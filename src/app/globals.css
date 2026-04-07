@@ -4141,6 +4141,64 @@ body {
     font-weight: 500;
   }
 
+  /* ===== STICKY SECTION TABS ===== */
+  .mob-section-tabs {
+    position: sticky;
+    top: 52px;
+    z-index: 49;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px) saturate(180%);
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+  }
+
+  .mob-section-tab {
+    all: unset;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text-secondary);
+    font-family: inherit;
+    transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+  }
+
+  .mob-section-tab:active {
+    background: rgba(51,102,255,0.06);
+    color: var(--accent-blue);
+    border-bottom-color: var(--accent-blue);
+  }
+
+  .mob-section-tab svg {
+    flex-shrink: 0;
+    opacity: 0.7;
+  }
+
+  .mob-tab-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    border-radius: 100px;
+    background: #e53935;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
   .mob-topbar-badge {
     display: flex;
     align-items: center;
@@ -4215,13 +4273,17 @@ body {
     margin-bottom: 8px;
   }
 
+  .mob-section {
+    scroll-margin-top: 96px;
+  }
+
   .mob-section-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 14px 16px 8px;
     position: sticky;
-    top: 49px;
+    top: 92px;
     z-index: 10;
     background: rgba(245,247,250,0.95);
     backdrop-filter: blur(8px);

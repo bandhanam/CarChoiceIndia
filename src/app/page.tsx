@@ -146,6 +146,10 @@ export default function HomePage() {
       .filter((c): c is Car => c !== null && c !== undefined);
   }, [selectedItems]);
 
+  const scrollToSection = useCallback((sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   // ==================== MOBILE LAYOUT ====================
   if (isMobile) {
     return (
@@ -163,6 +167,44 @@ export default function HomePage() {
             AI
           </div>
         </header>
+
+        {/* Sticky section tabs */}
+        <nav className="mob-section-tabs">
+          <button className="mob-section-tab" onClick={() => scrollToSection("mob-browse-section")}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+            Browse
+          </button>
+          <button
+            className={`mob-section-tab ${selectedItems.length > 0 ? "has-count" : ""}`}
+            onClick={() => scrollToSection("mob-compare-section")}
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5z" />
+              <path d="M2 17l10 5 10-5" />
+              <path d="M2 12l10 5 10-5" />
+            </svg>
+            Compare
+            {selectedItems.length > 0 && (
+              <span className="mob-tab-count">{selectedItems.length}</span>
+            )}
+          </button>
+          <button className="mob-section-tab" onClick={() => scrollToSection("mob-allcars-section")}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+              <line x1="8" y1="6" x2="21" y2="6" />
+              <line x1="8" y1="12" x2="21" y2="12" />
+              <line x1="8" y1="18" x2="21" y2="18" />
+              <line x1="3" y1="6" x2="3.01" y2="6" />
+              <line x1="3" y1="12" x2="3.01" y2="12" />
+              <line x1="3" y1="18" x2="3.01" y2="18" />
+            </svg>
+            All Cars
+          </button>
+        </nav>
 
         {/* Top Find Winner button */}
         {selectedItems.length >= 2 && (
@@ -183,7 +225,7 @@ export default function HomePage() {
         <div className="mob-content">
 
           {/* ===== SECTION: BROWSE ===== */}
-          <div className="mob-section">
+          <div className="mob-section" id="mob-browse-section">
             <div className="mob-section-header">
               <h2 className="mob-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -297,7 +339,7 @@ export default function HomePage() {
           </div>
 
           {/* ===== SECTION: ALL CARS ===== */}
-          <div className="mob-section">
+          <div className="mob-section" id="mob-allcars-section">
             <div className="mob-section-header">
               <h2 className="mob-section-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
