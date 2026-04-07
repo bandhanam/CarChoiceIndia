@@ -1,0 +1,5270 @@
+{
+  "version": "4.1.0",
+  "lastUpdated": "2026-04-06T12:44:43.661Z",
+  "brands": [
+    {
+      "name": "Tata",
+      "emoji": "🔵",
+      "color": "#0066FF",
+      "country": "India"
+    },
+    {
+      "name": "Hyundai",
+      "emoji": "🔷",
+      "color": "#002C5F",
+      "country": "South Korea"
+    },
+    {
+      "name": "Mahindra",
+      "emoji": "🔴",
+      "color": "#D4213D",
+      "country": "India"
+    },
+    {
+      "name": "Maruti Suzuki",
+      "emoji": "🟡",
+      "color": "#E31837",
+      "country": "Japan"
+    },
+    {
+      "name": "MG Motor",
+      "emoji": "⬛",
+      "color": "#1B1B1B",
+      "country": "China/UK"
+    },
+    {
+      "name": "Kia",
+      "emoji": "🟠",
+      "color": "#05141F",
+      "country": "South Korea"
+    },
+    {
+      "name": "Toyota",
+      "emoji": "🔶",
+      "color": "#EB0A1E",
+      "country": "Japan"
+    },
+    {
+      "name": "Honda",
+      "emoji": "🟥",
+      "color": "#CC0000",
+      "country": "Japan"
+    },
+    {
+      "name": "Skoda",
+      "emoji": "🟩",
+      "color": "#4BA82E",
+      "country": "Czech Republic"
+    },
+    {
+      "name": "Volkswagen",
+      "emoji": "🔵",
+      "color": "#001E50",
+      "country": "Germany"
+    },
+    {
+      "name": "Renault",
+      "emoji": "🔶",
+      "color": "#FFCC00",
+      "country": "France"
+    }
+  ],
+  "cars": [
+    {
+      "id": "tata-curvv-ev",
+      "name": "Tata Curvv EV",
+      "brand": "Tata",
+      "model": "Curvv EV",
+      "year": 2025,
+      "price": 1799000,
+      "currency": "INR",
+      "category": "Electric SUV Coupe",
+      "imageEmoji": "⚡",
+      "imageUrl": "/images/cars/tata-curvv-ev.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/curvv-ev-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#0066FF",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 167,
+        "torque": "215 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "FWD",
+        "fuelType": "Electric",
+        "mileage": 585,
+        "acceleration": 8.6,
+        "topSpeed": 160
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP with iVBAC",
+          "360° Camera",
+          "ADAS Level 2",
+          "TPMS",
+          "Hill Hold Assist"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Auto Climate Control",
+          "Powered Tailgate",
+          "Air Purifier",
+          "Wireless Charger"
+        ],
+        "technology": [
+          "12.3\" Touchscreen",
+          "10.25\" Digital Cluster",
+          "Connected Car Tech",
+          "OTA Updates",
+          "JBL 320W Sound System"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "Sequential Turn Indicators",
+          "Flush Door Handles",
+          "Coupe-Style Roofline",
+          "19\" Alloy Wheels"
+        ]
+      },
+      "ratings": {
+        "performance": 7.8,
+        "fuelEfficiency": 9.5,
+        "safety": 9,
+        "comfort": 8.2,
+        "technology": 8.8,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "Creative 45",
+          "price": 1799000
+        },
+        {
+          "name": "Creative+ 45",
+          "price": 1899000
+        },
+        {
+          "name": "Accomplished 45",
+          "price": 1999000
+        },
+        {
+          "name": "Accomplished+ 45",
+          "price": 2099000
+        },
+        {
+          "name": "Accomplished+ S 55",
+          "price": 2199000
+        },
+        {
+          "name": "Empowered 55",
+          "price": 2399000
+        },
+        {
+          "name": "Empowered+ 55",
+          "price": 2499000
+        }
+      ],
+      "description": "India's first electric SUV coupe with segment-leading range and ADAS.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Pristine White",
+        "Flame Red",
+        "Crystal Blue",
+        "Empowered Oxide",
+        "Pure Grey"
+      ]
+    },
+    {
+      "id": "tata-nexon-2025",
+      "name": "Tata Nexon 2025",
+      "brand": "Tata",
+      "model": "Nexon",
+      "year": 2025,
+      "price": 849000,
+      "currency": "INR",
+      "category": "Sub-Compact SUV",
+      "imageEmoji": "🏆",
+      "imageUrl": "/images/cars/tata-nexon-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/141867/nexon-exterior-right-front-three-quarter-71.jpeg"
+      ],
+      "color": "#1C3879",
+      "specs": {
+        "engine": "1.2L Revotron Turbo Petrol",
+        "horsepower": 120,
+        "torque": "170 Nm",
+        "transmission": "6-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 10.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Hold",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Ventilated Seats",
+          "Electric Sunroof",
+          "Air Purifier",
+          "Push Button Start"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Wireless CarPlay/Android Auto",
+          "Connected Car Tech",
+          "Harman Audio"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "LED Projector Headlamps",
+          "16\" Alloy Wheels",
+          "Shark Fin Antenna",
+          "Roof Rails"
+        ]
+      },
+      "ratings": {
+        "performance": 7.2,
+        "fuelEfficiency": 7.5,
+        "safety": 9,
+        "comfort": 7.8,
+        "technology": 8,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "Smart (MT)",
+          "price": 849000
+        },
+        {
+          "name": "Smart+ (MT)",
+          "price": 949000
+        },
+        {
+          "name": "Smart+ S (MT)",
+          "price": 1049000
+        },
+        {
+          "name": "Creative (AMT)",
+          "price": 1149000
+        },
+        {
+          "name": "Creative+ (MT)",
+          "price": 1249000
+        },
+        {
+          "name": "Creative+ S (AMT)",
+          "price": 1349000
+        },
+        {
+          "name": "Fearless (MT)",
+          "price": 1399000
+        },
+        {
+          "name": "Fearless+ S (AMT)",
+          "price": 1449000
+        }
+      ],
+      "description": "India's safest and best-selling sub-compact SUV with 5-star GNCAP rating.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Creative Ocean",
+        "Fearless Purple",
+        "Flame Red",
+        "Daytona Grey",
+        "Pure White"
+      ]
+    },
+    {
+      "id": "tata-harrier-2025",
+      "name": "Tata Harrier 2025",
+      "brand": "Tata",
+      "model": "Harrier",
+      "year": 2025,
+      "price": 1549000,
+      "currency": "INR",
+      "category": "Mid-Size SUV",
+      "imageEmoji": "🦁",
+      "imageUrl": "/images/cars/tata-harrier-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/161501/harrier-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#2E4053",
+      "specs": {
+        "engine": "2.0L Kryotec Diesel",
+        "horsepower": 170,
+        "torque": "350 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Diesel",
+        "mileage": 16,
+        "acceleration": 9.8,
+        "topSpeed": 190
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Panoramic Sunroof",
+          "Auto Climate Control",
+          "Powered Tailgate",
+          "Air Purifier"
+        ],
+        "technology": [
+          "12.3\" Touchscreen",
+          "10.25\" Cluster",
+          "JBL 9-Speaker Audio",
+          "OTA Updates",
+          "Connected Car Tech"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "Sequential Indicators",
+          "18\" Alloy Wheels",
+          "Dual-Tone Roof",
+          "Power Folding Mirrors"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7,
+        "safety": 8.8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 7.8
+      },
+      "variants": [
+        {
+          "name": "Smart (MT)",
+          "price": 1549000
+        },
+        {
+          "name": "Pure (MT)",
+          "price": 1699000
+        },
+        {
+          "name": "Pure+ (AT)",
+          "price": 1799000
+        },
+        {
+          "name": "Adventure+ (AT)",
+          "price": 1999000
+        },
+        {
+          "name": "Fearless (AT)",
+          "price": 2199000
+        },
+        {
+          "name": "Fearless+ (AT)",
+          "price": 2499000
+        }
+      ],
+      "description": "Bold and commanding mid-size SUV built on OMEGARC platform with ADAS and panoramic sunroof.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Ash Grey",
+        "Coral Red",
+        "Lunar White",
+        "Orcus White",
+        "Daytona Grey"
+      ]
+    },
+    {
+      "id": "tata-punch-2025",
+      "name": "Tata Punch 2025",
+      "brand": "Tata",
+      "model": "Punch",
+      "year": 2025,
+      "price": 610000,
+      "currency": "INR",
+      "category": "Micro SUV",
+      "imageEmoji": "👊",
+      "imageUrl": "/images/cars/tata-punch-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/130591/punch-exterior-right-front-three-quarter-64.jpeg"
+      ],
+      "color": "#FF6F61",
+      "specs": {
+        "engine": "1.2L Revotron Petrol",
+        "horsepower": 86,
+        "torque": "113 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 20,
+        "acceleration": 13.5,
+        "topSpeed": 160
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ABS with EBD",
+          "Rear Parking Camera",
+          "ISOFIX",
+          "Seatbelt Reminder",
+          "Corner Stability Control"
+        ],
+        "comfort": [
+          "Semi-Digital Instrument Cluster",
+          "Height Adjustable Seat",
+          "Tilt Steering",
+          "Auto Fold Mirrors",
+          "Follow-Me-Home Headlamps"
+        ],
+        "technology": [
+          "7\" Touchscreen",
+          "Wireless CarPlay/Android Auto",
+          "Harman Audio",
+          "Tata Connected",
+          "Voice Recognition"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "Halogen Projector Headlamps",
+          "16\" Steel Wheels",
+          "Roof Rails",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 6,
+        "fuelEfficiency": 8,
+        "safety": 9,
+        "comfort": 7,
+        "technology": 7,
+        "valueForMoney": 9
+      },
+      "variants": [
+        {
+          "name": "Pure (MT)",
+          "price": 610000
+        },
+        {
+          "name": "Adventure (MT)",
+          "price": 699000
+        },
+        {
+          "name": "Adventure Rhythm (MT)",
+          "price": 749000
+        },
+        {
+          "name": "Accomplished (MT)",
+          "price": 799000
+        },
+        {
+          "name": "Accomplished+ (AMT)",
+          "price": 849000
+        },
+        {
+          "name": "Creative (MT)",
+          "price": 869000
+        },
+        {
+          "name": "Creative+ (AMT)",
+          "price": 899000
+        }
+      ],
+      "description": "India's safest micro SUV with 5-star safety and fun-to-drive character.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Tornado Blue",
+        "Calypso Red",
+        "Meteor Bronze",
+        "Orcus White",
+        "Daytona Grey"
+      ]
+    },
+    {
+      "id": "tata-safari-2025",
+      "name": "Tata Safari 2025",
+      "brand": "Tata",
+      "model": "Safari",
+      "year": 2025,
+      "price": 1699000,
+      "currency": "INR",
+      "category": "Premium 7-Seater SUV",
+      "imageEmoji": "🐘",
+      "imageUrl": "/images/cars/tata-safari-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/161503/safari-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#5D4037",
+      "specs": {
+        "engine": "2.0L Kryotec Diesel",
+        "horsepower": 170,
+        "torque": "350 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Diesel",
+        "mileage": 14,
+        "acceleration": 10,
+        "topSpeed": 190
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control"
+        ],
+        "comfort": [
+          "Ventilated Front & 2nd Row Seats",
+          "Panoramic Sunroof",
+          "Dual-Zone Climate",
+          "Powered Tailgate",
+          "Air Purifier"
+        ],
+        "technology": [
+          "12.3\" Touchscreen",
+          "10.25\" Cluster",
+          "JBL 9-Speaker Audio",
+          "Connected Car Tech",
+          "OTA Updates"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "Sequential Indicators",
+          "19\" Alloy Wheels",
+          "Dual-Tone Roof",
+          "Power Folding Mirrors"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 6.5,
+        "safety": 8.8,
+        "comfort": 8.8,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Smart (MT)",
+          "price": 1699000
+        },
+        {
+          "name": "Pure+ (AT)",
+          "price": 1899000
+        },
+        {
+          "name": "Adventure+ (AT)",
+          "price": 2199000
+        },
+        {
+          "name": "Fearless (AT)",
+          "price": 2399000
+        },
+        {
+          "name": "Fearless+ (AT)",
+          "price": 2699000
+        },
+        {
+          "name": "Kaziranga (AT)",
+          "price": 2799000
+        }
+      ],
+      "description": "Flagship 7-seater SUV with ADAS, panoramic sunroof, and segment-best 3rd row space.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Stardust Ash",
+        "Cosmic Gold",
+        "Lunar White",
+        "Orcus White",
+        "Oberon Black"
+      ]
+    },
+    {
+      "id": "tata-altroz-2025",
+      "name": "Tata Altroz 2025",
+      "brand": "Tata",
+      "model": "Altroz",
+      "year": 2025,
+      "price": 699000,
+      "currency": "INR",
+      "category": "Premium Hatchback",
+      "imageEmoji": "🦋",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/114423/altroz-exterior-right-front-three-quarter-6.jpeg",
+      "gallery": [],
+      "color": "#7E57C2",
+      "specs": {
+        "engine": "1.2L Revotron Petrol",
+        "horsepower": 86,
+        "torque": "113 Nm",
+        "transmission": "5-Speed MT / DCA",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 22,
+        "acceleration": 12.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ABS with EBD",
+          "ESP",
+          "Corner Stability Control",
+          "Rear Camera",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Height Adjustable Seat",
+          "Push Button Start",
+          "Cooled Glove Box",
+          "90° Opening Doors"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Harman Audio",
+          "Wireless CarPlay/Android Auto",
+          "Connected Car Tech"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "Projector Headlamps",
+          "16\" Alloy Wheels",
+          "Shark Fin Antenna",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 8.5,
+        "safety": 8.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "XE (MT)",
+          "price": 699000
+        },
+        {
+          "name": "XM (MT)",
+          "price": 799000
+        },
+        {
+          "name": "XM+ (MT)",
+          "price": 849000
+        },
+        {
+          "name": "XZ (MT)",
+          "price": 899000
+        },
+        {
+          "name": "XZ+ (MT)",
+          "price": 949000
+        },
+        {
+          "name": "XZ+ (DCA)",
+          "price": 999000
+        },
+        {
+          "name": "Racer (MT)",
+          "price": 1049000
+        }
+      ],
+      "description": "Premium hatchback with 5-star safety, 90° opening doors, and sharp IMPACT 2.0 design.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Opera Blue",
+        "High Street Gold",
+        "Harbour Blue",
+        "Downtown Red",
+        "Avenue White"
+      ]
+    },
+    {
+      "id": "hyundai-creta-2025",
+      "name": "Hyundai Creta 2025",
+      "brand": "Hyundai",
+      "model": "Creta",
+      "year": 2025,
+      "price": 1199900,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🏎️",
+      "imageUrl": "/images/cars/hyundai-creta-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150603/creta-exterior-right-front-three-quarter-2.jpeg"
+      ],
+      "color": "#002C5F",
+      "specs": {
+        "engine": "1.5L Turbo GDi Petrol",
+        "horsepower": 160,
+        "torque": "253 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 9.5,
+        "topSpeed": 185
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "Hill Assist",
+          "360° Camera",
+          "Blind Spot Monitor"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Dual-Zone Climate",
+          "Panoramic Sunroof",
+          "Powered Driver Seat",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 8-Speaker Audio",
+          "Bluelink Connected Car",
+          "Wireless Android Auto/CarPlay"
+        ],
+        "exterior": [
+          "Connected LED DRLs",
+          "H-Shaped LED Tail Lamps",
+          "17\" Diamond Cut Alloys",
+          "Shark Fin Antenna",
+          "Chrome Door Handles"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7.5,
+        "safety": 8.8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "E 1.5 MT",
+          "price": 1099900
+        },
+        {
+          "name": "EX 1.5 MT",
+          "price": 1199900
+        },
+        {
+          "name": "S 1.5 MT",
+          "price": 1299900
+        },
+        {
+          "name": "S(O) 1.5 IVT",
+          "price": 1399900
+        },
+        {
+          "name": "SX 1.5 Turbo DCT",
+          "price": 1599900
+        },
+        {
+          "name": "SX(O) 1.5 Turbo DCT",
+          "price": 1799900
+        },
+        {
+          "name": "SX(O) Knight",
+          "price": 1999900
+        }
+      ],
+      "description": "Best-selling compact SUV with ADAS, bold design and powerful turbo engine.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Atlas White",
+        "Abyss Black",
+        "Ranger Khaki",
+        "Fiery Red",
+        "Titan Grey",
+        "Oceanic Blue"
+      ]
+    },
+    {
+      "id": "hyundai-venue-2025",
+      "name": "Hyundai Venue 2025",
+      "brand": "Hyundai",
+      "model": "Venue",
+      "year": 2025,
+      "price": 799000,
+      "currency": "INR",
+      "category": "Sub-Compact SUV",
+      "imageEmoji": "🌟",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/157897/venue-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#003580",
+      "specs": {
+        "engine": "1.2L Kappa Petrol",
+        "horsepower": 83,
+        "torque": "114 Nm",
+        "transmission": "5-Speed MT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 13,
+        "topSpeed": 165
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Hill Assist",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Height Adjustable Seat",
+          "Wireless Charger",
+          "Rear AC Vents",
+          "Push Button Start"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "Digital Cluster",
+          "Wireless CarPlay/Android Auto",
+          "Bluelink Connected",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "LED Tail Lamps",
+          "15\" Alloy Wheels",
+          "Shark Fin Antenna",
+          "Turn Indicators on ORVMs"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 7.5,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 8,
+        "valueForMoney": 7.8
+      },
+      "variants": [
+        {
+          "name": "E 1.2 MT",
+          "price": 799000
+        },
+        {
+          "name": "S 1.2 MT",
+          "price": 899000
+        },
+        {
+          "name": "S(O) 1.0 Turbo IMT",
+          "price": 999000
+        },
+        {
+          "name": "SX 1.0 Turbo DCT",
+          "price": 1099000
+        },
+        {
+          "name": "SX(O) 1.0 Turbo DCT",
+          "price": 1199000
+        },
+        {
+          "name": "SX(O) Knight",
+          "price": 1249000
+        }
+      ],
+      "description": "Feature-packed urban sub-compact SUV with connected technology and refined interior.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Denim Blue",
+        "Fiery Red",
+        "Phantom Black",
+        "Polar White",
+        "Titan Grey"
+      ]
+    },
+    {
+      "id": "hyundai-i20-2025",
+      "name": "Hyundai i20 2025",
+      "brand": "Hyundai",
+      "model": "i20",
+      "year": 2025,
+      "price": 749000,
+      "currency": "INR",
+      "category": "Premium Hatchback",
+      "imageEmoji": "💎",
+      "imageUrl": "/images/cars/hyundai-i20-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150601/i20-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#1A5276",
+      "specs": {
+        "engine": "1.2L Kappa Petrol",
+        "horsepower": 88,
+        "torque": "115 Nm",
+        "transmission": "IVT / 6-Speed MT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 20,
+        "acceleration": 11.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Hill Assist",
+          "TPMS",
+          "Rear Camera",
+          "Vehicle Stability Management"
+        ],
+        "comfort": [
+          "Sunroof",
+          "Auto Climate Control",
+          "Wireless Charger",
+          "Rear AC Vents",
+          "Leather Wrapped Steering"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 7-Speaker Audio",
+          "Bluelink Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Z-Shaped LED DRLs",
+          "LED Projector Headlamps",
+          "16\" Diamond Cut Alloys",
+          "Shark Fin Antenna",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 8,
+        "safety": 8,
+        "comfort": 8,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Magna 1.2 MT",
+          "price": 749000
+        },
+        {
+          "name": "Sportz 1.2 MT",
+          "price": 849000
+        },
+        {
+          "name": "Sportz 1.2 IVT",
+          "price": 899000
+        },
+        {
+          "name": "Asta 1.2 MT",
+          "price": 949000
+        },
+        {
+          "name": "Asta 1.0 Turbo IMT",
+          "price": 1049000
+        },
+        {
+          "name": "Asta(O) 1.0 Turbo DCT",
+          "price": 1149000
+        },
+        {
+          "name": "N Line 1.0 Turbo DCT",
+          "price": 1199000
+        }
+      ],
+      "description": "Premium hatchback with segment-best features, Bose audio, and connected tech.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Starry Night",
+        "Fiery Red",
+        "Polar White",
+        "Typhoon Silver",
+        "Titan Grey"
+      ]
+    },
+    {
+      "id": "hyundai-verna-2025",
+      "name": "Hyundai Verna 2025",
+      "brand": "Hyundai",
+      "model": "Verna",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Premium Sedan",
+      "imageEmoji": "🔷",
+      "imageUrl": "/images/cars/hyundai-verna-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/144555/verna-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#0D47A1",
+      "specs": {
+        "engine": "1.5L Turbo GDi Petrol",
+        "horsepower": 160,
+        "torque": "253 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 9.2,
+        "topSpeed": 195
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "Hill Assist",
+          "360° Camera",
+          "Blind Spot Monitor"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Single-Zone Climate",
+          "Electric Sunroof",
+          "Rear AC Vents",
+          "Powered Driver Seat"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 8-Speaker Audio",
+          "Bluelink Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Connected LED DRLs",
+          "LED Projector Headlamps",
+          "16\" Diamond Cut Alloys",
+          "Chrome Package",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7.5,
+        "safety": 8.8,
+        "comfort": 8,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "EX 1.5 MT",
+          "price": 1099000
+        },
+        {
+          "name": "S 1.5 MT",
+          "price": 1199000
+        },
+        {
+          "name": "S(O) 1.5 IVT",
+          "price": 1349000
+        },
+        {
+          "name": "SX 1.5 Turbo DCT",
+          "price": 1549000
+        },
+        {
+          "name": "SX(O) 1.5 Turbo DCT",
+          "price": 1749000
+        }
+      ],
+      "description": "Sporty sedan with turbo power, ADAS, and premium cabin feel rivaling European cars.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Atlas White",
+        "Abyss Black",
+        "Typhoon Silver",
+        "Fiery Red",
+        "Tellurian Brown"
+      ]
+    },
+    {
+      "id": "hyundai-tucson-2025",
+      "name": "Hyundai Tucson 2025",
+      "brand": "Hyundai",
+      "model": "Tucson",
+      "year": 2025,
+      "price": 2799900,
+      "currency": "INR",
+      "category": "Premium Mid-Size SUV",
+      "imageEmoji": "🛡️",
+      "imageUrl": "/images/cars/hyundai-tucson-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139743/tucson-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#263238",
+      "specs": {
+        "engine": "2.0L CRDi Diesel",
+        "horsepower": 186,
+        "torque": "416 Nm",
+        "transmission": "8-Speed AT",
+        "drivetrain": "AWD",
+        "fuelType": "Diesel",
+        "mileage": 14,
+        "acceleration": 9,
+        "topSpeed": 195
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "360° Camera",
+          "Blind Spot Monitor",
+          "Rear Cross Traffic Alert"
+        ],
+        "comfort": [
+          "Ventilated & Heated Seats",
+          "Dual-Zone Climate",
+          "Panoramic Sunroof",
+          "Powered Tailgate",
+          "Ambient Lighting 64 Colors"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 8-Speaker Audio",
+          "Bluelink Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Parametric Jewel LED DRLs",
+          "LED Projector Headlamps",
+          "18\" Alloy Wheels",
+          "Hidden DRL Design",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 7,
+        "safety": 9,
+        "comfort": 9,
+        "technology": 9,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "GL 2.0 Petrol AT",
+          "price": 2799900
+        },
+        {
+          "name": "Platinum 2.0 Diesel AT",
+          "price": 3199900
+        },
+        {
+          "name": "Platinum 2.0 Diesel AWD AT",
+          "price": 3299900
+        },
+        {
+          "name": "Signature 2.0 Diesel AWD AT",
+          "price": 3499900
+        }
+      ],
+      "description": "Premium SUV with parametric design, AWD, and segment-best ADAS technology.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Polar White",
+        "Phantom Black",
+        "Shimmering Silver",
+        "Fiery Red",
+        "Amazon Grey"
+      ]
+    },
+    {
+      "id": "hyundai-exter-2025",
+      "name": "Hyundai Exter 2025",
+      "brand": "Hyundai",
+      "model": "Exter",
+      "year": 2025,
+      "price": 599000,
+      "currency": "INR",
+      "category": "Micro SUV",
+      "imageEmoji": "🌈",
+      "imageUrl": "/images/cars/hyundai-exter-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150595/exter-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#FF7043",
+      "specs": {
+        "engine": "1.2L Kappa Petrol",
+        "horsepower": 83,
+        "torque": "114 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 19,
+        "acceleration": 14,
+        "topSpeed": 160
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Hill Assist",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Height Adjustable Seat",
+          "Rear AC Vents",
+          "Electrically Folding Mirrors",
+          "Push Button Start"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "Digital Cluster",
+          "Wireless CarPlay/Android Auto",
+          "Bluelink Connected",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "Halogen Headlamps",
+          "15\" Alloy Wheels",
+          "Roof Rails",
+          "Skid Plates"
+        ]
+      },
+      "ratings": {
+        "performance": 6,
+        "fuelEfficiency": 8,
+        "safety": 7.5,
+        "comfort": 7,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "EX 1.2 MT",
+          "price": 599000
+        },
+        {
+          "name": "S 1.2 MT",
+          "price": 699000
+        },
+        {
+          "name": "S(O) 1.2 MT",
+          "price": 749000
+        },
+        {
+          "name": "SX 1.2 MT",
+          "price": 849000
+        },
+        {
+          "name": "SX(O) 1.2 AMT",
+          "price": 949000
+        },
+        {
+          "name": "SX(O) Knight",
+          "price": 999000
+        }
+      ],
+      "description": "Entry-level micro SUV with SUV styling, connected features, and affordable pricing.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Cosmic Blue",
+        "Fiery Red",
+        "Ranger Khaki",
+        "Polar White",
+        "Abyss Black",
+        "Starry Night"
+      ]
+    },
+    {
+      "id": "mahindra-thar-roxx",
+      "name": "Mahindra Thar Roxx",
+      "brand": "Mahindra",
+      "model": "Thar Roxx",
+      "year": 2025,
+      "price": 1299000,
+      "currency": "INR",
+      "category": "Off-Road SUV",
+      "imageEmoji": "🏔️",
+      "imageUrl": "/images/cars/mahindra-thar-roxx.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150605/thar-roxx-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#D4213D",
+      "specs": {
+        "engine": "2.0L mStallion Turbo Petrol",
+        "horsepower": 177,
+        "torque": "380 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "4WD",
+        "fuelType": "Petrol",
+        "mileage": 15,
+        "acceleration": 10,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "Hill Descent Control",
+          "TPMS",
+          "Rear Parking Camera",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Leatherette Seats",
+          "Auto Climate Control",
+          "Panoramic Sunroof",
+          "Rear AC Vents",
+          "Height Adjustable Seat"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "7\" Digital Cluster",
+          "Harman Kardon Audio",
+          "Wireless CarPlay/Android Auto",
+          "Adrenox Connected"
+        ],
+        "exterior": [
+          "C-Shaped LED DRLs",
+          "LED Projector Headlamps",
+          "18\" Alloy Wheels",
+          "Front Bash Plate",
+          "5-Door Body"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 6,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.8,
+        "valueForMoney": 8.2
+      },
+      "variants": [
+        {
+          "name": "MX1 RWD Petrol MT",
+          "price": 1299000
+        },
+        {
+          "name": "MX3 RWD Petrol MT",
+          "price": 1449000
+        },
+        {
+          "name": "AX3L RWD Petrol AT",
+          "price": 1699000
+        },
+        {
+          "name": "AX5L RWD Diesel AT",
+          "price": 1899000
+        },
+        {
+          "name": "AX5L 4WD Diesel AT",
+          "price": 2099000
+        },
+        {
+          "name": "AX7L RWD Diesel AT",
+          "price": 2199000
+        },
+        {
+          "name": "AX7L 4WD Diesel AT",
+          "price": 2299000
+        }
+      ],
+      "description": "5-door Thar with legendary off-road capability, panoramic sunroof, and modern comfort.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Tango Red",
+        "Stealth Black",
+        "Battleship Grey",
+        "Everest White",
+        "Nebula Blue"
+      ]
+    },
+    {
+      "id": "mahindra-xuv700-2025",
+      "name": "Mahindra XUV700 2025",
+      "brand": "Mahindra",
+      "model": "XUV700",
+      "year": 2025,
+      "price": 1399000,
+      "currency": "INR",
+      "category": "Mid-Size SUV",
+      "imageEmoji": "🦅",
+      "imageUrl": "/images/cars/mahindra-xuv700-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/42355/xuv700-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#8B0000",
+      "specs": {
+        "engine": "2.0L mStallion Turbo Petrol",
+        "horsepower": 200,
+        "torque": "380 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "AWD",
+        "fuelType": "Petrol",
+        "mileage": 13,
+        "acceleration": 8.3,
+        "topSpeed": 200
+      },
+      "features": {
+        "safety": [
+          "7 Airbags",
+          "ADAS Level 2",
+          "ESP",
+          "360° Camera",
+          "Driver Drowsiness Alert",
+          "Smart Pilot Assist"
+        ],
+        "comfort": [
+          "Ventilated Seats",
+          "Panoramic Sunroof",
+          "Dual-Zone Climate",
+          "Powered Tailgate",
+          "Memory Seats"
+        ],
+        "technology": [
+          "10.25\" Dual Screens",
+          "Alexa Built-In",
+          "Sony 3D Sound",
+          "Adrenox Connected",
+          "OTA Updates"
+        ],
+        "exterior": [
+          "LED Sequential DRLs",
+          "LED Projector Headlamps",
+          "18\" Diamond Cut Alloys",
+          "Flush Door Handles",
+          "Panoramic Sunroof"
+        ]
+      },
+      "ratings": {
+        "performance": 8.8,
+        "fuelEfficiency": 6.5,
+        "safety": 9,
+        "comfort": 8.5,
+        "technology": 9,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "MX Petrol MT 5-Seater",
+          "price": 1399000
+        },
+        {
+          "name": "AX3 Petrol MT 5-Seater",
+          "price": 1599000
+        },
+        {
+          "name": "AX5 Petrol AT 5-Seater",
+          "price": 1799000
+        },
+        {
+          "name": "AX5 Diesel AT 7-Seater",
+          "price": 1999000
+        },
+        {
+          "name": "AX7 Petrol AT 7-Seater",
+          "price": 2299000
+        },
+        {
+          "name": "AX7L Diesel AT 7-Seater",
+          "price": 2499000
+        },
+        {
+          "name": "AX7 AWD Diesel AT",
+          "price": 2699000
+        }
+      ],
+      "description": "Most powerful SUV in its class with 200HP, ADAS, Alexa built-in, and 7-seater option.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Midnight Black",
+        "Everest White",
+        "Red Rage",
+        "Dazzling Silver",
+        "Electric Blue"
+      ]
+    },
+    {
+      "id": "mahindra-xuv3xo-2025",
+      "name": "Mahindra XUV 3XO 2025",
+      "brand": "Mahindra",
+      "model": "XUV 3XO",
+      "year": 2025,
+      "price": 799000,
+      "currency": "INR",
+      "category": "Sub-Compact SUV",
+      "imageEmoji": "🔥",
+      "imageUrl": "/images/cars/mahindra-xuv3xo-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/157863/xuv-3xo-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#E8590C",
+      "specs": {
+        "engine": "1.2L Turbo GDi Petrol",
+        "horsepower": 130,
+        "torque": "230 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 9,
+        "topSpeed": 185
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "TPMS",
+          "Rear Camera",
+          "Hill Hold",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Sunroof",
+          "Auto Climate Control",
+          "Wireless Charger",
+          "Rear AC Vents",
+          "Leatherette Seats"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "7\" Digital Cluster",
+          "Harman Kardon Audio",
+          "Adrenox Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "LED Projector Headlamps",
+          "17\" Alloy Wheels",
+          "Dual-Tone Roof",
+          "Power Folding Mirrors"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 7.5,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 8,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "MX1 1.2 Petrol MT",
+          "price": 799000
+        },
+        {
+          "name": "MX2 1.2 Petrol MT",
+          "price": 899000
+        },
+        {
+          "name": "MX3 1.2 Turbo MT",
+          "price": 999000
+        },
+        {
+          "name": "MX3 Pro 1.2 Turbo AT",
+          "price": 1049000
+        },
+        {
+          "name": "AX5 1.2 Turbo AT",
+          "price": 1249000
+        },
+        {
+          "name": "AX7 1.2 Turbo AT",
+          "price": 1399000
+        },
+        {
+          "name": "AX7 Luxury 1.2 Turbo AT",
+          "price": 1549000
+        }
+      ],
+      "description": "Refreshed XUV with turbo power, panoramic sunroof, and premium tech at value pricing.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Citrine Yellow",
+        "Red Rage",
+        "Tango Red",
+        "Everest White",
+        "Galaxy Grey"
+      ]
+    },
+    {
+      "id": "mahindra-scorpio-n-2025",
+      "name": "Mahindra Scorpio-N 2025",
+      "brand": "Mahindra",
+      "model": "Scorpio-N",
+      "year": 2025,
+      "price": 1399000,
+      "currency": "INR",
+      "category": "Body-on-Frame SUV",
+      "imageEmoji": "🦂",
+      "imageUrl": "/images/cars/mahindra-scorpio-n-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/40432/scorpio-n-exterior-right-front-three-quarter-16.jpeg"
+      ],
+      "color": "#3E2723",
+      "specs": {
+        "engine": "2.0L mStallion Turbo Petrol",
+        "horsepower": 200,
+        "torque": "380 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "4WD",
+        "fuelType": "Petrol",
+        "mileage": 12,
+        "acceleration": 8.8,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control"
+        ],
+        "comfort": [
+          "Leatherette Seats",
+          "Dual-Zone Climate",
+          "Electric Sunroof",
+          "Rear AC Vents",
+          "Cruise Control"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "7\" Digital Cluster",
+          "Sony 3D Sound",
+          "Adrenox Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "18\" Alloy Wheels",
+          "Front Skid Plate",
+          "Roof Rails"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 6,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "Z2 Petrol MT 2WD",
+          "price": 1399000
+        },
+        {
+          "name": "Z4 Petrol MT 2WD",
+          "price": 1599000
+        },
+        {
+          "name": "Z6 Diesel MT 2WD",
+          "price": 1699000
+        },
+        {
+          "name": "Z8 Diesel AT 2WD",
+          "price": 1899000
+        },
+        {
+          "name": "Z8L Diesel AT 2WD",
+          "price": 2099000
+        },
+        {
+          "name": "Z8L Diesel AT 4WD",
+          "price": 2399000
+        }
+      ],
+      "description": "Muscular body-on-frame SUV with 200HP, 4WD, and legendary Scorpio DNA.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Dazzling Silver",
+        "Deep Forest",
+        "Grand Canyon",
+        "Everest White",
+        "Napoli Black",
+        "Red Rage"
+      ]
+    },
+    {
+      "id": "mahindra-bolero-neo-2025",
+      "name": "Mahindra Bolero Neo 2025",
+      "brand": "Mahindra",
+      "model": "Bolero Neo",
+      "year": 2025,
+      "price": 999000,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🐎",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/43482/bolero-neo-exterior-right-front-three-quarter-4.jpeg",
+      "gallery": [],
+      "color": "#795548",
+      "specs": {
+        "engine": "1.5L mHawk Diesel",
+        "horsepower": 100,
+        "torque": "260 Nm",
+        "transmission": "5-Speed MT",
+        "drivetrain": "RWD",
+        "fuelType": "Diesel",
+        "mileage": 17,
+        "acceleration": 14,
+        "topSpeed": 150
+      },
+      "features": {
+        "safety": [
+          "Dual Airbags",
+          "ABS with EBD",
+          "Rear Parking Sensors",
+          "ISOFIX",
+          "Seat Belt Reminder",
+          "Speed Alert"
+        ],
+        "comfort": [
+          "Semi-Digital Cluster",
+          "Height Adjustable Seat",
+          "Tilt Steering",
+          "All 4 Power Windows",
+          "Front Armrest"
+        ],
+        "technology": [
+          "7\" Touchscreen",
+          "USB/AUX/Bluetooth",
+          "Voice Recognition",
+          "GPS Navigation",
+          "Reverse Camera"
+        ],
+        "exterior": [
+          "Halogen Headlamps",
+          "Body-Colored Bumpers",
+          "Steel Wheels",
+          "Chrome Grille",
+          "Roof Rails"
+        ]
+      },
+      "ratings": {
+        "performance": 6,
+        "fuelEfficiency": 7.5,
+        "safety": 6.5,
+        "comfort": 6,
+        "technology": 6,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "N4",
+          "price": 999000
+        },
+        {
+          "name": "N8",
+          "price": 1049000
+        },
+        {
+          "name": "N10",
+          "price": 1099000
+        },
+        {
+          "name": "N10 (O)",
+          "price": 1149000
+        }
+      ],
+      "description": "Rugged and affordable compact SUV with proven diesel engine and tough build quality.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Diamond White",
+        "Highway Red",
+        "Napoli Black",
+        "Lakeside Brown"
+      ]
+    },
+    {
+      "id": "maruti-swift-2025",
+      "name": "Maruti Swift 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Swift",
+      "year": 2025,
+      "price": 699000,
+      "currency": "INR",
+      "category": "Hatchback",
+      "imageEmoji": "💨",
+      "imageUrl": "/images/cars/maruti-swift-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/swift-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#E31837",
+      "specs": {
+        "engine": "1.2L Z-Series DualJet Petrol",
+        "horsepower": 82,
+        "torque": "112 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 25,
+        "acceleration": 12,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold Assist",
+          "Reverse Parking Camera",
+          "Seatbelt Reminder"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Height Adjustable Seat",
+          "Push Button Start",
+          "Steering Mounted Controls",
+          "Electrically Folding Mirrors"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Heads-Up Display",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "Arkamys Sound Tuning"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "Shark Fin Antenna",
+          "15\" Dual Tone Alloys"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 9,
+        "safety": 7.5,
+        "comfort": 7,
+        "technology": 7.5,
+        "valueForMoney": 9
+      },
+      "variants": [
+        {
+          "name": "LXi MT",
+          "price": 699000
+        },
+        {
+          "name": "VXi MT",
+          "price": 779000
+        },
+        {
+          "name": "VXi AMT",
+          "price": 829000
+        },
+        {
+          "name": "VXi (O) MT",
+          "price": 839000
+        },
+        {
+          "name": "ZXi MT",
+          "price": 879000
+        },
+        {
+          "name": "ZXi AMT",
+          "price": 929000
+        },
+        {
+          "name": "ZXi+ MT",
+          "price": 949000
+        },
+        {
+          "name": "ZXi+ AMT",
+          "price": 999000
+        }
+      ],
+      "description": "India's favourite hatchback with Z-Series engine and best-in-class mileage.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Luster Blue",
+        "Sizzling Red",
+        "Pearl Arctic White",
+        "Magma Grey",
+        "Midnight Black"
+      ]
+    },
+    {
+      "id": "maruti-brezza-2025",
+      "name": "Maruti Brezza 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Brezza",
+      "year": 2025,
+      "price": 849000,
+      "currency": "INR",
+      "category": "Sub-Compact SUV",
+      "imageEmoji": "🌊",
+      "imageUrl": "/images/cars/maruti-brezza-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/brezza-exterior-right-front-three-quarter-3.jpeg"
+      ],
+      "color": "#4A148C",
+      "specs": {
+        "engine": "1.5L K-Series Petrol",
+        "horsepower": 103,
+        "torque": "137 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 20,
+        "acceleration": 11.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "Hill Hold",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Cruise Control",
+          "Rear AC Vents",
+          "Height Adjustable Seat"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Heads-Up Display",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "16\" Alloy Wheels",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 6.8,
+        "fuelEfficiency": 8.5,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "LXi MT",
+          "price": 849000
+        },
+        {
+          "name": "VXi MT",
+          "price": 949000
+        },
+        {
+          "name": "VXi AT",
+          "price": 999000
+        },
+        {
+          "name": "ZXi MT",
+          "price": 1099000
+        },
+        {
+          "name": "ZXi AT",
+          "price": 1149000
+        },
+        {
+          "name": "ZXi+ MT",
+          "price": 1249000
+        },
+        {
+          "name": "ZXi+ AT",
+          "price": 1349000
+        }
+      ],
+      "description": "Popular sub-compact SUV with SUV styling, sunroof, and strong resale value.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Brave Khakhi",
+        "Sizzling Red",
+        "Pearl Arctic White",
+        "Magma Grey",
+        "Nexa Blue"
+      ]
+    },
+    {
+      "id": "maruti-grand-vitara-2025",
+      "name": "Maruti Grand Vitara 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Grand Vitara",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Mid-Size SUV",
+      "imageEmoji": "🌿",
+      "imageUrl": "/images/cars/maruti-grand-vitara-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/106055/grand-vitara-exterior-right-front-three-quarter-5.jpeg"
+      ],
+      "color": "#1B5E20",
+      "specs": {
+        "engine": "1.5L Strong Hybrid Petrol",
+        "horsepower": 116,
+        "torque": "122 Nm",
+        "transmission": "e-CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol Hybrid",
+        "mileage": 28,
+        "acceleration": 11,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "360° Camera",
+          "Hill Hold",
+          "Hill Descent",
+          "TPMS"
+        ],
+        "comfort": [
+          "Ventilated Seats",
+          "Panoramic Sunroof",
+          "Wireless Charger",
+          "Dual-Zone Climate",
+          "Head-Up Display"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Digital Cluster",
+          "JBL 6-Speaker Audio",
+          "Suzuki Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 9.5,
+        "safety": 8,
+        "comfort": 8,
+        "technology": 8,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "Sigma MT",
+          "price": 1099000
+        },
+        {
+          "name": "Delta Smart Hybrid MT",
+          "price": 1249000
+        },
+        {
+          "name": "Zeta Smart Hybrid MT",
+          "price": 1399000
+        },
+        {
+          "name": "Alpha Smart Hybrid AT",
+          "price": 1549000
+        },
+        {
+          "name": "Zeta+ Strong Hybrid e-CVT",
+          "price": 1799000
+        },
+        {
+          "name": "Alpha+ Strong Hybrid e-CVT",
+          "price": 1999000
+        },
+        {
+          "name": "Alpha+ Strong Hybrid AWD",
+          "price": 2099000
+        }
+      ],
+      "description": "Best-in-class mileage with strong hybrid, AWD option, and panoramic sunroof.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Arctic White",
+        "Celestial Blue",
+        "Chestnut Brown",
+        "Grandeur Grey",
+        "Nexa Blue"
+      ]
+    },
+    {
+      "id": "maruti-baleno-2025",
+      "name": "Maruti Baleno 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Baleno",
+      "year": 2025,
+      "price": 699000,
+      "currency": "INR",
+      "category": "Premium Hatchback",
+      "imageEmoji": "💠",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/baleno-exterior-right-front-three-quarter-3.jpeg",
+      "gallery": [],
+      "color": "#1565C0",
+      "specs": {
+        "engine": "1.2L DualJet Petrol",
+        "horsepower": 90,
+        "torque": "113 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 22,
+        "acceleration": 11.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold",
+          "Rear Camera",
+          "Seatbelt Reminder"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Push Button Start",
+          "Height Adjustable Seat",
+          "Rear AC Vents",
+          "Electrically Folding Mirrors"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Heads-Up Display",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "16\" Alloy Wheels",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 8.5,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "Sigma MT",
+          "price": 699000
+        },
+        {
+          "name": "Delta MT",
+          "price": 799000
+        },
+        {
+          "name": "Delta AMT",
+          "price": 849000
+        },
+        {
+          "name": "Zeta MT",
+          "price": 899000
+        },
+        {
+          "name": "Zeta AMT",
+          "price": 949000
+        },
+        {
+          "name": "Alpha MT",
+          "price": 979000
+        },
+        {
+          "name": "Alpha AMT",
+          "price": 999000
+        }
+      ],
+      "description": "Premium Nexa hatchback with heads-up display, connected tech, and spacious cabin.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Nexa Blue",
+        "Luxe Beige",
+        "Opulent Red",
+        "Grandeur Grey",
+        "Pearl Arctic White"
+      ]
+    },
+    {
+      "id": "maruti-fronx-2025",
+      "name": "Maruti Fronx 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Fronx",
+      "year": 2025,
+      "price": 799000,
+      "currency": "INR",
+      "category": "Coupe SUV",
+      "imageEmoji": "🌀",
+      "imageUrl": "/images/cars/maruti-fronx-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/133801/fronx-exterior-right-front-three-quarter-4.jpeg"
+      ],
+      "color": "#E91E63",
+      "specs": {
+        "engine": "1.0L Turbo BoosterJet Petrol",
+        "horsepower": 100,
+        "torque": "148 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 22,
+        "acceleration": 10.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold",
+          "Rear Camera",
+          "TPMS"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Push Button Start",
+          "Cruise Control",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Heads-Up Display",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "16\" Alloy Wheels",
+          "Coupe-Style Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 8.5,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "Sigma 1.2 MT",
+          "price": 799000
+        },
+        {
+          "name": "Delta 1.2 MT",
+          "price": 899000
+        },
+        {
+          "name": "Delta+ 1.2 AMT",
+          "price": 949000
+        },
+        {
+          "name": "Zeta 1.0 Turbo MT",
+          "price": 1049000
+        },
+        {
+          "name": "Alpha 1.0 Turbo AT",
+          "price": 1149000
+        },
+        {
+          "name": "Alpha+ 1.0 Turbo AT",
+          "price": 1249000
+        }
+      ],
+      "description": "Sporty coupe-SUV with turbo power, sunroof, and aggressive design language.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Earthen Brown",
+        "Opulent Red",
+        "Splendid Silver",
+        "Celestial Blue",
+        "Arctic White"
+      ]
+    },
+    {
+      "id": "maruti-ertiga-2025",
+      "name": "Maruti Ertiga 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Ertiga",
+      "year": 2025,
+      "price": 899000,
+      "currency": "INR",
+      "category": "MPV",
+      "imageEmoji": "👨‍👩‍👧‍👦",
+      "imageUrl": "/images/cars/maruti-ertiga-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112839/ertiga-exterior-right-front-three-quarter-3.jpeg"
+      ],
+      "color": "#00695C",
+      "specs": {
+        "engine": "1.5L K-Series Petrol",
+        "horsepower": 103,
+        "torque": "137 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 20,
+        "acceleration": 12,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold",
+          "Rear Camera",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Steering Mounted Controls",
+          "Height Adjustable Seat",
+          "2nd Row Armrest"
+        ],
+        "technology": [
+          "7\" SmartPlay Studio",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "USB Charging Ports",
+          "Steering Audio Controls"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "15\" Alloy Wheels",
+          "Chrome Grille"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 8.5,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7,
+        "valueForMoney": 9
+      },
+      "variants": [
+        {
+          "name": "LXi MT",
+          "price": 899000
+        },
+        {
+          "name": "VXi MT",
+          "price": 949000
+        },
+        {
+          "name": "VXi CNG",
+          "price": 999000
+        },
+        {
+          "name": "ZXi MT",
+          "price": 1049000
+        },
+        {
+          "name": "ZXi AT",
+          "price": 1099000
+        },
+        {
+          "name": "ZXi+ MT",
+          "price": 1149000
+        },
+        {
+          "name": "ZXi+ AT",
+          "price": 1199000
+        }
+      ],
+      "description": "India's best-selling 7-seater MPV with excellent mileage, CNG option, and family comfort.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Pearl Arctic White",
+        "Magma Grey",
+        "Midnight Black",
+        "Splendid Silver",
+        "Auburn Red"
+      ]
+    },
+    {
+      "id": "mg-hector-plus-2025",
+      "name": "MG Hector Plus 2025",
+      "brand": "MG Motor",
+      "model": "Hector Plus",
+      "year": 2025,
+      "price": 1699000,
+      "currency": "INR",
+      "category": "Premium SUV",
+      "imageEmoji": "🛡️",
+      "imageUrl": "/images/cars/mg-hector-plus-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/130583/hector-exterior-right-front-three-quarter-74.jpeg"
+      ],
+      "color": "#1B1B1B",
+      "specs": {
+        "engine": "1.5L Turbo Petrol + 48V Mild Hybrid",
+        "horsepower": 143,
+        "torque": "250 Nm",
+        "transmission": "CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol Hybrid",
+        "mileage": 16,
+        "acceleration": 11.2,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "360° Camera",
+          "ESC",
+          "Traction Control",
+          "Front Parking Sensors"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Panoramic Sunroof",
+          "Captain Seats",
+          "Powered Tailgate",
+          "Ambient Lighting 64 Colors"
+        ],
+        "technology": [
+          "14\" HD Touchscreen",
+          "i-SMART 2.0 Connected",
+          "Infinity Sound System",
+          "OTA Updates",
+          "Voice Commands (Hi MG)"
+        ],
+        "exterior": [
+          "Diamond Mesh Grille",
+          "Dual Function LED DRLs",
+          "18\" Turbine Alloys",
+          "Sequential Indicators",
+          "Dual Exhaust Design"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 7,
+        "safety": 8.5,
+        "comfort": 8.8,
+        "technology": 9,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Style 1.5 Turbo MT 5-Seater",
+          "price": 1699000
+        },
+        {
+          "name": "Super 1.5 Turbo CVT 5-Seater",
+          "price": 1799000
+        },
+        {
+          "name": "Smart 1.5 Turbo CVT 6-Seater",
+          "price": 1899000
+        },
+        {
+          "name": "Sharp Hybrid CVT 6-Seater",
+          "price": 2099000
+        },
+        {
+          "name": "Savvy Hybrid CVT 7-Seater",
+          "price": 2199000
+        },
+        {
+          "name": "Savvy Pro Hybrid CVT 7-Seater",
+          "price": 2299000
+        }
+      ],
+      "description": "Feature-loaded premium SUV with largest touchscreen, ADAS, and 64-color ambient lighting.",
+      "seatingCapacity": 6,
+      "colors": [
+        "Starry Black",
+        "Candy White",
+        "Glaze Red",
+        "Aurora Silver",
+        "Havana Grey"
+      ]
+    },
+    {
+      "id": "mg-astor-2025",
+      "name": "MG Astor 2025",
+      "brand": "MG Motor",
+      "model": "Astor",
+      "year": 2025,
+      "price": 999000,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🤖",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/95201/astor-exterior-right-front-three-quarter-7.jpeg",
+      "gallery": [],
+      "color": "#455A64",
+      "specs": {
+        "engine": "1.5L VTi-Tech Petrol",
+        "horsepower": 110,
+        "torque": "144 Nm",
+        "transmission": "CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 15,
+        "acceleration": 12,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "Blind Spot Detection",
+          "Rear Cross Traffic Alert",
+          "Lane Departure Warning"
+        ],
+        "comfort": [
+          "Heated Mirrors",
+          "Auto Climate Control",
+          "Powered Driver Seat",
+          "Rear AC Vents",
+          "Push Button Start"
+        ],
+        "technology": [
+          "10.1\" Touchscreen",
+          "AI Personal Assistant",
+          "i-SMART Connected",
+          "Wireless CarPlay/Android Auto",
+          "6-Speaker Audio"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "Projector Headlamps",
+          "17\" Alloy Wheels",
+          "Shark Fin Antenna",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 7,
+        "safety": 8.5,
+        "comfort": 7.5,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Style 1.5 MT",
+          "price": 999000
+        },
+        {
+          "name": "Super 1.5 CVT",
+          "price": 1099000
+        },
+        {
+          "name": "Smart 1.5 CVT",
+          "price": 1199000
+        },
+        {
+          "name": "Sharp 1.5 CVT",
+          "price": 1399000
+        },
+        {
+          "name": "Sharp Pro 1.5 CVT",
+          "price": 1549000
+        }
+      ],
+      "description": "First-in-India AI-powered personal assistant with ADAS Level 2.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Glaze Red",
+        "Aurora Silver",
+        "Candy White",
+        "Spiced Orange",
+        "Starry Black"
+      ]
+    },
+    {
+      "id": "mg-zs-ev-2025",
+      "name": "MG ZS EV 2025",
+      "brand": "MG Motor",
+      "model": "ZS EV",
+      "year": 2025,
+      "price": 1899000,
+      "currency": "INR",
+      "category": "Electric SUV",
+      "imageEmoji": "⚡",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/48680/zs-ev-exterior-right-front-three-quarter-2.jpeg",
+      "gallery": [],
+      "color": "#2E7D32",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 176,
+        "torque": "280 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "FWD",
+        "fuelType": "Electric",
+        "mileage": 461,
+        "acceleration": 8.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control"
+        ],
+        "comfort": [
+          "Heated Front Seats",
+          "PM 2.5 Filter",
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Leather Seats"
+        ],
+        "technology": [
+          "10.1\" Touchscreen",
+          "i-SMART Connected",
+          "6-Speaker Audio",
+          "OTA Updates",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "17\" Alloy Wheels",
+          "Panoramic Sunroof",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 9,
+        "safety": 8.5,
+        "comfort": 8,
+        "technology": 8.5,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "Excite",
+          "price": 1899000
+        },
+        {
+          "name": "Exclusive",
+          "price": 2099000
+        },
+        {
+          "name": "Exclusive Pro",
+          "price": 2399000
+        }
+      ],
+      "description": "Affordable electric SUV with 461 km range, ADAS, and fast charging support.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Pomegranate Red",
+        "Aurora Silver",
+        "Candy White",
+        "Clubhouse Grey"
+      ]
+    },
+    {
+      "id": "kia-seltos-2025",
+      "name": "Kia Seltos 2025",
+      "brand": "Kia",
+      "model": "Seltos",
+      "year": 2025,
+      "price": 1109900,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🌟",
+      "imageUrl": "/images/cars/kia-seltos-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150599/seltos-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#05141F",
+      "specs": {
+        "engine": "1.5L Turbo GDi Petrol",
+        "horsepower": 160,
+        "torque": "253 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 17,
+        "acceleration": 9.5,
+        "topSpeed": 185
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESC",
+          "360° Camera",
+          "Blind Spot Monitor",
+          "Rear Cross Traffic Alert"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Panoramic Sunroof",
+          "Dual-Zone Climate",
+          "Powered Driver Seat",
+          "Air Purifier"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 8-Speaker Audio",
+          "Kia Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Star Map LED DRLs",
+          "LED Projector Headlamps",
+          "18\" Crystal Cut Alloys",
+          "Crown Jewel LED Tail Lamps",
+          "Tiger Nose Grille"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7.5,
+        "safety": 8.8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "HTE 1.5 NA MT",
+          "price": 1109900
+        },
+        {
+          "name": "HTK 1.5 NA MT",
+          "price": 1209900
+        },
+        {
+          "name": "HTK+ 1.5 NA MT",
+          "price": 1309900
+        },
+        {
+          "name": "HTX 1.5 Turbo DCT",
+          "price": 1459900
+        },
+        {
+          "name": "HTX+ 1.5 Turbo DCT",
+          "price": 1609900
+        },
+        {
+          "name": "GTX+ 1.5 Turbo DCT",
+          "price": 1809900
+        },
+        {
+          "name": "X-Line 1.5 Turbo DCT",
+          "price": 1999900
+        }
+      ],
+      "description": "Premium compact SUV with tiger-nose design, ADAS, and turbo performance.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Intense Red",
+        "Aurora Black Pearl",
+        "Gravity Grey",
+        "Glacier White Pearl",
+        "Pewter Olive"
+      ]
+    },
+    {
+      "id": "kia-sonet-2025",
+      "name": "Kia Sonet 2025",
+      "brand": "Kia",
+      "model": "Sonet",
+      "year": 2025,
+      "price": 799900,
+      "currency": "INR",
+      "category": "Sub-Compact SUV",
+      "imageEmoji": "🏅",
+      "imageUrl": "/images/cars/kia-sonet-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/150597/sonet-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#C62828",
+      "specs": {
+        "engine": "1.0L Turbo GDi Petrol",
+        "horsepower": 120,
+        "torque": "172 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 10.8,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Hill Assist",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Wireless Charger"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 7-Speaker Audio",
+          "Kia Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Crown Jewel LED DRLs",
+          "LED Projector Headlamps",
+          "16\" Alloy Wheels",
+          "Rear Spoiler",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 7.5,
+        "safety": 8,
+        "comfort": 8,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "HTE 1.2 MT",
+          "price": 799900
+        },
+        {
+          "name": "HTK 1.2 MT",
+          "price": 879900
+        },
+        {
+          "name": "HTK+ 1.0 Turbo IMT",
+          "price": 999900
+        },
+        {
+          "name": "HTX 1.0 Turbo DCT",
+          "price": 1099900
+        },
+        {
+          "name": "HTX+ 1.0 Turbo DCT",
+          "price": 1199900
+        },
+        {
+          "name": "GTX+ 1.0 Turbo DCT",
+          "price": 1399900
+        },
+        {
+          "name": "GTX+ 1.5 Diesel AT",
+          "price": 1549900
+        }
+      ],
+      "description": "Stylish sub-compact SUV with turbo power, Bose audio, and connected tech.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Intense Red",
+        "Aurora Black",
+        "Gravity Grey",
+        "Glacier White",
+        "Pewter Olive"
+      ]
+    },
+    {
+      "id": "kia-ev6-2025",
+      "name": "Kia EV6 2025",
+      "brand": "Kia",
+      "model": "EV6",
+      "year": 2025,
+      "price": 6095000,
+      "currency": "INR",
+      "category": "Electric Crossover",
+      "imageEmoji": "⚡",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/107801/ev6-exterior-right-front-three-quarter-3.jpeg",
+      "gallery": [],
+      "color": "#263238",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 325,
+        "torque": "605 Nm",
+        "transmission": "Single-Speed Reduction",
+        "drivetrain": "AWD",
+        "fuelType": "Electric",
+        "mileage": 708,
+        "acceleration": 5.2,
+        "topSpeed": 260
+      },
+      "features": {
+        "safety": [
+          "8 Airbags",
+          "ADAS Level 2+",
+          "360° Camera",
+          "Blind Spot Avoidance",
+          "Rear Cross Traffic",
+          "Forward Collision Avoidance"
+        ],
+        "comfort": [
+          "Ventilated & Heated Seats",
+          "Dual-Zone Climate",
+          "Relaxation Seats",
+          "V2L (Vehicle-to-Load)",
+          "64-Color Ambient Lighting"
+        ],
+        "technology": [
+          "12.3\" Dual Curved Screens",
+          "Augmented Reality HUD",
+          "Meridian 14-Speaker Audio",
+          "OTA Updates",
+          "Connected Car Tech"
+        ],
+        "exterior": [
+          "Sequential LED Indicators",
+          "Flush Door Handles",
+          "19\" Aero Wheels",
+          "Panoramic Roof",
+          "Integrated Rear Spoiler"
+        ]
+      },
+      "ratings": {
+        "performance": 9.5,
+        "fuelEfficiency": 9,
+        "safety": 9.5,
+        "comfort": 9,
+        "technology": 9.5,
+        "valueForMoney": 6
+      },
+      "variants": [
+        {
+          "name": "RWD",
+          "price": 6095000
+        },
+        {
+          "name": "AWD",
+          "price": 6595000
+        },
+        {
+          "name": "GT-Line AWD",
+          "price": 6995000
+        }
+      ],
+      "description": "Ultra-fast luxury electric crossover with 708 km range, V2L, and 800V architecture.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Moonscape",
+        "Runway Red",
+        "Glacier",
+        "Aurora Black Pearl",
+        "Yacht Blue"
+      ]
+    },
+    {
+      "id": "kia-carens-2025",
+      "name": "Kia Carens 2025",
+      "brand": "Kia",
+      "model": "Carens",
+      "year": 2025,
+      "price": 1099900,
+      "currency": "INR",
+      "category": "Premium MPV",
+      "imageEmoji": "👨‍👩‍👧‍👦",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/143863/carens-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#37474F",
+      "specs": {
+        "engine": "1.5L Turbo GDi Petrol",
+        "horsepower": 160,
+        "torque": "253 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 16,
+        "acceleration": 10,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Hill Assist",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Ventilated 1st Row Seats",
+          "One-Touch Electric Sunroof",
+          "Dual-Zone Climate",
+          "2nd Row Captain Seats",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Bose 8-Speaker Audio",
+          "Kia Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Crown Jewel LED DRLs",
+          "LED Projector Headlamps",
+          "16\" Crystal Cut Alloys",
+          "LED Tail Lamps",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 7,
+        "safety": 8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "Premium 1.5 MT 7-Seater",
+          "price": 1099900
+        },
+        {
+          "name": "Prestige 1.5 MT 7-Seater",
+          "price": 1299900
+        },
+        {
+          "name": "Prestige+ 1.5 Turbo DCT 7-Seater",
+          "price": 1499900
+        },
+        {
+          "name": "Luxury 1.5 Turbo DCT 6-Seater",
+          "price": 1699900
+        },
+        {
+          "name": "Luxury+ 1.5 Diesel AT 6-Seater",
+          "price": 1899900
+        },
+        {
+          "name": "X-Line 1.5 Diesel AT 6-Seater",
+          "price": 1999900
+        }
+      ],
+      "description": "Premium 6/7-seater MPV with turbo power, Bose audio, and versatile seating.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Intense Red",
+        "Aurora Black",
+        "Gravity Grey",
+        "Glacier White",
+        "Imperial Blue"
+      ]
+    },
+    {
+      "id": "kia-syros-2025",
+      "name": "Kia Syros 2025",
+      "brand": "Kia",
+      "model": "Syros",
+      "year": 2025,
+      "price": 899900,
+      "currency": "INR",
+      "category": "Sub-4m SUV",
+      "imageEmoji": "🆕",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170043/syros-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#1565C0",
+      "specs": {
+        "engine": "1.0L Turbo GDi Petrol",
+        "horsepower": 120,
+        "torque": "172 Nm",
+        "transmission": "7-Speed DCT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 10.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "ADAS Level 2",
+          "360° Camera",
+          "TPMS",
+          "Hill Assist"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Electric Sunroof",
+          "Dual-Zone Climate",
+          "Rear AC Vents",
+          "Wireless Charger"
+        ],
+        "technology": [
+          "12.3\" Touchscreen",
+          "5\" MID Cluster",
+          "Harman Kardon Audio",
+          "Kia Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Star Map LED DRLs",
+          "LED Projector Headlamps",
+          "17\" Alloy Wheels",
+          "Vertically Stacked Headlamps",
+          "Boxy Design"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 7.5,
+        "safety": 8.5,
+        "comfort": 8,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "HTE 1.2 MT",
+          "price": 899900
+        },
+        {
+          "name": "HTK 1.2 MT",
+          "price": 999900
+        },
+        {
+          "name": "HTK+ 1.0 Turbo IMT",
+          "price": 1099900
+        },
+        {
+          "name": "HTX+ 1.0 Turbo DCT",
+          "price": 1299900
+        },
+        {
+          "name": "GTX+ 1.0 Turbo DCT",
+          "price": 1449900
+        },
+        {
+          "name": "GTX+ 1.5 Diesel AT",
+          "price": 1599900
+        }
+      ],
+      "description": "All-new boxy SUV with ADAS, 12.3\" display, and distinctive vertically stacked design.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Intense Red",
+        "Aurora Black",
+        "Gravity Grey",
+        "Glacier White",
+        "Pewter Olive",
+        "Imperial Blue"
+      ]
+    },
+    {
+      "id": "toyota-innova-hycross-2025",
+      "name": "Toyota Innova Hycross 2025",
+      "brand": "Toyota",
+      "model": "Innova Hycross",
+      "year": 2025,
+      "price": 1999000,
+      "currency": "INR",
+      "category": "Premium MPV",
+      "imageEmoji": "👑",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-hycross-exterior-right-front-three-quarter-2.jpeg",
+      "gallery": [],
+      "color": "#B71C1C",
+      "specs": {
+        "engine": "2.0L Strong Hybrid Petrol",
+        "horsepower": 186,
+        "torque": "188 Nm",
+        "transmission": "e-CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol Hybrid",
+        "mileage": 23,
+        "acceleration": 9.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "TSS (Safety Sense)",
+          "BSM",
+          "RCTA",
+          "ABS with EBD",
+          "Vehicle Stability Control"
+        ],
+        "comfort": [
+          "Ottoman Seats (2nd Row)",
+          "Dual-Zone Climate",
+          "Powered Tailgate",
+          "Ambient Lighting",
+          "Wireless Charger"
+        ],
+        "technology": [
+          "10.1\" Touchscreen",
+          "7\" MID",
+          "JBL 9-Speaker Audio",
+          "Toyota Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Sequential Headlamps",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Chrome Front Grille",
+          "Roof Rails"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 9,
+        "safety": 8.5,
+        "comfort": 9.5,
+        "technology": 8,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "G 2.0 Petrol 7-Seater",
+          "price": 1999000
+        },
+        {
+          "name": "GX 2.0 Petrol 8-Seater",
+          "price": 2199000
+        },
+        {
+          "name": "VX Hybrid 7-Seater",
+          "price": 2499000
+        },
+        {
+          "name": "ZX Hybrid 7-Seater",
+          "price": 2699000
+        },
+        {
+          "name": "ZX(O) Hybrid 7-Seater",
+          "price": 2899000
+        }
+      ],
+      "description": "Legendary Innova reborn as a strong hybrid with ottoman seats and premium comfort.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Super White",
+        "Sparkling Black",
+        "Avant-Garde Bronze",
+        "Silver Metallic",
+        "Platinum White"
+      ]
+    },
+    {
+      "id": "toyota-fortuner-2025",
+      "name": "Toyota Fortuner 2025",
+      "brand": "Toyota",
+      "model": "Fortuner",
+      "year": 2025,
+      "price": 3399000,
+      "currency": "INR",
+      "category": "Full-Size SUV",
+      "imageEmoji": "💪",
+      "imageUrl": "/images/cars/toyota-fortuner-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-19.jpeg"
+      ],
+      "color": "#37474F",
+      "specs": {
+        "engine": "2.8L Diesel",
+        "horsepower": 204,
+        "torque": "500 Nm",
+        "transmission": "6-Speed AT",
+        "drivetrain": "4WD",
+        "fuelType": "Diesel",
+        "mileage": 10,
+        "acceleration": 8.5,
+        "topSpeed": 185
+      },
+      "features": {
+        "safety": [
+          "7 Airbags",
+          "TSS",
+          "BSM",
+          "RCTA",
+          "Downhill Assist",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Dual-Zone Climate",
+          "Powered Seats",
+          "Cooled Glove Box",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "Optitron Meter",
+          "JBL Sound System",
+          "Toyota Connect",
+          "Apple CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Sequential Headlamps",
+          "LED DRLs",
+          "18\" Alloy Wheels",
+          "Front Skid Plate",
+          "Power Tailgate"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 5.5,
+        "safety": 8.5,
+        "comfort": 8.5,
+        "technology": 7.5,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "4x2 MT",
+          "price": 3399000
+        },
+        {
+          "name": "4x2 AT",
+          "price": 3599000
+        },
+        {
+          "name": "4x4 AT",
+          "price": 3899000
+        },
+        {
+          "name": "Legender 4x2 AT",
+          "price": 4099000
+        },
+        {
+          "name": "Legender 4x4 AT",
+          "price": 4299000
+        }
+      ],
+      "description": "Iconic full-size SUV with bulletproof reliability, 500 Nm torque, and 4WD capability.",
+      "seatingCapacity": 7,
+      "colors": [
+        "Super White",
+        "Attitude Black",
+        "Phantom Brown",
+        "Silver Metallic",
+        "Avant-Garde Bronze"
+      ]
+    },
+    {
+      "id": "toyota-glanza-2025",
+      "name": "Toyota Glanza 2025",
+      "brand": "Toyota",
+      "model": "Glanza",
+      "year": 2025,
+      "price": 699000,
+      "currency": "INR",
+      "category": "Premium Hatchback",
+      "imageEmoji": "✨",
+      "imageUrl": "/images/cars/toyota-glanza-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/106085/glanza-exterior-right-front-three-quarter-6.jpeg"
+      ],
+      "color": "#E65100",
+      "specs": {
+        "engine": "1.2L DualJet Petrol",
+        "horsepower": 90,
+        "torque": "113 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 22,
+        "acceleration": 11.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold",
+          "Rear Camera",
+          "Seatbelt Reminder"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Push Button Start",
+          "Height Adjustable Seat",
+          "Electrically Folding Mirrors",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "9\" Touchscreen",
+          "Heads-Up Display",
+          "Wireless CarPlay/Android Auto",
+          "Toyota Connect",
+          "Arkamys Sound"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "15\" Alloy Wheels",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 6.5,
+        "fuelEfficiency": 8.5,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "E MT",
+          "price": 699000
+        },
+        {
+          "name": "S MT",
+          "price": 799000
+        },
+        {
+          "name": "S AMT",
+          "price": 849000
+        },
+        {
+          "name": "G MT",
+          "price": 899000
+        },
+        {
+          "name": "V MT",
+          "price": 949000
+        },
+        {
+          "name": "V AMT",
+          "price": 999000
+        }
+      ],
+      "description": "Toyota's premium hatchback with heads-up display, connected tech, and Toyota reliability.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Sporting Red",
+        "Enticing Silver",
+        "Gaming Grey",
+        "Insta Blue",
+        "Cafe White"
+      ]
+    },
+    {
+      "id": "toyota-urban-cruiser-hyryder-2025",
+      "name": "Toyota Urban Cruiser Hyryder 2025",
+      "brand": "Toyota",
+      "model": "Urban Cruiser Hyryder",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Mid-Size SUV",
+      "imageEmoji": "🌄",
+      "imageUrl": "/images/cars/toyota-urban-cruiser-hyryder-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/106087/urban-cruiser-hyryder-exterior-right-front-three-quarter-3.jpeg"
+      ],
+      "color": "#00838F",
+      "specs": {
+        "engine": "1.5L Strong Hybrid Petrol",
+        "horsepower": 116,
+        "torque": "122 Nm",
+        "transmission": "e-CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol Hybrid",
+        "mileage": 28,
+        "acceleration": 11,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "360° Camera",
+          "Hill Hold",
+          "Hill Descent",
+          "TPMS"
+        ],
+        "comfort": [
+          "Ventilated Seats",
+          "Panoramic Sunroof",
+          "Dual-Zone Climate",
+          "Wireless Charger",
+          "Head-Up Display"
+        ],
+        "technology": [
+          "9\" Touchscreen",
+          "7\" MID",
+          "JBL 6-Speaker Audio",
+          "Toyota Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 9.5,
+        "safety": 8,
+        "comfort": 8,
+        "technology": 8,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "E MT",
+          "price": 1099000
+        },
+        {
+          "name": "S Smart Hybrid MT",
+          "price": 1249000
+        },
+        {
+          "name": "G Smart Hybrid MT",
+          "price": 1399000
+        },
+        {
+          "name": "V Strong Hybrid e-CVT",
+          "price": 1699000
+        },
+        {
+          "name": "V Strong Hybrid AWD e-CVT",
+          "price": 1999000
+        }
+      ],
+      "description": "Toyota's strong hybrid SUV with 28 km/l mileage, AWD option, and panoramic sunroof.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Cafe White",
+        "Enticing Silver",
+        "Gaming Grey",
+        "Sporting Red",
+        "Midnight Black"
+      ]
+    },
+    {
+      "id": "honda-elevate-2025",
+      "name": "Honda Elevate 2025",
+      "brand": "Honda",
+      "model": "Elevate",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Mid-Size SUV",
+      "imageEmoji": "🔹",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/141115/elevate-exterior-right-front-three-quarter-2.jpeg",
+      "gallery": [],
+      "color": "#1565C0",
+      "specs": {
+        "engine": "1.5L i-VTEC Petrol",
+        "horsepower": 121,
+        "torque": "145 Nm",
+        "transmission": "CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 16,
+        "acceleration": 11.5,
+        "topSpeed": 175
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "Honda SENSING ADAS",
+          "VSA",
+          "Hill Start Assist",
+          "LaneWatch Camera",
+          "TPMS"
+        ],
+        "comfort": [
+          "8-Way Powered Driver Seat",
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Remote Engine Start",
+          "Walk Away Auto Lock"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "7\" TFT Cluster",
+          "8-Speaker Audio",
+          "Honda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Full LED Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 7.5,
+        "safety": 8.5,
+        "comfort": 8,
+        "technology": 8,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "SV MT",
+          "price": 1099000
+        },
+        {
+          "name": "V MT",
+          "price": 1199000
+        },
+        {
+          "name": "V CVT",
+          "price": 1299000
+        },
+        {
+          "name": "VX CVT",
+          "price": 1399000
+        },
+        {
+          "name": "ZX CVT",
+          "price": 1599000
+        }
+      ],
+      "description": "Honda's urban SUV with SENSING ADAS, spacious cabin, and refined ride quality.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Golden Brown",
+        "Lunar Silver",
+        "Platinum White",
+        "Crystal Black",
+        "Radiant Red"
+      ]
+    },
+    {
+      "id": "honda-city-2025",
+      "name": "Honda City 2025",
+      "brand": "Honda",
+      "model": "City",
+      "year": 2025,
+      "price": 1199000,
+      "currency": "INR",
+      "category": "Sedan",
+      "imageEmoji": "🏙️",
+      "imageUrl": "/images/cars/honda-city-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/city-exterior-right-front-three-quarter-3.jpeg"
+      ],
+      "color": "#0D47A1",
+      "specs": {
+        "engine": "1.5L i-VTEC Petrol",
+        "horsepower": 121,
+        "torque": "145 Nm",
+        "transmission": "CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 10,
+        "topSpeed": 190
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "Honda SENSING",
+          "VSA",
+          "Hill Start Assist",
+          "LaneWatch",
+          "TPMS"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Cruise Control",
+          "Leather Seats"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "7\" TFT Cluster",
+          "8-Speaker Audio",
+          "Honda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Full LED Headlamps",
+          "Chrome Front Grille",
+          "16\" Alloy Wheels",
+          "LED Tail Lamps",
+          "Shark Fin Antenna"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 8,
+        "safety": 8.5,
+        "comfort": 8,
+        "technology": 7.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "V MT",
+          "price": 1199000
+        },
+        {
+          "name": "V CVT",
+          "price": 1299000
+        },
+        {
+          "name": "VX MT",
+          "price": 1349000
+        },
+        {
+          "name": "VX CVT",
+          "price": 1399000
+        },
+        {
+          "name": "ZX CVT",
+          "price": 1549000
+        },
+        {
+          "name": "ZX Hybrid e-HEV",
+          "price": 1999000
+        }
+      ],
+      "description": "Premium sedan benchmark with Honda reliability, SENSING ADAS, and spacious cabin.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Platinum White",
+        "Crystal Black",
+        "Lunar Silver",
+        "Radiant Red",
+        "Golden Brown"
+      ]
+    },
+    {
+      "id": "honda-amaze-2025",
+      "name": "Honda Amaze 2025",
+      "brand": "Honda",
+      "model": "Amaze",
+      "year": 2025,
+      "price": 799000,
+      "currency": "INR",
+      "category": "Sub-Compact Sedan",
+      "imageEmoji": "🚘",
+      "imageUrl": "/images/cars/honda-amaze-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170021/amaze-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#B71C1C",
+      "specs": {
+        "engine": "1.2L i-VTEC Petrol",
+        "horsepower": 90,
+        "torque": "110 Nm",
+        "transmission": "CVT / 5-Speed MT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 13,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "VSA",
+          "Hill Start Assist",
+          "TPMS",
+          "Rear Camera",
+          "ABS with EBD"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Push Button Start",
+          "Rear AC Vents",
+          "Height Adjustable Seat",
+          "Electrically Folding Mirrors"
+        ],
+        "technology": [
+          "8\" Touchscreen",
+          "7\" TFT Cluster",
+          "4-Speaker Audio",
+          "Honda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "15\" Alloy Wheels",
+          "Chrome Package"
+        ]
+      },
+      "ratings": {
+        "performance": 6,
+        "fuelEfficiency": 8,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "E MT",
+          "price": 799000
+        },
+        {
+          "name": "S MT",
+          "price": 879000
+        },
+        {
+          "name": "V MT",
+          "price": 949000
+        },
+        {
+          "name": "V CVT",
+          "price": 999000
+        },
+        {
+          "name": "VX MT",
+          "price": 1049000
+        },
+        {
+          "name": "VX CVT",
+          "price": 1099000
+        }
+      ],
+      "description": "All-new 3rd-gen Amaze with SUV-inspired design, ADAS ready, and spacious boot.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Radiant Red",
+        "Obsidian Blue",
+        "Platinum White",
+        "Lunar Silver",
+        "Meteoroid Grey"
+      ]
+    },
+    {
+      "id": "skoda-kushaq-2025",
+      "name": "Skoda Kushaq 2025",
+      "brand": "Skoda",
+      "model": "Kushaq",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "💚",
+      "imageUrl": "/images/cars/skoda-kushaq-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/135591/kushaq-exterior-right-front-three-quarter-4.jpeg"
+      ],
+      "color": "#4BA82E",
+      "specs": {
+        "engine": "1.5L TSI Turbo Petrol",
+        "horsepower": 150,
+        "torque": "250 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 16,
+        "acceleration": 8.8,
+        "topSpeed": 195
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "TPMS",
+          "Hill Hold",
+          "Rear Camera"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Ventilated Front Seats",
+          "Cruise Control",
+          "Push Button Start"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cluster",
+          "6-Speaker Audio",
+          "Skoda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Crystal Face Grille"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Active 1.0 TSI MT",
+          "price": 1099000
+        },
+        {
+          "name": "Ambition 1.0 TSI MT",
+          "price": 1249000
+        },
+        {
+          "name": "Ambition 1.0 TSI AT",
+          "price": 1349000
+        },
+        {
+          "name": "Style 1.0 TSI AT",
+          "price": 1499000
+        },
+        {
+          "name": "Style 1.5 TSI MT",
+          "price": 1599000
+        },
+        {
+          "name": "Style 1.5 TSI DSG",
+          "price": 1749000
+        },
+        {
+          "name": "Monte Carlo 1.5 TSI DSG",
+          "price": 1849000
+        }
+      ],
+      "description": "European-engineered compact SUV with punchy TSI engines and planted ride quality.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Candy White",
+        "Carbon Steel",
+        "Honey Orange",
+        "Reflex Silver",
+        "Tornado Red"
+      ]
+    },
+    {
+      "id": "skoda-slavia-2025",
+      "name": "Skoda Slavia 2025",
+      "brand": "Skoda",
+      "model": "Slavia",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Sedan",
+      "imageEmoji": "🏁",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/106727/slavia-exterior-right-front-three-quarter-3.jpeg",
+      "gallery": [],
+      "color": "#2E7D32",
+      "specs": {
+        "engine": "1.5L TSI Turbo Petrol",
+        "horsepower": 150,
+        "torque": "250 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 16,
+        "acceleration": 8.5,
+        "topSpeed": 200
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "TPMS",
+          "Hill Hold",
+          "Rear Camera"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Ventilated Seats",
+          "Cruise Control",
+          "Cooled Glove Box"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cluster",
+          "6-Speaker Audio",
+          "Skoda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "16\" Alloy Wheels",
+          "Crystal Face Grille"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Active 1.0 TSI MT",
+          "price": 1099000
+        },
+        {
+          "name": "Ambition 1.0 TSI MT",
+          "price": 1199000
+        },
+        {
+          "name": "Ambition 1.0 TSI AT",
+          "price": 1299000
+        },
+        {
+          "name": "Style 1.5 TSI MT",
+          "price": 1499000
+        },
+        {
+          "name": "Style 1.5 TSI DSG",
+          "price": 1699000
+        },
+        {
+          "name": "Monte Carlo 1.5 TSI DSG",
+          "price": 1799000
+        }
+      ],
+      "description": "Driver's sedan with best-in-class handling, punchy TSI engine, and European build.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Candy White",
+        "Carbon Steel",
+        "Tornado Red",
+        "Reflex Silver",
+        "Brilliant Silver"
+      ]
+    },
+    {
+      "id": "skoda-superb-2025",
+      "name": "Skoda Superb 2025",
+      "brand": "Skoda",
+      "model": "Superb",
+      "year": 2025,
+      "price": 3499000,
+      "currency": "INR",
+      "category": "Executive Sedan",
+      "imageEmoji": "👔",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/178425/superb-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#1A237E",
+      "specs": {
+        "engine": "2.0L TSI Turbo Petrol",
+        "horsepower": 190,
+        "torque": "320 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 14,
+        "acceleration": 7.8,
+        "topSpeed": 230
+      },
+      "features": {
+        "safety": [
+          "8 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "TPMS",
+          "Lane Assist",
+          "Front Assist"
+        ],
+        "comfort": [
+          "Ventilated & Heated Seats",
+          "3-Zone Climate",
+          "Electric Sunroof",
+          "Powered Rear Seats",
+          "Ambient Lighting 30 Colors"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cockpit Pro",
+          "Canton 12-Speaker Audio",
+          "Skoda Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Matrix LED Headlamps",
+          "Crystal LED Tail Lamps",
+          "18\" Alloy Wheels",
+          "Chrome Package",
+          "Panoramic Sunroof"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 6.5,
+        "safety": 9,
+        "comfort": 9.5,
+        "technology": 9,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "Sportline 2.0 TSI DSG",
+          "price": 3499000
+        },
+        {
+          "name": "L&K 2.0 TSI DSG",
+          "price": 3899000
+        }
+      ],
+      "description": "Executive sedan reborn with 190HP TSI, Canton audio, and limousine-like rear space.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Moon White",
+        "Magic Black",
+        "Lava Blue",
+        "Race Blue",
+        "Business Grey"
+      ]
+    },
+    {
+      "id": "vw-taigun-2025",
+      "name": "Volkswagen Taigun 2025",
+      "brand": "Volkswagen",
+      "model": "Taigun",
+      "year": 2025,
+      "price": 1149000,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🇩🇪",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/144681/taigun-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#001E50",
+      "specs": {
+        "engine": "1.5L TSI EVO Turbo Petrol",
+        "horsepower": 150,
+        "torque": "250 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 15,
+        "acceleration": 8.8,
+        "topSpeed": 195
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "TPMS",
+          "Hill Hold",
+          "Rear Camera"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Ventilated Front Seats",
+          "Cruise Control",
+          "Wireless Charger"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cockpit",
+          "8-Speaker Audio",
+          "VW Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Chrome Accents"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "Comfortline 1.0 TSI MT",
+          "price": 1149000
+        },
+        {
+          "name": "Highline 1.0 TSI MT",
+          "price": 1349000
+        },
+        {
+          "name": "Highline 1.0 TSI AT",
+          "price": 1449000
+        },
+        {
+          "name": "Topline 1.5 TSI MT",
+          "price": 1549000
+        },
+        {
+          "name": "Topline 1.5 TSI DSG",
+          "price": 1749000
+        },
+        {
+          "name": "GT Plus 1.5 TSI DSG",
+          "price": 1849000
+        }
+      ],
+      "description": "German-engineered compact SUV with rock-solid build, TSI power, and assured handling.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Candy White",
+        "Carbon Steel",
+        "Wild Cherry Red",
+        "Reflex Silver",
+        "Curcuma Yellow"
+      ]
+    },
+    {
+      "id": "vw-virtus-2025",
+      "name": "Volkswagen Virtus 2025",
+      "brand": "Volkswagen",
+      "model": "Virtus",
+      "year": 2025,
+      "price": 1149000,
+      "currency": "INR",
+      "category": "Sedan",
+      "imageEmoji": "🏎️",
+      "imageUrl": "/images/cars/vw-virtus-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/127667/virtus-exterior-right-front-three-quarter-6.jpeg"
+      ],
+      "color": "#0D47A1",
+      "specs": {
+        "engine": "1.5L TSI EVO Turbo Petrol",
+        "horsepower": 150,
+        "torque": "250 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 16,
+        "acceleration": 8.5,
+        "topSpeed": 205
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "TPMS",
+          "Hill Hold",
+          "Rear Camera"
+        ],
+        "comfort": [
+          "Electric Sunroof",
+          "Auto Climate Control",
+          "Ventilated Seats",
+          "Cruise Control",
+          "Cooled Glove Box"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cockpit",
+          "8-Speaker Audio",
+          "VW Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "16\" Alloy Wheels",
+          "Chrome Package"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 7,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 7
+      },
+      "variants": [
+        {
+          "name": "Comfortline 1.0 TSI MT",
+          "price": 1149000
+        },
+        {
+          "name": "Highline 1.0 TSI MT",
+          "price": 1299000
+        },
+        {
+          "name": "Highline 1.0 TSI AT",
+          "price": 1399000
+        },
+        {
+          "name": "Topline 1.5 TSI MT",
+          "price": 1499000
+        },
+        {
+          "name": "Topline 1.5 TSI DSG",
+          "price": 1699000
+        },
+        {
+          "name": "GT Plus 1.5 TSI DSG",
+          "price": 1899000
+        }
+      ],
+      "description": "Enthusiast's sedan with best-in-class driving dynamics, TSI power, and German quality.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Candy White",
+        "Carbon Steel",
+        "Wild Cherry Red",
+        "Reflex Silver",
+        "Rising Blue"
+      ]
+    },
+    {
+      "id": "vw-tiguan-2025",
+      "name": "Volkswagen Tiguan 2025",
+      "brand": "Volkswagen",
+      "model": "Tiguan",
+      "year": 2025,
+      "price": 3599000,
+      "currency": "INR",
+      "category": "Premium Mid-Size SUV",
+      "imageEmoji": "🐅",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/155537/tiguan-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#004D40",
+      "specs": {
+        "engine": "2.0L TSI Turbo Petrol",
+        "horsepower": 190,
+        "torque": "320 Nm",
+        "transmission": "7-Speed DSG",
+        "drivetrain": "AWD",
+        "fuelType": "Petrol",
+        "mileage": 12,
+        "acceleration": 7.6,
+        "topSpeed": 210
+      },
+      "features": {
+        "safety": [
+          "8 Airbags",
+          "ESC",
+          "Multi-Collision Brake",
+          "Lane Assist",
+          "Front Assist",
+          "TPMS"
+        ],
+        "comfort": [
+          "Vienna Leather Seats",
+          "Ventilated & Heated Seats",
+          "3-Zone Climate",
+          "Panoramic Sunroof",
+          "Powered Tailgate"
+        ],
+        "technology": [
+          "10\" Touchscreen",
+          "Digital Cockpit Pro",
+          "Harman Kardon 9-Speaker Audio",
+          "VW Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Matrix LED Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "19\" Alloy Wheels",
+          "Chrome Package"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 6,
+        "safety": 9,
+        "comfort": 9,
+        "technology": 8.5,
+        "valueForMoney": 6.5
+      },
+      "variants": [
+        {
+          "name": "Elegance 2.0 TSI DSG",
+          "price": 3599000
+        },
+        {
+          "name": "Exclusive 2.0 TSI DSG",
+          "price": 3799000
+        }
+      ],
+      "description": "Premium German SUV with 190HP TSI, AWD, matrix LED, and impeccable build quality.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Pure White",
+        "Deep Black",
+        "Dolphin Grey",
+        "Nightshade Blue",
+        "Kings Red"
+      ]
+    },
+    {
+      "id": "tata-sierra-2025",
+      "name": "Tata Sierra 2025",
+      "brand": "Tata",
+      "model": "Sierra",
+      "year": 2025,
+      "price": 1149000,
+      "currency": "INR",
+      "category": "Lifestyle SUV",
+      "imageEmoji": "🏔️",
+      "imageUrl": "/images/cars/tata-sierra-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/166101/sierra-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#1E88E5",
+      "specs": {
+        "engine": "1.5L Revotron Turbo Petrol",
+        "horsepower": 150,
+        "torque": "250 Nm",
+        "transmission": "6-Speed MT / DCA",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 17,
+        "acceleration": 9.5,
+        "topSpeed": 185
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Hold Assist"
+        ],
+        "comfort": [
+          "Ventilated Front Seats",
+          "Panoramic Sunroof",
+          "Auto Climate Control",
+          "Powered Tailgate",
+          "Air Purifier"
+        ],
+        "technology": [
+          "12.3\" Touchscreen",
+          "10.25\" Digital Cluster",
+          "JBL 9-Speaker Audio",
+          "Connected Car Tech",
+          "OTA Updates"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "Sequential Turn Indicators",
+          "18\" Alloy Wheels",
+          "Flush Door Handles",
+          "Iconic Sierra Silhouette"
+        ]
+      },
+      "ratings": {
+        "performance": 7.8,
+        "fuelEfficiency": 7.5,
+        "safety": 8.8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "Smart Plus (Petrol MT)",
+          "price": 1149000
+        },
+        {
+          "name": "Pure (Petrol MT)",
+          "price": 1299000
+        },
+        {
+          "name": "Pure Plus (Petrol DCA)",
+          "price": 1599000
+        },
+        {
+          "name": "Adventure (Petrol MT)",
+          "price": 1529000
+        },
+        {
+          "name": "Adventure Plus (Petrol DCA)",
+          "price": 1799000
+        },
+        {
+          "name": "Accomplished (Diesel MT)",
+          "price": 1899000
+        },
+        {
+          "name": "Accomplished Plus (Diesel AT)",
+          "price": 2129000
+        }
+      ],
+      "description": "Iconic Sierra reborn as a modern lifestyle SUV with ADAS, panoramic sunroof, and distinctive design.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Grassland Beige",
+        "Flame Red",
+        "Lunar White",
+        "Oberon Black",
+        "Daytona Grey"
+      ]
+    },
+    {
+      "id": "tata-punch-ev-2025",
+      "name": "Tata Punch EV 2025",
+      "brand": "Tata",
+      "model": "Punch EV",
+      "year": 2025,
+      "price": 1099000,
+      "currency": "INR",
+      "category": "Electric Micro SUV",
+      "imageEmoji": "⚡",
+      "imageUrl": "/images/cars/tata-punch-ev-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/159677/punch-ev-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#00C853",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 120,
+        "torque": "190 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "FWD",
+        "fuelType": "Electric",
+        "mileage": 421,
+        "acceleration": 9.5,
+        "topSpeed": 140
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "Rear Parking Camera",
+          "TPMS",
+          "Hill Hold",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Height Adjustable Seat",
+          "Push Button Start",
+          "Cooled Glove Box",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "Connected Car Tech",
+          "OTA Updates",
+          "Harman Audio"
+        ],
+        "exterior": [
+          "LED DRLs",
+          "Projector Headlamps",
+          "16\" Alloy Wheels",
+          "Dual-Tone Roof",
+          "EV-Specific Design Elements"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 9.5,
+        "safety": 8.5,
+        "comfort": 7.5,
+        "technology": 8,
+        "valueForMoney": 8
+      },
+      "variants": [
+        {
+          "name": "Adventure 25",
+          "price": 1099000
+        },
+        {
+          "name": "Adventure+ 25",
+          "price": 1199000
+        },
+        {
+          "name": "Accomplished 25",
+          "price": 1299000
+        },
+        {
+          "name": "Accomplished+ S 35",
+          "price": 1399000
+        },
+        {
+          "name": "Empowered+ 35",
+          "price": 1499000
+        }
+      ],
+      "description": "India's most affordable electric SUV with up to 421 km range and peppy performance.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Pristine White",
+        "Empowered Oxide",
+        "Fearless Purple",
+        "Flame Red",
+        "Daytona Grey"
+      ]
+    },
+    {
+      "id": "maruti-dzire-2025",
+      "name": "Maruti Dzire 2025",
+      "brand": "Maruti Suzuki",
+      "model": "Dzire",
+      "year": 2025,
+      "price": 626000,
+      "currency": "INR",
+      "category": "Sub-Compact Sedan",
+      "imageEmoji": "💫",
+      "imageUrl": "/images/cars/maruti-dzire-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/166475/dzire-2024-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#F57C00",
+      "specs": {
+        "engine": "1.2L Z-Series DualJet Petrol",
+        "horsepower": 82,
+        "torque": "112 Nm",
+        "transmission": "5-Speed MT / AMT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 25,
+        "acceleration": 12.5,
+        "topSpeed": 170
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "ABS with EBD",
+          "Hill Hold",
+          "Rear Camera",
+          "Seatbelt Reminder"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Push Button Start",
+          "Cruise Control",
+          "Height Adjustable Seat",
+          "Rear AC Vents"
+        ],
+        "technology": [
+          "9\" SmartPlay Pro+",
+          "Wireless CarPlay/Android Auto",
+          "Suzuki Connect",
+          "Arkamys Sound",
+          "Heads-Up Display"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "15\" Alloy Wheels",
+          "Chrome Package"
+        ]
+      },
+      "ratings": {
+        "performance": 6,
+        "fuelEfficiency": 9,
+        "safety": 7.5,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 9.5
+      },
+      "variants": [
+        {
+          "name": "LXi MT",
+          "price": 626000
+        },
+        {
+          "name": "VXi MT",
+          "price": 717000
+        },
+        {
+          "name": "VXi AMT",
+          "price": 762000
+        },
+        {
+          "name": "VXi CNG",
+          "price": 803000
+        },
+        {
+          "name": "ZXi MT",
+          "price": 818000
+        },
+        {
+          "name": "ZXi AMT",
+          "price": 863000
+        },
+        {
+          "name": "ZXi CNG",
+          "price": 904000
+        },
+        {
+          "name": "ZXi+ MT",
+          "price": 886000
+        },
+        {
+          "name": "ZXi+ AMT",
+          "price": 931000
+        }
+      ],
+      "description": "India's best-selling sub-compact sedan with best-in-class mileage and new-gen design.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Alluring Blue",
+        "Sizzling Red",
+        "Pearl Arctic White",
+        "Magma Grey",
+        "Midnight Black",
+        "Gallant Red"
+      ]
+    },
+    {
+      "id": "maruti-e-vitara-2025",
+      "name": "Maruti e Vitara 2025",
+      "brand": "Maruti Suzuki",
+      "model": "e Vitara",
+      "year": 2025,
+      "price": 1599000,
+      "currency": "INR",
+      "category": "Electric SUV",
+      "imageEmoji": "⚡",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170037/e-vitara-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#00897B",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 172,
+        "torque": "189 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "FWD",
+        "fuelType": "Electric",
+        "mileage": 543,
+        "acceleration": 8,
+        "topSpeed": 150
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control",
+          "ADAS Level 2"
+        ],
+        "comfort": [
+          "Ventilated Seats",
+          "Panoramic Sunroof",
+          "Dual-Zone Climate",
+          "Wireless Charger",
+          "Powered Tailgate"
+        ],
+        "technology": [
+          "10.25\" Touchscreen",
+          "Digital Cluster",
+          "JBL 6-Speaker Audio",
+          "Suzuki Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "Connected LED DRLs",
+          "LED Tail Lamps",
+          "18\" Alloy Wheels",
+          "Dual-Tone Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 9.5,
+        "safety": 8.5,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Delta 49 kWh",
+          "price": 1599000
+        },
+        {
+          "name": "Zeta 61 kWh",
+          "price": 1749000
+        },
+        {
+          "name": "Alpha 61 kWh",
+          "price": 1979000
+        },
+        {
+          "name": "Alpha Dual Tone 61 kWh",
+          "price": 2001000
+        }
+      ],
+      "description": "Maruti's first born-EV with 543 km range, ADAS, and premium connected features.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Arctic White",
+        "Celestial Blue",
+        "Grandeur Grey",
+        "Opulent Red",
+        "Earth Brown"
+      ]
+    },
+    {
+      "id": "renault-duster-2025",
+      "name": "Renault Duster 2025",
+      "brand": "Renault",
+      "model": "Duster",
+      "year": 2025,
+      "price": 1049000,
+      "currency": "INR",
+      "category": "Compact SUV",
+      "imageEmoji": "🏜️",
+      "imageUrl": "/images/cars/renault-duster-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/172601/duster-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#8D6E63",
+      "specs": {
+        "engine": "1.3L Turbo Petrol",
+        "horsepower": 155,
+        "torque": "254 Nm",
+        "transmission": "6-Speed MT / CVT",
+        "drivetrain": "FWD",
+        "fuelType": "Petrol",
+        "mileage": 18,
+        "acceleration": 9.5,
+        "topSpeed": 190
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "360° Camera",
+          "Hill Start Assist",
+          "TPMS",
+          "Blind Spot Warning"
+        ],
+        "comfort": [
+          "Auto Climate Control",
+          "Wireless Charger",
+          "Rear AC Vents",
+          "Cruise Control",
+          "Height Adjustable Seat"
+        ],
+        "technology": [
+          "10.1\" Touchscreen",
+          "7\" Digital Cluster",
+          "6-Speaker Audio",
+          "Renault Connect",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "LED Projector Headlamps",
+          "C-Shaped LED DRLs",
+          "LED Tail Lamps",
+          "17\" Alloy Wheels",
+          "Roof Rails"
+        ]
+      },
+      "ratings": {
+        "performance": 7.5,
+        "fuelEfficiency": 7.5,
+        "safety": 8,
+        "comfort": 7.5,
+        "technology": 7.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "Authentic 1.0 Turbo MT",
+          "price": 1049000
+        },
+        {
+          "name": "Evolution 1.0 Turbo MT",
+          "price": 1169000
+        },
+        {
+          "name": "Evolution 1.3 Turbo MT",
+          "price": 1299000
+        },
+        {
+          "name": "Techno 1.3 Turbo MT",
+          "price": 1449000
+        },
+        {
+          "name": "Techno 1.3 Turbo CVT",
+          "price": 1589000
+        },
+        {
+          "name": "Techno Plus 1.3 Turbo MT",
+          "price": 1529000
+        },
+        {
+          "name": "Techno Plus 1.3 Turbo CVT",
+          "price": 1669000
+        },
+        {
+          "name": "Iconic 1.3 Turbo MT",
+          "price": 1699000
+        },
+        {
+          "name": "Iconic 1.3 Turbo CVT",
+          "price": 1849000
+        }
+      ],
+      "description": "Iconic Duster returns with all-new design, 1.3L turbo, and segment-best ground clearance.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Jasper Green",
+        "Dusty Sand",
+        "Glacier White",
+        "Stealth Grey",
+        "Cardamom Brown"
+      ]
+    },
+    {
+      "id": "mahindra-thar-3door-2025",
+      "name": "Mahindra Thar 3-Door 2025",
+      "brand": "Mahindra",
+      "model": "Thar 3-Door",
+      "year": 2025,
+      "price": 999000,
+      "currency": "INR",
+      "category": "Off-Road SUV",
+      "imageEmoji": "🏕️",
+      "imageUrl": "/images/cars/mahindra-thar-3door-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/40087/thar-exterior-right-front-three-quarter-57.jpeg"
+      ],
+      "color": "#D32F2F",
+      "specs": {
+        "engine": "2.0L mStallion Turbo Petrol",
+        "horsepower": 152,
+        "torque": "300 Nm",
+        "transmission": "6-Speed MT / AT",
+        "drivetrain": "4WD",
+        "fuelType": "Petrol",
+        "mileage": 15,
+        "acceleration": 10.5,
+        "topSpeed": 180
+      },
+      "features": {
+        "safety": [
+          "Dual Airbags",
+          "ABS with EBD",
+          "Roll Cage",
+          "Hill Descent Control",
+          "Hill Hold",
+          "ISOFIX"
+        ],
+        "comfort": [
+          "Touchscreen Infotainment",
+          "Roof-Mounted Speakers",
+          "Drizzle-Resistant Switches",
+          "Washable Floor",
+          "Tilt Steering"
+        ],
+        "technology": [
+          "7\" Touchscreen",
+          "Semi-Digital Cluster",
+          "USB/AUX",
+          "AdrenoX Connected",
+          "Wired CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Round LED Headlamps",
+          "LED DRLs",
+          "LED Tail Lamps",
+          "18\" Alloy Wheels",
+          "Removable Hard/Soft Top"
+        ]
+      },
+      "ratings": {
+        "performance": 8,
+        "fuelEfficiency": 6,
+        "safety": 7,
+        "comfort": 6.5,
+        "technology": 6.5,
+        "valueForMoney": 8.5
+      },
+      "variants": [
+        {
+          "name": "AXT RWD Diesel MT",
+          "price": 999000
+        },
+        {
+          "name": "LXT RWD Diesel MT",
+          "price": 1239000
+        },
+        {
+          "name": "LXT RWD AT Petrol",
+          "price": 1419000
+        },
+        {
+          "name": "LXT 4WD Petrol MT",
+          "price": 1489000
+        },
+        {
+          "name": "LXT 4WD Diesel MT",
+          "price": 1569000
+        },
+        {
+          "name": "LXT 4WD Petrol AT",
+          "price": 1645000
+        },
+        {
+          "name": "LXT 4WD Diesel AT",
+          "price": 1719000
+        }
+      ],
+      "description": "Legendary 3-door off-roader with removable roof, 4WD, and unmatched adventure character.",
+      "seatingCapacity": 4,
+      "colors": [
+        "Tango Red",
+        "Everest White",
+        "Napoli Black",
+        "Galaxy Grey",
+        "Aquamarine"
+      ]
+    },
+    {
+      "id": "mahindra-be6-2025",
+      "name": "Mahindra BE 6 2025",
+      "brand": "Mahindra",
+      "model": "BE 6",
+      "year": 2025,
+      "price": 1899000,
+      "currency": "INR",
+      "category": "Electric SUV Coupe",
+      "imageEmoji": "⚡",
+      "imageUrl": "/images/cars/mahindra-be6-2025.jpg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/166795/be-6-exterior-right-front-three-quarter.jpeg"
+      ],
+      "color": "#7C4DFF",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 228,
+        "torque": "380 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "RWD",
+        "fuelType": "Electric",
+        "mileage": 556,
+        "acceleration": 6.7,
+        "topSpeed": 200
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ADAS Level 2",
+          "ESP",
+          "360° Camera",
+          "TPMS",
+          "Hill Descent Control"
+        ],
+        "comfort": [
+          "Ventilated Seats",
+          "Panoramic Glass Roof",
+          "Dual-Zone Climate",
+          "Powered Tailgate",
+          "64-Color Ambient Lighting"
+        ],
+        "technology": [
+          "12.3\" Dual Screens",
+          "Harman Kardon Audio",
+          "OTA Updates",
+          "Adrenox Connected",
+          "Vehicle-to-Load"
+        ],
+        "exterior": [
+          "C-Shaped LED DRLs",
+          "LED Projector Headlamps",
+          "19\" Aero Alloy Wheels",
+          "Flush Door Handles",
+          "Coupe Roofline"
+        ]
+      },
+      "ratings": {
+        "performance": 8.5,
+        "fuelEfficiency": 9.5,
+        "safety": 8.5,
+        "comfort": 8.5,
+        "technology": 9,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Pack One 59 kWh",
+          "price": 1899000
+        },
+        {
+          "name": "Pack Two 59 kWh",
+          "price": 2099000
+        },
+        {
+          "name": "Pack Three 79 kWh",
+          "price": 2499000
+        }
+      ],
+      "description": "Born-electric SUV coupe on INGLO platform with 556 km range and stunning design.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Teal Blue",
+        "Deep Forest",
+        "Everest White",
+        "Napoli Black",
+        "Burnt Sienna"
+      ]
+    },
+    {
+      "id": "mg-windsor-ev-2025",
+      "name": "MG Windsor EV 2025",
+      "brand": "MG Motor",
+      "model": "Windsor EV",
+      "year": 2025,
+      "price": 1399000,
+      "currency": "INR",
+      "category": "Electric Crossover",
+      "imageEmoji": "⚡",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/157863/windsor-ev-exterior-right-front-three-quarter.jpeg",
+      "gallery": [],
+      "color": "#546E7A",
+      "specs": {
+        "engine": "Permanent Magnet Synchronous Motor",
+        "horsepower": 136,
+        "torque": "200 Nm",
+        "transmission": "Single-Speed Automatic",
+        "drivetrain": "FWD",
+        "fuelType": "Electric",
+        "mileage": 331,
+        "acceleration": 9,
+        "topSpeed": 160
+      },
+      "features": {
+        "safety": [
+          "6 Airbags",
+          "ESC",
+          "360° Camera",
+          "TPMS",
+          "Hill Hold",
+          "Rear Cross Traffic Alert"
+        ],
+        "comfort": [
+          "Aero Lounge Seats",
+          "Auto Climate Control",
+          "Rear AC Vents",
+          "Wireless Charger",
+          "Powered Tailgate"
+        ],
+        "technology": [
+          "15.6\" HD Touchscreen",
+          "7\" Digital Cluster",
+          "Infinity Sound System",
+          "i-SMART Connected",
+          "Wireless CarPlay/Android Auto"
+        ],
+        "exterior": [
+          "Connected LED DRLs",
+          "LED Projector Headlamps",
+          "18\" Aero Wheels",
+          "Flush Door Handles",
+          "Panoramic Glass Roof"
+        ]
+      },
+      "ratings": {
+        "performance": 7,
+        "fuelEfficiency": 9,
+        "safety": 8,
+        "comfort": 8.5,
+        "technology": 8.5,
+        "valueForMoney": 7.5
+      },
+      "variants": [
+        {
+          "name": "Excite 38 kWh",
+          "price": 1399000
+        },
+        {
+          "name": "Exclusive 38 kWh",
+          "price": 1549000
+        },
+        {
+          "name": "Essence 38 kWh",
+          "price": 1699000
+        }
+      ],
+      "description": "Stylish electric crossover with airline-style Aero Lounge seats and 15.6\" display.",
+      "seatingCapacity": 5,
+      "colors": [
+        "Starburst Black",
+        "Pearl White",
+        "Clay Beige",
+        "Turquoise Green"
+      ]
+    }
+  ]
+}

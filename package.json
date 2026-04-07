@@ -1,0 +1,48 @@
+{
+  "name": "carselector",
+  "version": "1.0.0",
+  "description": "AI-powered car comparison and winner selection dashboard with offline TensorFlow.js",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "postbuild": "jest --passWithNoTests"
+  },
+  "keywords": [
+    "car",
+    "selector",
+    "comparison",
+    "ai",
+    "tensorflow",
+    "offline"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "date-fns": "^4.1.0",
+    "next": "^16.2.1",
+    "postcss": "^8.5.8",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "recharts": "^3.8.1",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2"
+  }
+}
