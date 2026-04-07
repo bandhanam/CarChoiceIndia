@@ -932,6 +932,21 @@ body {
   margin: 1px 0 0;
 }
 
+.card-detail-link {
+  display: inline;
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.card-detail-link:hover {
+  color: #1a4fd6;
+  text-decoration: underline;
+}
+
 .card-score-inline {
   margin-left: auto;
   flex-shrink: 0;
@@ -1844,6 +1859,24 @@ body {
 .all-cars-cta-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(51, 102, 255, 0.35);
+}
+
+.all-car-detail-link-wrap {
+  padding: 0 16px 14px;
+  text-align: right;
+}
+
+.all-car-detail-link {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.all-car-detail-link:hover {
+  text-decoration: underline;
+  color: #1a4fd6;
 }
 
 /* ===== ADMIN PAGE ===== */
@@ -3575,6 +3608,483 @@ body {
 }
 
 /* ============================================================
+   CAR DETAIL PAGE (/cars/[id])
+   ============================================================ */
+.car-detail-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.cdp-not-found {
+  text-align: center;
+  padding: 80px 20px;
+  color: var(--text-secondary);
+}
+
+.cdp-not-found h2 {
+  font-size: 22px;
+  margin: 12px 0;
+  color: var(--text-primary);
+}
+
+.cdp-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.cdp-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.cdp-back-btn:hover { color: #1a4fd6; }
+
+.cdp-compare-btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  background: rgba(51,102,255,0.06);
+  border: 1px solid rgba(51,102,255,0.15);
+  transition: all 0.2s;
+}
+
+.cdp-compare-btn:hover {
+  background: rgba(51,102,255,0.12);
+}
+
+/* Hero */
+.cdp-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+
+.cdp-hero-img-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f4ff, #e8eef9);
+  box-shadow: var(--shadow-md);
+}
+
+.cdp-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.cdp-hero-category {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.cdp-hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cdp-hero-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cdp-brand-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.cdp-brand-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cdp-year {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-primary);
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.cdp-car-name {
+  font-size: 32px;
+  font-weight: 900;
+  margin: 0;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.cdp-description {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cdp-price-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cdp-price {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--accent-green);
+  margin: 0;
+}
+
+.cdp-variant-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent-blue);
+  background: rgba(51,102,255,0.08);
+  padding: 4px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(51,102,255,0.15);
+}
+
+/* Sections */
+.cdp-section {
+  margin-bottom: 32px;
+}
+
+.cdp-section-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--border);
+}
+
+/* Variants */
+.cdp-variants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.cdp-variant-card {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  transition: all 0.2s;
+}
+
+.cdp-variant-card:hover {
+  border-color: rgba(51,102,255,0.3);
+  box-shadow: 0 2px 8px rgba(51,102,255,0.08);
+}
+
+.cdp-variant-card.active {
+  border-color: var(--accent-blue);
+  background: rgba(51,102,255,0.04);
+  box-shadow: 0 0 0 2px rgba(51,102,255,0.12);
+}
+
+.cdp-variant-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.cdp-variant-price {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--accent-green);
+}
+
+/* Specs */
+.cdp-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.cdp-spec-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.cdp-spec-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+
+.cdp-spec-icon {
+  font-size: 18px;
+}
+
+.cdp-spec-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cdp-spec-value {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* Ratings */
+.cdp-ratings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cdp-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cdp-rating-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.cdp-rating-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  width: 130px;
+  flex-shrink: 0;
+}
+
+.cdp-rating-bar {
+  flex: 1;
+  height: 8px;
+  background: #e8ecf4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.cdp-rating-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+}
+
+.cdp-rating-value {
+  font-size: 16px;
+  font-weight: 900;
+  width: 36px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Features */
+.cdp-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cdp-feature-group {
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 16px;
+}
+
+.cdp-feature-group-title {
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  color: var(--text-primary);
+}
+
+.cdp-feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cdp-feature-item {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 6px 12px;
+  border-left: 3px solid;
+  background: var(--bg-primary);
+  border-radius: 0 8px 8px 0;
+  line-height: 1.4;
+}
+
+/* Colors */
+.cdp-colors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cdp-color-chip {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 8px 16px;
+  border-radius: 100px;
+  background: #fff;
+  border: 1px solid var(--border);
+}
+
+/* Gallery */
+.cdp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.cdp-gallery-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.cdp-gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* CTA */
+.cdp-cta {
+  text-align: center;
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  margin-top: 16px;
+}
+
+.cdp-cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #3366ff, #5b8def);
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(51,102,255,0.25);
+}
+
+.cdp-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(51,102,255,0.35);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .car-detail-page {
+    padding: 16px;
+  }
+
+  .cdp-hero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cdp-car-name {
+    font-size: 24px;
+  }
+
+  .cdp-price {
+    font-size: 22px;
+  }
+
+  .cdp-specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cdp-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cdp-variants-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cdp-rating-label {
+    width: 90px;
+    font-size: 12px;
+  }
+
+  .cdp-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .cdp-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cdp-variants-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
    MOBILE-FIRST REDESIGN — all below hidden on desktop (≥769px)
    ============================================================ */
 
@@ -3624,6 +4134,13 @@ body {
     background-clip: text;
   }
 
+  .mob-topbar-desc {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin: 2px 0 0;
+    font-weight: 500;
+  }
+
   .mob-topbar-badge {
     display: flex;
     align-items: center;
@@ -3643,6 +4160,47 @@ body {
     border-radius: 50%;
     background: var(--accent-green);
     animation: pulse 2s infinite;
+  }
+
+  /* ===== TOP FIND WINNER BUTTON ===== */
+  .mob-top-find-winner {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: calc(100% - 28px);
+    margin: 8px 14px 0;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #e53935, #c62828);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    font-family: inherit;
+    box-shadow: 0 4px 16px rgba(229,57,53,0.35);
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+
+  .mob-top-find-winner:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+
+  .mob-top-find-winner:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .mob-top-spinner {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
   }
 
   /* ===== MOBILE CONTENT AREA ===== */
@@ -4047,6 +4605,19 @@ body {
     font-weight: 800;
     color: var(--accent-green);
     margin: 0;
+  }
+
+  .mob-car-details-link {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    text-decoration: none;
+    margin-top: 4px;
+    display: inline-block;
+  }
+
+  .mob-car-details-link:active {
+    opacity: 0.7;
   }
 
   .mob-car-variants-badge {

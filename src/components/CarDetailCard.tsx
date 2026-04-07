@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Car } from "@/types";
 import { formatPrice } from "@/lib/car-data";
@@ -50,7 +51,10 @@ export default function CarDetailCard({
           <div className="card-name-row">
             <div>
               <h3 className="card-title">{car.name}</h3>
-              <p className="card-subtitle">{car.year} · {car.category}</p>
+              <p className="card-subtitle">
+                {car.year} · {car.category}
+                <Link href={`/cars/${car.id}`} className="card-detail-link">View Details →</Link>
+              </p>
             </div>
             {score !== undefined && (
               <div className="card-score-inline" style={{ color: car.color }}>

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { Car } from "@/types";
 import {
   CARS,
@@ -211,25 +212,32 @@ export default function MobileBrowse({
                     )}
                     <span className="mob-car-category">{car.category}</span>
                   </div>
-                  <div className="mob-car-info">
-                    <p className="mob-car-name">{car.model}</p>
-                    <p className="mob-car-brand">{car.brand}</p>
-                    <div className="mob-car-info-row">
-                      <p className="mob-car-price">{formatPrice(car.price)}</p>
-                      {hasVariants && (
-                        <span className="mob-car-variants-badge">
-                          {car.variants!.length} var
-                          <svg
-                            width="10" height="10" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" strokeWidth="2.5"
-                            style={{ transform: isExpanded ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}
-                          >
-                            <path d="M6 9l6 6 6-6" />
-                          </svg>
-                        </span>
-                      )}
-                    </div>
+                <div className="mob-car-info">
+                  <p className="mob-car-name">{car.model}</p>
+                  <p className="mob-car-brand">{car.brand}</p>
+                  <div className="mob-car-info-row">
+                    <p className="mob-car-price">{formatPrice(car.price)}</p>
+                    {hasVariants && (
+                      <span className="mob-car-variants-badge">
+                        {car.variants!.length} var
+                        <svg
+                          width="10" height="10" viewBox="0 0 24 24" fill="none"
+                          stroke="currentColor" strokeWidth="2.5"
+                          style={{ transform: isExpanded ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}
+                        >
+                          <path d="M6 9l6 6 6-6" />
+                        </svg>
+                      </span>
+                    )}
                   </div>
+                  <Link
+                    href={`/cars/${car.id}`}
+                    className="mob-car-details-link"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    View Details →
+                  </Link>
+                </div>
                 </button>
 
                 {/* Variant dropdown */}

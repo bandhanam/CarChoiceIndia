@@ -309,6 +309,11 @@ export default function AllCarsPage() {
                 </div>
               </div>
             </div>
+            <div className="all-car-detail-link-wrap">
+              <Link href={`/cars/${car.id}`} className="all-car-detail-link">
+                View Full Details →
+              </Link>
+            </div>
           </article>
         ))}
       </div>

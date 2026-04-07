@@ -154,12 +154,30 @@ export default function HomePage() {
 
         {/* Top bar */}
         <header className="mob-topbar">
-          <h1 className="mob-topbar-title">Car Selector AI</h1>
+          <div>
+            <h1 className="mob-topbar-title">Car Selector AI</h1>
+            <p className="mob-topbar-desc">Select the variant of car and hit Find Winner</p>
+          </div>
           <div className="mob-topbar-badge">
             <span className="mob-dot" />
             AI
           </div>
         </header>
+
+        {/* Top Find Winner button */}
+        {selectedItems.length >= 2 && (
+          <button
+            className="mob-top-find-winner"
+            onClick={handleRunAI}
+            disabled={isAnalyzing}
+          >
+            {isAnalyzing ? (
+              <><span className="mob-top-spinner" /> Analyzing...</>
+            ) : (
+              <><span>🏆</span> Find Winner ({selectedItems.length} cars selected)</>
+            )}
+          </button>
+        )}
 
         {/* Scrollable content — all sections visible */}
         <div className="mob-content">
