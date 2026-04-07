@@ -226,17 +226,6 @@ export default function HomePage() {
 
           {/* ===== SECTION: BROWSE ===== */}
           <div className="mob-section" id="mob-browse-section">
-            <div className="mob-section-header">
-              <h2 className="mob-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <rect x="3" y="3" width="7" height="7" rx="1" />
-                  <rect x="14" y="3" width="7" height="7" rx="1" />
-                  <rect x="3" y="14" width="7" height="7" rx="1" />
-                  <rect x="14" y="14" width="7" height="7" rx="1" />
-                </svg>
-                Browse Cars
-              </h2>
-            </div>
             <MobileBrowse
               selectedItems={selectedItems}
               onToggle={handleToggle}
@@ -245,19 +234,6 @@ export default function HomePage() {
 
           {/* ===== SECTION: SELECTED / COMPARE ===== */}
           <div className="mob-section" id="mob-compare-section">
-            <div className="mob-section-header">
-              <h2 className="mob-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                  <path d="M2 17l10 5 10-5" />
-                  <path d="M2 12l10 5 10-5" />
-                </svg>
-                Compare
-                {selectedItems.length > 0 && (
-                  <span className="mob-section-count">{selectedItems.length}</span>
-                )}
-              </h2>
-            </div>
 
             {/* Selected cars strip */}
             {selectedItems.length > 0 && (
@@ -340,19 +316,6 @@ export default function HomePage() {
 
           {/* ===== SECTION: ALL CARS ===== */}
           <div className="mob-section" id="mob-allcars-section">
-            <div className="mob-section-header">
-              <h2 className="mob-section-title">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <line x1="8" y1="6" x2="21" y2="6" />
-                  <line x1="8" y1="12" x2="21" y2="12" />
-                  <line x1="8" y1="18" x2="21" y2="18" />
-                  <line x1="3" y1="6" x2="3.01" y2="6" />
-                  <line x1="3" y1="12" x2="3.01" y2="12" />
-                  <line x1="3" y1="18" x2="3.01" y2="18" />
-                </svg>
-                All Cars
-              </h2>
-            </div>
             <div className="mob-allcars-link-wrap">
               <Link href="/cars" className="mob-allcars-link">
                 View Complete Car Collection with Full Details
