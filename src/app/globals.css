@@ -3895,6 +3895,21 @@ body {
     font-size: 12px;
   }
 
+  .mob-brand-pill.no-cars {
+    opacity: 0.65;
+  }
+
+  .mob-brand-pill-soon {
+    font-size: 8px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--accent-orange);
+    background: rgba(230,126,34,0.1);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
   /* ===== CARS GRID (2-col) ===== */
   .mob-cars-grid {
     display: grid;

@@ -7,7 +7,7 @@ import {
   CARS,
   BRAND_LOGOS,
   formatPrice,
-  getBrandGroups,
+  getAllBrandNames,
 } from "@/lib/car-data";
 
 interface SelectedItem {
@@ -38,7 +38,7 @@ export default function MobileBrowse({
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedCarId, setExpandedCarId] = useState<string | null>(null);
 
-  const brandGroups = useMemo(() => getBrandGroups(), []);
+  const allBrands = useMemo(() => getAllBrandNames(), []);
 
   const filteredCars = useMemo(() => {
     const priceFilter = PRICE_CHIPS[activePriceIdx];
@@ -124,38 +124,47 @@ export default function MobileBrowse({
         >
           <span className="mob-brand-pill-text">All</span>
         </button>
-        {brandGroups.map((group) => (
-          <button
-            key={group.brand.name}
-            className={`mob-brand-pill ${activeBrand === group.brand.name ? "active" : ""}`}
-            onClick={() =>
-              setActiveBrand(
-                activeBrand === group.brand.name ? null : group.brand.name
-              )
-            }
-          >
-            {BRAND_LOGOS[group.brand.name] ? (
-              <Image
-                src={BRAND_LOGOS[group.brand.name]}
-                alt={group.brand.name}
-                width={24}
-                height={24}
-                className="mob-brand-pill-logo"
-                unoptimized
-              />
-            ) : (
-              <span className="mob-brand-pill-emoji">{group.brand.emoji}</span>
-            )}
-            <span className="mob-brand-pill-text">{group.brand.name}</span>
-          </button>
-        ))}
+        {allBrands.map((brandName) => {
+          const carCount = CARS.filter((c) => c.brand === brandName).length;
+          return (
+            <button
+              key={brandName}
+              className={`mob-brand-pill ${activeBrand === brandName ? "active" : ""} ${carCount === 0 ? "no-cars" : ""}`}
+              onClick={() =>
+                setActiveBrand(activeBrand === brandName ? null : brandName)
+              }
+            >
+              {BRAND_LOGOS[brandName] ? (
+                <Image
+                  src={BRAND_LOGOS[brandName]}
+                  alt={brandName}
+                  width={24}
+                  height={24}
+                  className="mob-brand-pill-logo"
+                  unoptimized
+                />
+              ) : (
+                <span className="mob-brand-pill-emoji">🚗</span>
+              )}
+              <span className="mob-brand-pill-text">{brandName}</span>
+              {carCount === 0 && <span className="mob-brand-pill-soon">soon</span>}
+            </button>
+          );
+        })}
       </div>
 
       {/* Cars grid */}
       <div className="mob-cars-grid">
         {filteredCars.length === 0 ? (
           <div className="mob-empty">
-            <p>No cars found</p>
+            {activeBrand && CARS.filter((c) => c.brand === activeBrand).length === 0 ? (
+              <>
+                <p style={{ fontSize: 32, marginBottom: 8 }}>🚧</p>
+                <p><strong>{activeBrand}</strong> cars coming soon!</p>
+              </>
+            ) : (
+              <p>No cars found</p>
+            )}
           </div>
         ) : (
           filteredCars.map((car) => {

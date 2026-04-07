@@ -44,6 +44,12 @@ export function getBrandGroups(): BrandGroup[] {
   })).filter((g) => g.cars.length > 0);
 }
 
+export function getAllBrandNames(): string[] {
+  const fromData = BRANDS.map((b) => b.name);
+  const fromLogos = Object.keys(BRAND_LOGOS);
+  return [...new Set([...fromData, ...fromLogos])];
+}
+
 export function getBrandMeta(brandName: string): BrandMeta | undefined {
   return BRANDS.find((b) => b.name === brandName);
 }
