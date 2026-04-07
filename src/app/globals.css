@@ -3581,6 +3581,15 @@ body {
 /* Hide mobile layout on desktop */
 .mob-app { display: none; }
 
+/* Fix /cars page images — ensure they never get cut off */
+.all-car-image-compact {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 16px;
+}
+
 @media (max-width: 768px) {
   /* Hide desktop layout on mobile */
   .app-layout { display: none !important; }
@@ -3640,7 +3649,48 @@ body {
   .mob-content {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 70px; /* space for bottom nav */
+    padding-bottom: 20px;
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  .mob-section {
+    margin-bottom: 8px;
+  }
+
+  .mob-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 8px;
+    position: sticky;
+    top: 49px;
+    z-index: 10;
+    background: rgba(245,247,250,0.95);
+    backdrop-filter: blur(8px);
+  }
+
+  .mob-section-title {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 0;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mob-section-title svg {
+    color: var(--accent-blue);
+  }
+
+  .mob-section-count {
+    font-size: 11px;
+    font-weight: 800;
+    background: var(--accent-blue);
+    color: #fff;
+    padding: 1px 7px;
+    border-radius: 100px;
+    margin-left: 4px;
   }
 
   /* ===== MOBILE SEARCH BAR ===== */
@@ -3726,10 +3776,11 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 8px 14px;
+    padding: 10px 14px;
     background: rgba(51,102,255,0.04);
     border-top: 1px solid rgba(51,102,255,0.08);
     border-bottom: 1px solid rgba(51,102,255,0.08);
+    margin-bottom: 8px;
   }
 
   .mob-selected-scroll {
@@ -3747,7 +3798,7 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: visible;
     border: 2px solid var(--accent-blue);
     flex-shrink: 0;
     background: #fff;
@@ -3757,14 +3808,15 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
   }
 
   .mob-selected-remove {
     all: unset;
     cursor: pointer;
     position: absolute;
-    top: -2px;
-    right: -2px;
+    top: -4px;
+    right: -4px;
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -3773,27 +3825,22 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    z-index: 2;
   }
 
-  .mob-compare-link {
-    all: unset;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-size: 12px;
+  .mob-selected-variant-label {
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 7px;
     font-weight: 700;
-    color: var(--accent-blue);
+    background: var(--accent-blue);
+    color: #fff;
+    padding: 0 4px;
+    border-radius: 4px;
     white-space: nowrap;
-    flex-shrink: 0;
-    padding: 6px 10px;
-    border-radius: 8px;
-    background: rgba(51,102,255,0.08);
-    transition: background 0.2s;
-  }
-
-  .mob-compare-link:hover {
-    background: rgba(51,102,255,0.14);
+    z-index: 2;
   }
 
   /* ===== BRAND LOGO PILLS ===== */
@@ -3853,7 +3900,22 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    padding: 0 14px 20px;
+    padding: 0 14px 12px;
+  }
+
+  .mob-car-card-wrap {
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #fff;
+    border: 1.5px solid var(--border);
+    transition: all 0.2s ease;
+  }
+
+  .mob-car-card-wrap.has-selection {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(51,102,255,0.12);
   }
 
   .mob-car-card {
@@ -3861,10 +3923,6 @@ body {
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border: 1.5px solid var(--border);
-    border-radius: 14px;
-    overflow: hidden;
     transition: all 0.2s ease;
     position: relative;
   }
@@ -3875,12 +3933,11 @@ body {
   }
 
   .mob-car-card.selected {
-    border-color: var(--accent-blue);
-    box-shadow: 0 0 0 2px rgba(51,102,255,0.15), 0 4px 12px rgba(51,102,255,0.1);
+    background: rgba(51,102,255,0.03);
   }
 
   .mob-car-card:active:not(:disabled) {
-    transform: scale(0.97);
+    transform: scale(0.98);
   }
 
   .mob-car-img-wrap {
@@ -3909,6 +3966,23 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 6px rgba(51,102,255,0.3);
+  }
+
+  .mob-car-sel-count {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(13,159,110,0.3);
   }
 
   .mob-car-category {
@@ -3946,11 +4020,31 @@ body {
     margin: 0 0 4px;
   }
 
+  .mob-car-info-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
   .mob-car-price {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 800;
     color: var(--accent-green);
     margin: 0;
+  }
+
+  .mob-car-variants-badge {
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    background: rgba(51,102,255,0.08);
+    padding: 2px 6px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    white-space: nowrap;
   }
 
   .mob-empty {
@@ -3961,59 +4055,87 @@ body {
     font-size: 14px;
   }
 
-  /* ===== COMPARE VIEW (mobile) ===== */
-  .mob-compare-view {
-    padding: 16px 14px;
+  /* ===== VARIANT LIST (mobile) ===== */
+  .mob-variant-list {
+    border-top: 1px solid var(--border);
+    background: var(--bg-primary);
+    animation: fadeIn 0.2s ease;
   }
 
+  .mob-variant-row {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    transition: background 0.15s;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mob-variant-row:last-child {
+    border-bottom: none;
+  }
+
+  .mob-variant-row:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+
+  .mob-variant-row.selected {
+    background: rgba(51,102,255,0.06);
+  }
+
+  .mob-variant-check {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1.5px solid #bfc3d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+
+  .mob-variant-check.checked {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+  }
+
+  .mob-variant-name {
+    flex: 1;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+  }
+
+  .mob-variant-price {
+    font-weight: 700;
+    color: var(--accent-green);
+    flex-shrink: 0;
+    font-size: 10px;
+  }
+
+  /* ===== COMPARE SECTION (inline, no tab) ===== */
   .mob-compare-cards {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    margin-top: 16px;
+    padding: 0 14px;
   }
 
-  .mob-compare-empty {
+  .mob-compare-empty-inline {
     text-align: center;
-    padding: 60px 20px;
-    color: var(--text-secondary);
-  }
-
-  .mob-compare-empty-icon {
-    margin-bottom: 16px;
-  }
-
-  .mob-compare-empty h3 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0 0 6px;
-    color: var(--text-primary);
-  }
-
-  .mob-compare-empty p {
-    font-size: 13px;
-    margin: 0 0 20px;
+    padding: 24px 20px;
     color: var(--text-muted);
-  }
-
-  .mob-goto-browse {
-    all: unset;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #3366ff, #5588ff);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    box-shadow: 0 3px 12px rgba(51,102,255,0.3);
-    transition: all 0.2s;
-  }
-
-  .mob-goto-browse:active {
-    transform: scale(0.97);
+    font-size: 13px;
   }
 
   .mob-analyzing {
@@ -4036,12 +4158,38 @@ body {
     animation: spin 0.8s linear infinite;
   }
 
+  /* ===== ALL CARS LINK ===== */
+  .mob-allcars-link-wrap {
+    padding: 0 14px 16px;
+  }
+
+  .mob-allcars-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f0f4ff, #e8eef9);
+    border: 1.5px solid rgba(51,102,255,0.15);
+    color: var(--accent-blue);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .mob-allcars-link:active {
+    transform: scale(0.98);
+    background: rgba(51,102,255,0.1);
+  }
+
   /* ===== FLOATING ACTION BUTTON ===== */
   .mob-fab {
     all: unset;
     cursor: pointer;
     position: fixed;
-    bottom: 72px;
+    bottom: 20px;
     right: 16px;
     z-index: 60;
     display: flex;
@@ -4074,75 +4222,6 @@ body {
   @keyframes fabPulse {
     0%, 100% { box-shadow: 0 6px 24px rgba(229,57,53,0.4), 0 2px 8px rgba(0,0,0,0.15); }
     50% { box-shadow: 0 6px 32px rgba(229,57,53,0.55), 0 2px 12px rgba(0,0,0,0.2); }
-  }
-
-  /* ===== BOTTOM NAVIGATION ===== */
-  .mob-bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 80;
-    height: 56px;
-    display: flex;
-    align-items: stretch;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(16px) saturate(180%);
-    border-top: 1px solid var(--border);
-    box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
-  }
-
-  .mob-nav-tab {
-    all: unset;
-    cursor: pointer;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    font-size: 10px;
-    font-weight: 600;
-    color: var(--text-muted);
-    transition: color 0.2s;
-    position: relative;
-  }
-
-  .mob-nav-tab.active {
-    color: var(--accent-blue);
-  }
-
-  .mob-nav-tab.active::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 25%;
-    right: 25%;
-    height: 2.5px;
-    border-radius: 0 0 4px 4px;
-    background: var(--accent-blue);
-  }
-
-  .mob-nav-tab-icon-wrap {
-    position: relative;
-  }
-
-  .mob-nav-badge {
-    position: absolute;
-    top: -6px;
-    right: -10px;
-    min-width: 16px;
-    height: 16px;
-    padding: 0 4px;
-    border-radius: 100px;
-    background: var(--accent-red);
-    color: #fff;
-    font-size: 9px;
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 4px rgba(229,57,53,0.3);
   }
 
   /* ===== MOBILE OVERRIDES FOR EXISTING COMPONENTS ===== */
@@ -4230,5 +4309,15 @@ body {
   .ranking-score {
     font-size: 14px;
     width: 36px;
+  }
+
+  /* /cars page mobile fixes */
+  .all-car-image-wrapper {
+    max-height: none;
+  }
+
+  .all-car-image-compact {
+    object-fit: contain;
+    height: auto;
   }
 }

@@ -5,7 +5,6 @@ import Image from "next/image";
 import { Car } from "@/types";
 import {
   CARS,
-  BRANDS,
   BRAND_LOGOS,
   formatPrice,
   getBrandGroups,
@@ -19,7 +18,6 @@ interface SelectedItem {
 interface MobileBrowseProps {
   selectedItems: SelectedItem[];
   onToggle: (carId: string, variantName?: string) => void;
-  onSwitchToCompare: () => void;
 }
 
 const PRICE_CHIPS = [
@@ -34,11 +32,11 @@ const PRICE_CHIPS = [
 export default function MobileBrowse({
   selectedItems,
   onToggle,
-  onSwitchToCompare,
 }: MobileBrowseProps) {
   const [activeBrand, setActiveBrand] = useState<string | null>(null);
   const [activePriceIdx, setActivePriceIdx] = useState(0);
   const [searchQuery, setSearchQuery] = useState("");
+  const [expandedCarId, setExpandedCarId] = useState<string | null>(null);
 
   const brandGroups = useMemo(() => getBrandGroups(), []);
 
@@ -67,14 +65,19 @@ export default function MobileBrowse({
     return cars;
   }, [activeBrand, activePriceIdx, searchQuery]);
 
-  const isSelected = (carId: string) =>
+  const isBaseSelected = (carId: string) =>
     selectedItems.some((item) => item.carId === carId && !item.variantName);
 
-  const selectedCars = useMemo(() => {
-    return selectedItems
-      .map((item) => CARS.find((c) => c.id === item.carId))
-      .filter((c): c is Car => c !== null);
-  }, [selectedItems]);
+  const isVariantSelected = (carId: string, variantName: string) =>
+    selectedItems.some(
+      (item) => item.carId === carId && item.variantName === variantName
+    );
+
+  const anySelectedForCar = (carId: string) =>
+    selectedItems.some((item) => item.carId === carId);
+
+  const selectedCountForCar = (carId: string) =>
+    selectedItems.filter((item) => item.carId === carId).length;
 
   return (
     <div className="mob-browse">
@@ -112,41 +115,6 @@ export default function MobileBrowse({
           </button>
         ))}
       </div>
-
-      {/* Selected cars strip */}
-      {selectedItems.length > 0 && (
-        <div className="mob-selected-strip">
-          <div className="mob-selected-scroll">
-            {selectedCars.map((car) => (
-              <div key={car.id} className="mob-selected-thumb">
-                <Image
-                  src={car.imageUrl}
-                  alt={car.name}
-                  width={48}
-                  height={48}
-                  className="mob-selected-img"
-                  unoptimized
-                />
-                <button
-                  className="mob-selected-remove"
-                  onClick={() => onToggle(car.id)}
-                  aria-label={`Remove ${car.name}`}
-                >
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                    <path d="M18 6L6 18M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            ))}
-          </div>
-          <button className="mob-compare-link" onClick={onSwitchToCompare}>
-            Compare {selectedItems.length}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </div>
-      )}
 
       {/* Brand logo pills */}
       <div className="mob-brand-pills">
@@ -191,39 +159,113 @@ export default function MobileBrowse({
           </div>
         ) : (
           filteredCars.map((car) => {
-            const selected = isSelected(car.id);
+            const baseSelected = isBaseSelected(car.id);
+            const hasVariants = car.variants && car.variants.length > 0;
+            const isExpanded = expandedCarId === car.id;
+            const selCount = selectedCountForCar(car.id);
+
             return (
-              <button
+              <div
                 key={car.id}
-                className={`mob-car-card ${selected ? "selected" : ""}`}
-                onClick={() => onToggle(car.id)}
-                disabled={!selected && selectedItems.length >= 5}
+                className={`mob-car-card-wrap ${anySelectedForCar(car.id) ? "has-selection" : ""}`}
                 style={{ "--card-accent": car.color } as React.CSSProperties}
               >
-                <div className="mob-car-img-wrap">
-                  <Image
-                    src={car.imageUrl}
-                    alt={car.name}
-                    width={180}
-                    height={110}
-                    className="mob-car-img"
-                    unoptimized
-                  />
-                  {selected && (
-                    <div className="mob-car-check">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
-                        <path d="M5 12l5 5L20 7" />
-                      </svg>
+                <button
+                  className={`mob-car-card ${baseSelected ? "selected" : ""}`}
+                  onClick={() => {
+                    if (hasVariants) {
+                      setExpandedCarId(isExpanded ? null : car.id);
+                    } else {
+                      onToggle(car.id);
+                    }
+                  }}
+                  disabled={!baseSelected && !hasVariants && selectedItems.length >= 5}
+                >
+                  <div className="mob-car-img-wrap">
+                    <Image
+                      src={car.imageUrl}
+                      alt={car.name}
+                      width={180}
+                      height={110}
+                      className="mob-car-img"
+                      unoptimized
+                    />
+                    {baseSelected && (
+                      <div className="mob-car-check">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                          <path d="M5 12l5 5L20 7" />
+                        </svg>
+                      </div>
+                    )}
+                    {selCount > 0 && !baseSelected && (
+                      <div className="mob-car-sel-count">{selCount}</div>
+                    )}
+                    <span className="mob-car-category">{car.category}</span>
+                  </div>
+                  <div className="mob-car-info">
+                    <p className="mob-car-name">{car.model}</p>
+                    <p className="mob-car-brand">{car.brand}</p>
+                    <div className="mob-car-info-row">
+                      <p className="mob-car-price">{formatPrice(car.price)}</p>
+                      {hasVariants && (
+                        <span className="mob-car-variants-badge">
+                          {car.variants!.length} var
+                          <svg
+                            width="10" height="10" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" strokeWidth="2.5"
+                            style={{ transform: isExpanded ? "rotate(180deg)" : "none", transition: "transform 0.2s" }}
+                          >
+                            <path d="M6 9l6 6 6-6" />
+                          </svg>
+                        </span>
+                      )}
                     </div>
-                  )}
-                  <span className="mob-car-category">{car.category}</span>
-                </div>
-                <div className="mob-car-info">
-                  <p className="mob-car-name">{car.model}</p>
-                  <p className="mob-car-brand">{car.brand}</p>
-                  <p className="mob-car-price">{formatPrice(car.price)}</p>
-                </div>
-              </button>
+                  </div>
+                </button>
+
+                {/* Variant dropdown */}
+                {hasVariants && isExpanded && (
+                  <div className="mob-variant-list">
+                    {/* Base model option */}
+                    <button
+                      className={`mob-variant-row ${baseSelected ? "selected" : ""}`}
+                      onClick={() => onToggle(car.id)}
+                      disabled={!baseSelected && selectedItems.length >= 5}
+                    >
+                      <span className={`mob-variant-check ${baseSelected ? "checked" : ""}`}>
+                        {baseSelected && (
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                            <path d="M5 12l5 5L20 7" />
+                          </svg>
+                        )}
+                      </span>
+                      <span className="mob-variant-name">Base Model</span>
+                      <span className="mob-variant-price">{formatPrice(car.price)}</span>
+                    </button>
+                    {car.variants!.map((v) => {
+                      const vSelected = isVariantSelected(car.id, v.name);
+                      return (
+                        <button
+                          key={v.name}
+                          className={`mob-variant-row ${vSelected ? "selected" : ""}`}
+                          onClick={() => onToggle(car.id, v.name)}
+                          disabled={!vSelected && selectedItems.length >= 5}
+                        >
+                          <span className={`mob-variant-check ${vSelected ? "checked" : ""}`}>
+                            {vSelected && (
+                              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                                <path d="M5 12l5 5L20 7" />
+                              </svg>
+                            )}
+                          </span>
+                          <span className="mob-variant-name">{v.name}</span>
+                          <span className="mob-variant-price">{formatPrice(v.price)}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
             );
           })
         )}

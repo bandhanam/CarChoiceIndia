@@ -2,14 +2,14 @@
 
 import { useState, useCallback, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 import { CARS } from "@/lib/car-data";
 import { runAIComparison } from "@/lib/ai-engine";
 import { Car, ComparisonResult } from "@/types";
 import Sidebar from "@/components/Sidebar";
 import CarDetailCard from "@/components/CarDetailCard";
 import Fireworks from "@/components/Fireworks";
-import MobileBottomNav, { MobileTab } from "@/components/MobileBottomNav";
 import MobileBrowse from "@/components/MobileBrowse";
 
 const AIWinnerPanel = dynamic(() => import("@/components/AIWinnerPanel"), {
@@ -58,14 +58,12 @@ function useIsMobile() {
 }
 
 export default function HomePage() {
-  const router = useRouter();
   const isMobile = useIsMobile();
   const [selectedItems, setSelectedItems] = useState<SelectedItem[]>([]);
   const [result, setResult] = useState<ComparisonResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [mobileTab, setMobileTab] = useState<MobileTab>("browse");
   const [priceRange, setPriceRange] = useState<[number, number]>([0, maxPriceLakh]);
 
   const isPriceFiltered = priceRange[0] > 0 || priceRange[1] < maxPriceLakh;
@@ -115,8 +113,6 @@ export default function HomePage() {
   const handleRunAI = useCallback(async () => {
     if (comparisonCars.length < 2) return;
 
-    if (isMobile) setMobileTab("compare");
-
     setIsAnalyzing(true);
     setResult(null);
     setShowFireworks(false);
@@ -127,6 +123,12 @@ export default function HomePage() {
     setResult(comparison);
     setIsAnalyzing(false);
     setShowFireworks(true);
+
+    if (isMobile) {
+      setTimeout(() => {
+        document.getElementById("mob-compare-section")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
   }, [comparisonCars, isMobile]);
 
   useEffect(() => {
@@ -138,13 +140,11 @@ export default function HomePage() {
 
   const showPriceRanking = isPriceFiltered && selectedItems.length === 0 && priceRankedResult && priceRankedCars.length > 0;
 
-  const handleMobileTabChange = (tab: MobileTab) => {
-    if (tab === "allcars") {
-      router.push("/cars");
-      return;
-    }
-    setMobileTab(tab);
-  };
+  const selectedCars = useMemo(() => {
+    return selectedItems
+      .map((item) => CARS.find((c) => c.id === item.carId))
+      .filter((c): c is Car => c !== null && c !== undefined);
+  }, [selectedItems]);
 
   // ==================== MOBILE LAYOUT ====================
   if (isMobile) {
@@ -161,92 +161,156 @@ export default function HomePage() {
           </div>
         </header>
 
-        {/* Tab content */}
+        {/* Scrollable content — all sections visible */}
         <div className="mob-content">
-          {mobileTab === "browse" && (
+
+          {/* ===== SECTION: BROWSE ===== */}
+          <div className="mob-section">
+            <div className="mob-section-header">
+              <h2 className="mob-section-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <rect x="3" y="3" width="7" height="7" rx="1" />
+                  <rect x="14" y="3" width="7" height="7" rx="1" />
+                  <rect x="3" y="14" width="7" height="7" rx="1" />
+                  <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+                Browse Cars
+              </h2>
+            </div>
             <MobileBrowse
               selectedItems={selectedItems}
               onToggle={handleToggle}
-              onSwitchToCompare={() => setMobileTab("compare")}
             />
-          )}
+          </div>
 
-          {mobileTab === "compare" && (
-            <div className="mob-compare-view">
-              {isAnalyzing && (
-                <div className="mob-analyzing">
-                  <div className="mob-analyzing-spinner" />
-                  <p>AI is analyzing your cars...</p>
-                </div>
-              )}
+          {/* ===== SECTION: SELECTED / COMPARE ===== */}
+          <div className="mob-section" id="mob-compare-section">
+            <div className="mob-section-header">
+              <h2 className="mob-section-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+                Compare
+                {selectedItems.length > 0 && (
+                  <span className="mob-section-count">{selectedItems.length}</span>
+                )}
+              </h2>
+            </div>
 
-              {result && (
-                <div className={`winner-reveal ${showFireworks ? "animating" : ""}`}>
-                  <AIWinnerPanel result={result} cars={comparisonCars} />
-                </div>
-              )}
-
-              {result && (
-                <div className="fade-in" style={{ marginTop: 16 }}>
-                  <ComparisonCharts result={result} cars={comparisonCars} />
-                </div>
-              )}
-
-              {comparisonCars.length > 0 ? (
-                <div className="mob-compare-cards">
-                  {comparisonCars.map((car) => {
-                    const score = result?.scores.find((s) => s.carId === car.id);
-                    const rank = result
-                      ? result.scores.findIndex((s) => s.carId === car.id) + 1
-                      : undefined;
-                    return (
-                      <CarDetailCard
-                        key={car.id}
-                        car={car}
-                        isWinner={result?.winnerId === car.id}
-                        rank={rank}
-                        score={score?.overallScore}
-                      />
-                    );
+            {/* Selected cars strip */}
+            {selectedItems.length > 0 && (
+              <div className="mob-selected-strip">
+                <div className="mob-selected-scroll">
+                  {selectedCars.map((car) => {
+                    const itemsForCar = selectedItems.filter((i) => i.carId === car.id);
+                    return itemsForCar.map((item) => (
+                      <div key={`${item.carId}-${item.variantName || "base"}`} className="mob-selected-thumb">
+                        <Image
+                          src={car.imageUrl}
+                          alt={car.name}
+                          width={48}
+                          height={48}
+                          className="mob-selected-img"
+                          unoptimized
+                        />
+                        <button
+                          className="mob-selected-remove"
+                          onClick={() => handleToggle(item.carId, item.variantName)}
+                          aria-label={`Remove ${car.name}`}
+                        >
+                          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
+                            <path d="M18 6L6 18M6 6l12 12" />
+                          </svg>
+                        </button>
+                        {item.variantName && (
+                          <span className="mob-selected-variant-label">{item.variantName.slice(0, 6)}</span>
+                        )}
+                      </div>
+                    ));
                   })}
                 </div>
-              ) : (
-                <div className="mob-compare-empty">
-                  <div className="mob-compare-empty-icon">
-                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#bfc3d0" strokeWidth="1.5">
-                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                      <path d="M2 17l10 5 10-5" />
-                      <path d="M2 12l10 5 10-5" />
-                    </svg>
-                  </div>
-                  <h3>No cars to compare</h3>
-                  <p>Go to Browse and tap on cars to select them (2-5 cars)</p>
-                  <button
-                    className="mob-goto-browse"
-                    onClick={() => setMobileTab("browse")}
-                  >
-                    Browse Cars
-                  </button>
-                </div>
-              )}
+              </div>
+            )}
+
+            {isAnalyzing && (
+              <div className="mob-analyzing">
+                <div className="mob-analyzing-spinner" />
+                <p>AI is analyzing your cars...</p>
+              </div>
+            )}
+
+            {result && (
+              <div className={`winner-reveal ${showFireworks ? "animating" : ""}`} style={{ margin: "0 14px" }}>
+                <AIWinnerPanel result={result} cars={comparisonCars} />
+              </div>
+            )}
+
+            {result && (
+              <div className="fade-in" style={{ margin: "16px 14px 0" }}>
+                <ComparisonCharts result={result} cars={comparisonCars} />
+              </div>
+            )}
+
+            {comparisonCars.length > 0 ? (
+              <div className="mob-compare-cards">
+                {comparisonCars.map((car) => {
+                  const score = result?.scores.find((s) => s.carId === car.id);
+                  const rank = result
+                    ? result.scores.findIndex((s) => s.carId === car.id) + 1
+                    : undefined;
+                  return (
+                    <CarDetailCard
+                      key={car.id}
+                      car={car}
+                      isWinner={result?.winnerId === car.id}
+                      rank={rank}
+                      score={score?.overallScore}
+                    />
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="mob-compare-empty-inline">
+                <p>Tap on cars above to select 2-5 for comparison</p>
+              </div>
+            )}
+          </div>
+
+          {/* ===== SECTION: ALL CARS ===== */}
+          <div className="mob-section">
+            <div className="mob-section-header">
+              <h2 className="mob-section-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <line x1="8" y1="6" x2="21" y2="6" />
+                  <line x1="8" y1="12" x2="21" y2="12" />
+                  <line x1="8" y1="18" x2="21" y2="18" />
+                  <line x1="3" y1="6" x2="3.01" y2="6" />
+                  <line x1="3" y1="12" x2="3.01" y2="12" />
+                  <line x1="3" y1="18" x2="3.01" y2="18" />
+                </svg>
+                All Cars
+              </h2>
             </div>
-          )}
+            <div className="mob-allcars-link-wrap">
+              <Link href="/cars" className="mob-allcars-link">
+                View Complete Car Collection with Full Details
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </Link>
+            </div>
+          </div>
         </div>
 
         {/* FAB - Find Winner */}
-        {selectedItems.length >= 2 && !isAnalyzing && mobileTab === "browse" && (
+        {selectedItems.length >= 2 && !isAnalyzing && (
           <button className="mob-fab" onClick={handleRunAI}>
             <span className="mob-fab-icon">🏆</span>
             <span className="mob-fab-text">Find Winner</span>
           </button>
         )}
-
-        {/* Bottom nav */}
-        <MobileBottomNav
-          activeTab={mobileTab}
-          onTabChange={handleMobileTabChange}
-          selectedCount={selectedItems.length}
-        />
       </div>
     );
   }
