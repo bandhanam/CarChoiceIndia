@@ -2,12 +2,15 @@
 
 import { useState, useCallback, useEffect, useMemo } from "react";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/navigation";
 import { CARS } from "@/lib/car-data";
 import { runAIComparison } from "@/lib/ai-engine";
 import { Car, ComparisonResult } from "@/types";
 import Sidebar from "@/components/Sidebar";
 import CarDetailCard from "@/components/CarDetailCard";
 import Fireworks from "@/components/Fireworks";
+import MobileBottomNav, { MobileTab } from "@/components/MobileBottomNav";
+import MobileBrowse from "@/components/MobileBrowse";
 
 const AIWinnerPanel = dynamic(() => import("@/components/AIWinnerPanel"), {
   ssr: false,
@@ -43,12 +46,26 @@ const maxPriceLakh = Math.ceil(
   Math.max(...CARS.map((c) => c.price / 100000))
 );
 
+function useIsMobile() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth <= 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+  return isMobile;
+}
+
 export default function HomePage() {
+  const router = useRouter();
+  const isMobile = useIsMobile();
   const [selectedItems, setSelectedItems] = useState<SelectedItem[]>([]);
   const [result, setResult] = useState<ComparisonResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileTab, setMobileTab] = useState<MobileTab>("browse");
   const [priceRange, setPriceRange] = useState<[number, number]>([0, maxPriceLakh]);
 
   const isPriceFiltered = priceRange[0] > 0 || priceRange[1] < maxPriceLakh;
@@ -98,6 +115,8 @@ export default function HomePage() {
   const handleRunAI = useCallback(async () => {
     if (comparisonCars.length < 2) return;
 
+    if (isMobile) setMobileTab("compare");
+
     setIsAnalyzing(true);
     setResult(null);
     setShowFireworks(false);
@@ -108,7 +127,7 @@ export default function HomePage() {
     setResult(comparison);
     setIsAnalyzing(false);
     setShowFireworks(true);
-  }, [comparisonCars]);
+  }, [comparisonCars, isMobile]);
 
   useEffect(() => {
     if (showFireworks) {
@@ -119,6 +138,120 @@ export default function HomePage() {
 
   const showPriceRanking = isPriceFiltered && selectedItems.length === 0 && priceRankedResult && priceRankedCars.length > 0;
 
+  const handleMobileTabChange = (tab: MobileTab) => {
+    if (tab === "allcars") {
+      router.push("/cars");
+      return;
+    }
+    setMobileTab(tab);
+  };
+
+  // ==================== MOBILE LAYOUT ====================
+  if (isMobile) {
+    return (
+      <div className="mob-app">
+        {showFireworks && <Fireworks duration={3800} />}
+
+        {/* Top bar */}
+        <header className="mob-topbar">
+          <h1 className="mob-topbar-title">Car Selector AI</h1>
+          <div className="mob-topbar-badge">
+            <span className="mob-dot" />
+            AI
+          </div>
+        </header>
+
+        {/* Tab content */}
+        <div className="mob-content">
+          {mobileTab === "browse" && (
+            <MobileBrowse
+              selectedItems={selectedItems}
+              onToggle={handleToggle}
+              onSwitchToCompare={() => setMobileTab("compare")}
+            />
+          )}
+
+          {mobileTab === "compare" && (
+            <div className="mob-compare-view">
+              {isAnalyzing && (
+                <div className="mob-analyzing">
+                  <div className="mob-analyzing-spinner" />
+                  <p>AI is analyzing your cars...</p>
+                </div>
+              )}
+
+              {result && (
+                <div className={`winner-reveal ${showFireworks ? "animating" : ""}`}>
+                  <AIWinnerPanel result={result} cars={comparisonCars} />
+                </div>
+              )}
+
+              {result && (
+                <div className="fade-in" style={{ marginTop: 16 }}>
+                  <ComparisonCharts result={result} cars={comparisonCars} />
+                </div>
+              )}
+
+              {comparisonCars.length > 0 ? (
+                <div className="mob-compare-cards">
+                  {comparisonCars.map((car) => {
+                    const score = result?.scores.find((s) => s.carId === car.id);
+                    const rank = result
+                      ? result.scores.findIndex((s) => s.carId === car.id) + 1
+                      : undefined;
+                    return (
+                      <CarDetailCard
+                        key={car.id}
+                        car={car}
+                        isWinner={result?.winnerId === car.id}
+                        rank={rank}
+                        score={score?.overallScore}
+                      />
+                    );
+                  })}
+                </div>
+              ) : (
+                <div className="mob-compare-empty">
+                  <div className="mob-compare-empty-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#bfc3d0" strokeWidth="1.5">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                      <path d="M2 17l10 5 10-5" />
+                      <path d="M2 12l10 5 10-5" />
+                    </svg>
+                  </div>
+                  <h3>No cars to compare</h3>
+                  <p>Go to Browse and tap on cars to select them (2-5 cars)</p>
+                  <button
+                    className="mob-goto-browse"
+                    onClick={() => setMobileTab("browse")}
+                  >
+                    Browse Cars
+                  </button>
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* FAB - Find Winner */}
+        {selectedItems.length >= 2 && !isAnalyzing && mobileTab === "browse" && (
+          <button className="mob-fab" onClick={handleRunAI}>
+            <span className="mob-fab-icon">🏆</span>
+            <span className="mob-fab-text">Find Winner</span>
+          </button>
+        )}
+
+        {/* Bottom nav */}
+        <MobileBottomNav
+          activeTab={mobileTab}
+          onTabChange={handleMobileTabChange}
+          selectedCount={selectedItems.length}
+        />
+      </div>
+    );
+  }
+
+  // ==================== DESKTOP LAYOUT ====================
   return (
     <div className="app-layout">
       <button
@@ -169,7 +302,6 @@ export default function HomePage() {
           </div>
         </header>
 
-        {/* Manual selection: winner panel */}
         {result && (
           <div className={`winner-reveal ${showFireworks ? "animating" : ""}`}>
             <AIWinnerPanel result={result} cars={comparisonCars} />
@@ -185,7 +317,6 @@ export default function HomePage() {
           </div>
         )}
 
-        {/* Manual selection: selected cars */}
         {comparisonCars.length > 0 ? (
           <>
             <h2 className="section-title">
@@ -219,7 +350,6 @@ export default function HomePage() {
                 AI-ranked by performance, safety, comfort, technology & value. Select specific cars to compare head-to-head.
               </p>
             </div>
-
             <div className="cars-grid">
               {priceRankedCars.map((car, idx) => {
                 const score = priceRankedResult!.scores.find((s) => s.carId === car.id);

@@ -3573,3 +3573,662 @@ body {
   padding: 12px;
   font-size: 15px;
 }
+
+/* ============================================================
+   MOBILE-FIRST REDESIGN — all below hidden on desktop (≥769px)
+   ============================================================ */
+
+/* Hide mobile layout on desktop */
+.mob-app { display: none; }
+
+@media (max-width: 768px) {
+  /* Hide desktop layout on mobile */
+  .app-layout { display: none !important; }
+  .mob-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    background: var(--bg-primary);
+  }
+
+  /* ===== MOBILE TOP BAR ===== */
+  .mob-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(14px) saturate(180%);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .mob-topbar-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0;
+    background: linear-gradient(135deg, #3366ff, #0066cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .mob-topbar-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent-green);
+    background: rgba(13,159,110,0.08);
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid rgba(13,159,110,0.15);
+  }
+
+  .mob-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    animation: pulse 2s infinite;
+  }
+
+  /* ===== MOBILE CONTENT AREA ===== */
+  .mob-content {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 70px; /* space for bottom nav */
+  }
+
+  /* ===== MOBILE SEARCH BAR ===== */
+  .mob-search-bar {
+    position: relative;
+    padding: 10px 14px 6px;
+  }
+
+  .mob-search-icon {
+    position: absolute;
+    left: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+    pointer-events: none;
+  }
+
+  .mob-search-input {
+    width: 100%;
+    padding: 10px 36px 10px 40px;
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: inherit;
+    background: #fff;
+    color: var(--text-primary);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .mob-search-input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(51,102,255,0.1);
+  }
+
+  .mob-search-clear {
+    all: unset;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-muted);
+    padding: 4px;
+  }
+
+  /* ===== PRICE QUICK CHIPS ===== */
+  .mob-price-chips {
+    display: flex;
+    gap: 6px;
+    padding: 6px 14px 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mob-price-chips::-webkit-scrollbar { display: none; }
+
+  .mob-price-chip {
+    all: unset;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: #fff;
+    border: 1.5px solid var(--border);
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .mob-price-chip.active {
+    background: linear-gradient(135deg, #3366ff, #5588ff);
+    color: #fff;
+    border-color: #3366ff;
+    box-shadow: 0 2px 8px rgba(51,102,255,0.25);
+  }
+
+  /* ===== SELECTED CARS STRIP ===== */
+  .mob-selected-strip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    background: rgba(51,102,255,0.04);
+    border-top: 1px solid rgba(51,102,255,0.08);
+    border-bottom: 1px solid rgba(51,102,255,0.08);
+  }
+
+  .mob-selected-scroll {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    flex: 1;
+    scrollbar-width: none;
+  }
+
+  .mob-selected-scroll::-webkit-scrollbar { display: none; }
+
+  .mob-selected-thumb {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--accent-blue);
+    flex-shrink: 0;
+    background: #fff;
+  }
+
+  .mob-selected-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mob-selected-remove {
+    all: unset;
+    cursor: pointer;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #e53935;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+
+  .mob-compare-link {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 6px 10px;
+    border-radius: 8px;
+    background: rgba(51,102,255,0.08);
+    transition: background 0.2s;
+  }
+
+  .mob-compare-link:hover {
+    background: rgba(51,102,255,0.14);
+  }
+
+  /* ===== BRAND LOGO PILLS ===== */
+  .mob-brand-pills {
+    display: flex;
+    gap: 8px;
+    padding: 8px 14px 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .mob-brand-pills::-webkit-scrollbar { display: none; }
+
+  .mob-brand-pill {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 100px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: #fff;
+    border: 1.5px solid var(--border);
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .mob-brand-pill.active {
+    background: linear-gradient(135deg, #f0f4ff, #e8eef9);
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+    box-shadow: 0 2px 8px rgba(51,102,255,0.12);
+  }
+
+  .mob-brand-pill-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  .mob-brand-pill-emoji {
+    font-size: 14px;
+  }
+
+  .mob-brand-pill-text {
+    font-size: 12px;
+  }
+
+  /* ===== CARS GRID (2-col) ===== */
+  .mob-cars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 0 14px 20px;
+  }
+
+  .mob-car-card {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    position: relative;
+  }
+
+  .mob-car-card:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .mob-car-card.selected {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 2px rgba(51,102,255,0.15), 0 4px 12px rgba(51,102,255,0.1);
+  }
+
+  .mob-car-card:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+
+  .mob-car-img-wrap {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/10;
+    background: var(--bg-primary);
+    overflow: hidden;
+  }
+
+  .mob-car-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mob-car-check {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(51,102,255,0.3);
+  }
+
+  .mob-car-category {
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+
+  .mob-car-info {
+    padding: 8px 10px 10px;
+  }
+
+  .mob-car-name {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 0 0 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .mob-car-brand {
+    font-size: 10px;
+    color: var(--text-muted);
+    margin: 0 0 4px;
+  }
+
+  .mob-car-price {
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--accent-green);
+    margin: 0;
+  }
+
+  .mob-empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  /* ===== COMPARE VIEW (mobile) ===== */
+  .mob-compare-view {
+    padding: 16px 14px;
+  }
+
+  .mob-compare-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 16px;
+  }
+
+  .mob-compare-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-secondary);
+  }
+
+  .mob-compare-empty-icon {
+    margin-bottom: 16px;
+  }
+
+  .mob-compare-empty h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 6px;
+    color: var(--text-primary);
+  }
+
+  .mob-compare-empty p {
+    font-size: 13px;
+    margin: 0 0 20px;
+    color: var(--text-muted);
+  }
+
+  .mob-goto-browse {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #3366ff, #5588ff);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 3px 12px rgba(51,102,255,0.3);
+    transition: all 0.2s;
+  }
+
+  .mob-goto-browse:active {
+    transform: scale(0.97);
+  }
+
+  .mob-analyzing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 20px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .mob-analyzing-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent-blue);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  /* ===== FLOATING ACTION BUTTON ===== */
+  .mob-fab {
+    all: unset;
+    cursor: pointer;
+    position: fixed;
+    bottom: 72px;
+    right: 16px;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 22px;
+    border-radius: 100px;
+    background: linear-gradient(135deg, #e53935, #c62828);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    box-shadow: 0 6px 24px rgba(229,57,53,0.4), 0 2px 8px rgba(0,0,0,0.15);
+    animation: fabPulse 2s ease-in-out infinite;
+    transition: transform 0.2s;
+  }
+
+  .mob-fab:active {
+    transform: scale(0.95);
+    animation: none;
+  }
+
+  .mob-fab-icon {
+    font-size: 18px;
+  }
+
+  .mob-fab-text {
+    font-size: 14px;
+  }
+
+  @keyframes fabPulse {
+    0%, 100% { box-shadow: 0 6px 24px rgba(229,57,53,0.4), 0 2px 8px rgba(0,0,0,0.15); }
+    50% { box-shadow: 0 6px 32px rgba(229,57,53,0.55), 0 2px 12px rgba(0,0,0,0.2); }
+  }
+
+  /* ===== BOTTOM NAVIGATION ===== */
+  .mob-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    height: 56px;
+    display: flex;
+    align-items: stretch;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(16px) saturate(180%);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+  }
+
+  .mob-nav-tab {
+    all: unset;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color 0.2s;
+    position: relative;
+  }
+
+  .mob-nav-tab.active {
+    color: var(--accent-blue);
+  }
+
+  .mob-nav-tab.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 25%;
+    right: 25%;
+    height: 2.5px;
+    border-radius: 0 0 4px 4px;
+    background: var(--accent-blue);
+  }
+
+  .mob-nav-tab-icon-wrap {
+    position: relative;
+  }
+
+  .mob-nav-badge {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    min-width: 16px;
+    height: 16px;
+    padding: 0 4px;
+    border-radius: 100px;
+    background: var(--accent-red);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(229,57,53,0.3);
+  }
+
+  /* ===== MOBILE OVERRIDES FOR EXISTING COMPONENTS ===== */
+  .car-detail-card {
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .card-top-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-image-col {
+    flex: none;
+    width: 100%;
+  }
+
+  .specs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .winner-panel {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .winner-panel-header {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .winner-panel-title {
+    font-size: 18px;
+  }
+
+  .winner-hero {
+    padding: 20px 0;
+  }
+
+  .winner-hero-name {
+    font-size: 20px;
+  }
+
+  .winner-hero-price {
+    font-size: 18px;
+  }
+
+  .winner-score-circle {
+    width: 90px;
+    height: 90px;
+    margin: 16px auto;
+  }
+
+  .score-number {
+    font-size: 22px;
+  }
+
+  .charts-container {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+
+  .chart-card {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .chart-title {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .ranking-row {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .ranking-name {
+    font-size: 12px;
+  }
+
+  .ranking-score {
+    font-size: 14px;
+    width: 36px;
+  }
+}
