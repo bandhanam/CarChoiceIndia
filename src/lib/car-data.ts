@@ -1,7 +1,17 @@
 import { Car, CarsDataset, BrandMeta, BrandGroup } from "@/types";
 import carsJson from "../../public/data/cars.json";
+import {
+  getBrandGroupsFrom,
+  getAllBrandNamesFrom,
+  datasetFingerprint,
+} from "./car-dataset-utils";
 
 const dataset = carsJson as CarsDataset;
+
+export { getBrandGroupsFrom, getAllBrandNamesFrom, datasetFingerprint };
+
+/** Default list-price tier in the UI — avoids “base” (sounds stripped-down). */
+export const STARTING_TRIM_LABEL = "Starting trim";
 
 export const CARS: Car[] = dataset.cars;
 export const BRANDS: BrandMeta[] = dataset.brands;
@@ -38,16 +48,13 @@ export function getCarById(id: string): Car | undefined {
 }
 
 export function getBrandGroups(): BrandGroup[] {
-  return BRANDS.map((brand) => ({
-    brand,
-    cars: CARS.filter((c) => c.brand === brand.name),
-  })).filter((g) => g.cars.length > 0);
+  return getBrandGroupsFrom(CARS, BRANDS);
 }
 
 export function getAllBrandNames(): string[] {
-  const fromData = BRANDS.map((b) => b.name);
+  const base = getAllBrandNamesFrom(CARS, BRANDS);
   const fromLogos = Object.keys(BRAND_LOGOS);
-  return [...new Set([...fromData, ...fromLogos])];
+  return [...new Set([...base, ...fromLogos])];
 }
 
 export function getBrandMeta(brandName: string): BrandMeta | undefined {

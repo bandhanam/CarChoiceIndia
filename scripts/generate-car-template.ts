@@ -157,7 +157,7 @@ Data Sources (for filling in details):
       valueForMoney: 5.0,
     },
     variants: [
-      { name: "TODO: Base Variant", price: 0 },
+      { name: "TODO: Starting trim (or first variant name)", price: 0 },
       { name: "TODO: Mid Variant", price: 0 },
       { name: "TODO: Top Variant", price: 0 },
     ],

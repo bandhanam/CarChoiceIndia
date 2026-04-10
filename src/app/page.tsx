@@ -1,10 +1,16 @@
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
+import {
+  useState,
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+} from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import Image from "next/image";
-import { CARS } from "@/lib/car-data";
+import { useCarDataset } from "@/context/CarDatasetContext";
 import { runAIComparison } from "@/lib/ai-engine";
 import { Car, ComparisonResult } from "@/types";
 import Sidebar from "@/components/Sidebar";
@@ -25,27 +31,6 @@ interface SelectedItem {
   variantName?: string;
 }
 
-function buildComparisonCar(item: SelectedItem): Car | null {
-  const baseCar = CARS.find((c) => c.id === item.carId);
-  if (!baseCar) return null;
-
-  if (!item.variantName) return baseCar;
-
-  const variant = baseCar.variants?.find((v) => v.name === item.variantName);
-  if (!variant) return baseCar;
-
-  return {
-    ...baseCar,
-    id: `${baseCar.id}__${item.variantName}`,
-    name: `${baseCar.brand} ${baseCar.model} ${item.variantName}`,
-    price: variant.price,
-  };
-}
-
-const maxPriceLakh = Math.ceil(
-  Math.max(...CARS.map((c) => c.price / 100000))
-);
-
 function useIsMobile() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -58,13 +43,46 @@ function useIsMobile() {
 }
 
 export default function HomePage() {
+  const {
+    cars,
+    brands,
+    refreshState,
+    refreshDataset,
+    showManualRefresh,
+  } = useCarDataset();
+  const maxPriceLakh = useMemo(
+    () => Math.ceil(Math.max(...cars.map((c) => c.price / 100000), 1)),
+    [cars]
+  );
+  const [priceRange, setPriceRange] = useState<[number, number]>([0, 100]);
+
+  useLayoutEffect(() => {
+    setPriceRange(([lo]) => [lo, maxPriceLakh]);
+  }, [maxPriceLakh]);
+
   const isMobile = useIsMobile();
   const [selectedItems, setSelectedItems] = useState<SelectedItem[]>([]);
   const [result, setResult] = useState<ComparisonResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showFireworks, setShowFireworks] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [priceRange, setPriceRange] = useState<[number, number]>([0, maxPriceLakh]);
+
+  const buildComparisonCar = useCallback(
+    (item: SelectedItem): Car | null => {
+      const baseCar = cars.find((c) => c.id === item.carId);
+      if (!baseCar) return null;
+      if (!item.variantName) return baseCar;
+      const variant = baseCar.variants?.find((v) => v.name === item.variantName);
+      if (!variant) return baseCar;
+      return {
+        ...baseCar,
+        id: `${baseCar.id}__${item.variantName}`,
+        name: `${baseCar.brand} ${baseCar.model} ${item.variantName}`,
+        price: variant.price,
+      };
+    },
+    [cars]
+  );
 
   const isPriceFiltered = priceRange[0] > 0 || priceRange[1] < maxPriceLakh;
 
@@ -72,8 +90,8 @@ export default function HomePage() {
     if (!isPriceFiltered) return [];
     const minP = priceRange[0] * 100000;
     const maxP = priceRange[1] * 100000;
-    return CARS.filter((c) => c.price >= minP && c.price <= maxP);
-  }, [priceRange, isPriceFiltered]);
+    return cars.filter((c) => c.price >= minP && c.price <= maxP);
+  }, [priceRange, isPriceFiltered, cars]);
 
   const priceRankedResult = useMemo(() => {
     if (!isPriceFiltered || selectedItems.length > 0 || filteredByPrice.length < 2) return null;
@@ -108,7 +126,7 @@ export default function HomePage() {
     return selectedItems
       .map(buildComparisonCar)
       .filter((c): c is Car => c !== null);
-  }, [selectedItems]);
+  }, [selectedItems, buildComparisonCar]);
 
   const handleRunAI = useCallback(async () => {
     if (comparisonCars.length < 2) return;
@@ -142,9 +160,9 @@ export default function HomePage() {
 
   const selectedCars = useMemo(() => {
     return selectedItems
-      .map((item) => CARS.find((c) => c.id === item.carId))
+      .map((item) => cars.find((c) => c.id === item.carId))
       .filter((c): c is Car => c !== null && c !== undefined);
-  }, [selectedItems]);
+  }, [selectedItems, cars]);
 
   const scrollToSection = useCallback((sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
@@ -227,6 +245,8 @@ export default function HomePage() {
           {/* ===== SECTION: BROWSE ===== */}
           <div className="mob-section" id="mob-browse-section">
             <MobileBrowse
+              cars={cars}
+              brands={brands}
               selectedItems={selectedItems}
               onToggle={handleToggle}
             />
@@ -361,7 +381,8 @@ export default function HomePage() {
       )}
 
       <Sidebar
-        cars={CARS}
+        cars={cars}
+        brands={brands}
         selectedItems={selectedItems}
         onToggle={handleToggle}
         onRunAI={handleRunAI}
@@ -382,10 +403,37 @@ export default function HomePage() {
             <p className="header-subtitle">
               Confused which car to buy? Pick your top choices and let AI end the debate.
             </p>
+            {refreshState === "updated" && (
+              <p className="header-data-hint" role="status" aria-live="polite">
+                Car list updated to latest dataset.
+              </p>
+            )}
           </div>
-          <div className="header-badge">
-            <span className="live-dot" />
-            AI Ready
+          <div className="header-actions">
+            {showManualRefresh && (
+              <button
+                type="button"
+                className="header-refresh-btn"
+                onClick={() => void refreshDataset()}
+                disabled={refreshState === "checking"}
+                title="Fetch latest prices & cars from server"
+              >
+                {refreshState === "checking" ? "Updating…" : "Refresh prices"}
+              </button>
+            )}
+            <div
+              className="header-badge"
+              title={
+                refreshState === "checking"
+                  ? "Checking for newer prices…"
+                  : undefined
+              }
+            >
+              <span
+                className={`live-dot ${refreshState === "checking" ? "pulse" : ""}`}
+              />
+              {refreshState === "checking" ? "Syncing…" : "AI Ready"}
+            </div>
           </div>
         </header>
 

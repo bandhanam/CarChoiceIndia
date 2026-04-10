@@ -1,4 +1,8 @@
 import { CARS, BRANDS, getCarById, formatPrice, getBrandGroups, getBrandMeta } from "@/lib/car-data";
+import catalogJson from "../../public/data/indian-cars-catalog.json";
+import type { IndianCarsCatalog } from "@/types";
+
+const catalog = catalogJson as IndianCarsCatalog;
 
 describe("Car Data", () => {
   it("should have at least 40 cars across multiple brands", () => {
@@ -118,6 +122,21 @@ describe("getCarById", () => {
 
   it("should return undefined for invalid ID", () => {
     expect(getCarById("nonexistent-car")).toBeUndefined();
+  });
+});
+
+describe("Indian cars catalog", () => {
+  it("entries merged from cars.json should include variants with prices", () => {
+    const detailed = catalog.entries.filter((e) => e.hasDetailedProfile);
+    expect(detailed.length).toBe(CARS.length);
+    detailed.forEach((entry) => {
+      expect(entry.variants).toBeDefined();
+      expect(entry.variants!.length).toBeGreaterThanOrEqual(2);
+      entry.variants!.forEach((v) => {
+        expect(v.name).toBeTruthy();
+        expect(v.price).toBeGreaterThan(0);
+      });
+    });
   });
 });
 

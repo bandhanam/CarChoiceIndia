@@ -3,12 +3,12 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Car } from "@/types";
+import { Car, BrandMeta } from "@/types";
 import {
-  CARS,
   BRAND_LOGOS,
   formatPrice,
-  getAllBrandNames,
+  getAllBrandNamesFrom,
+  STARTING_TRIM_LABEL,
 } from "@/lib/car-data";
 
 interface SelectedItem {
@@ -17,6 +17,8 @@ interface SelectedItem {
 }
 
 interface MobileBrowseProps {
+  cars: Car[];
+  brands: BrandMeta[];
   selectedItems: SelectedItem[];
   onToggle: (carId: string, variantName?: string) => void;
 }
@@ -31,6 +33,8 @@ const PRICE_CHIPS = [
 ];
 
 export default function MobileBrowse({
+  cars,
+  brands,
   selectedItems,
   onToggle,
 }: MobileBrowseProps) {
@@ -39,23 +43,32 @@ export default function MobileBrowse({
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedCarId, setExpandedCarId] = useState<string | null>(null);
 
-  const allBrands = useMemo(() => getAllBrandNames(), []);
+  const allBrands = useMemo(
+    () =>
+      [
+        ...new Set([
+          ...getAllBrandNamesFrom(cars, brands),
+          ...Object.keys(BRAND_LOGOS),
+        ]),
+      ],
+    [cars, brands]
+  );
 
   const filteredCars = useMemo(() => {
     const priceFilter = PRICE_CHIPS[activePriceIdx];
-    let cars = activeBrand
-      ? CARS.filter((c) => c.brand === activeBrand)
-      : CARS;
+    let list = activeBrand
+      ? cars.filter((c) => c.brand === activeBrand)
+      : cars;
 
     if (priceFilter.max !== Infinity || priceFilter.min !== 0) {
-      cars = cars.filter(
+      list = list.filter(
         (c) => c.price >= priceFilter.min && c.price <= priceFilter.max
       );
     }
 
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase();
-      cars = cars.filter(
+      list = list.filter(
         (c) =>
           c.name.toLowerCase().includes(q) ||
           c.brand.toLowerCase().includes(q) ||
@@ -63,10 +76,10 @@ export default function MobileBrowse({
       );
     }
 
-    return cars;
-  }, [activeBrand, activePriceIdx, searchQuery]);
+    return list;
+  }, [activeBrand, activePriceIdx, searchQuery, cars]);
 
-  const isBaseSelected = (carId: string) =>
+  const isStartingTrimSelected = (carId: string) =>
     selectedItems.some((item) => item.carId === carId && !item.variantName);
 
   const isVariantSelected = (carId: string, variantName: string) =>
@@ -126,7 +139,7 @@ export default function MobileBrowse({
           <span className="mob-brand-pill-text">All</span>
         </button>
         {allBrands.map((brandName) => {
-          const carCount = CARS.filter((c) => c.brand === brandName).length;
+          const carCount = cars.filter((c) => c.brand === brandName).length;
           return (
             <button
               key={brandName}
@@ -158,7 +171,7 @@ export default function MobileBrowse({
       <div className="mob-cars-grid">
         {filteredCars.length === 0 ? (
           <div className="mob-empty">
-            {activeBrand && CARS.filter((c) => c.brand === activeBrand).length === 0 ? (
+            {activeBrand && cars.filter((c) => c.brand === activeBrand).length === 0 ? (
               <>
                 <p style={{ fontSize: 32, marginBottom: 8 }}>🚧</p>
                 <p><strong>{activeBrand}</strong> cars coming soon!</p>
@@ -169,7 +182,7 @@ export default function MobileBrowse({
           </div>
         ) : (
           filteredCars.map((car) => {
-            const baseSelected = isBaseSelected(car.id);
+            const startingTrimSelected = isStartingTrimSelected(car.id);
             const hasVariants = car.variants && car.variants.length > 0;
             const isExpanded = expandedCarId === car.id;
             const selCount = selectedCountForCar(car.id);
@@ -181,7 +194,7 @@ export default function MobileBrowse({
                 style={{ "--card-accent": car.color } as React.CSSProperties}
               >
                 <button
-                  className={`mob-car-card ${baseSelected ? "selected" : ""}`}
+                  className={`mob-car-card ${startingTrimSelected ? "selected" : ""}`}
                   onClick={() => {
                     if (hasVariants) {
                       setExpandedCarId(isExpanded ? null : car.id);
@@ -189,7 +202,7 @@ export default function MobileBrowse({
                       onToggle(car.id);
                     }
                   }}
-                  disabled={!baseSelected && !hasVariants && selectedItems.length >= 5}
+                  disabled={!startingTrimSelected && !hasVariants && selectedItems.length >= 5}
                 >
                   <div className="mob-car-img-wrap">
                     <Image
@@ -200,14 +213,14 @@ export default function MobileBrowse({
                       className="mob-car-img"
                       unoptimized
                     />
-                    {baseSelected && (
+                    {startingTrimSelected && (
                       <div className="mob-car-check">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
                           <path d="M5 12l5 5L20 7" />
                         </svg>
                       </div>
                     )}
-                    {selCount > 0 && !baseSelected && (
+                    {selCount > 0 && !startingTrimSelected && (
                       <div className="mob-car-sel-count">{selCount}</div>
                     )}
                     <span className="mob-car-category">{car.category}</span>
@@ -243,20 +256,20 @@ export default function MobileBrowse({
                 {/* Variant dropdown */}
                 {hasVariants && isExpanded && (
                   <div className="mob-variant-list">
-                    {/* Base model option */}
+                    {/* Starting trim — list price, same model line */}
                     <button
-                      className={`mob-variant-row ${baseSelected ? "selected" : ""}`}
+                      className={`mob-variant-row ${startingTrimSelected ? "selected" : ""}`}
                       onClick={() => onToggle(car.id)}
-                      disabled={!baseSelected && selectedItems.length >= 5}
+                      disabled={!startingTrimSelected && selectedItems.length >= 5}
                     >
-                      <span className={`mob-variant-check ${baseSelected ? "checked" : ""}`}>
-                        {baseSelected && (
+                      <span className={`mob-variant-check ${startingTrimSelected ? "checked" : ""}`}>
+                        {startingTrimSelected && (
                           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3">
                             <path d="M5 12l5 5L20 7" />
                           </svg>
                         )}
                       </span>
-                      <span className="mob-variant-name">Base Model</span>
+                      <span className="mob-variant-name">{STARTING_TRIM_LABEL}</span>
                       <span className="mob-variant-price">{formatPrice(car.price)}</span>
                     </button>
                     {car.variants!.map((v) => {

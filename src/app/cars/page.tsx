@@ -3,9 +3,11 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { CARS, formatPrice, BRANDS } from "@/lib/car-data";
+import { formatPrice } from "@/lib/car-data";
+import { useCarDataset } from "@/context/CarDatasetContext";
 
 export default function AllCarsPage() {
+  const { cars: CARS, brands: BRANDS } = useCarDataset();
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedBrands, setSelectedBrands] = useState<string[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);

@@ -8,6 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build:catalog": "node scripts/build-indian-catalog.mjs",
+    "build:nested-catalog": "node scripts/build-nested-india-catalog-2026.mjs",
+    "refresh:data": "node scripts/daily-refresh-car-data.mjs",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch --passWithNoTests",
     "postbuild": "jest --passWithNoTests"

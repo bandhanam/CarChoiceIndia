@@ -3,8 +3,13 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Car, BrandGroup } from "@/types";
-import { formatPrice, getBrandGroups, BRAND_LOGOS, CARS } from "@/lib/car-data";
+import { Car, BrandGroup, BrandMeta } from "@/types";
+import {
+  formatPrice,
+  getBrandGroupsFrom,
+  BRAND_LOGOS,
+  STARTING_TRIM_LABEL,
+} from "@/lib/car-data";
 
 interface SelectedItem {
   carId: string;
@@ -13,6 +18,7 @@ interface SelectedItem {
 
 interface SidebarProps {
   cars: Car[];
+  brands: BrandMeta[];
   selectedItems: SelectedItem[];
   onToggle: (carId: string, variantName?: string) => void;
   onRunAI: () => void;
@@ -26,6 +32,7 @@ interface SidebarProps {
 
 export default function Sidebar({
   cars,
+  brands,
   selectedItems,
   onToggle,
   onRunAI,
@@ -37,7 +44,10 @@ export default function Sidebar({
   maxPriceLakh,
 }: SidebarProps) {
   const canAnalyze = selectedItems.length >= 2;
-  const brandGroups = useMemo(() => getBrandGroups(), []);
+  const brandGroups = useMemo(
+    () => getBrandGroupsFrom(cars, brands),
+    [cars, brands]
+  );
   const [expandedBrands, setExpandedBrands] = useState<Set<string>>(
     () => new Set(brandGroups.map((g) => g.brand.name))
   );
@@ -321,7 +331,7 @@ export default function Sidebar({
               {isExpanded && (
                 <div className="car-leaves">
                   {group.cars.map((car) => {
-                    const baseSelected = isItemSelected(car.id);
+                    const startingTrimSelected = isItemSelected(car.id);
                     const hasVariants = car.variants && car.variants.length > 0;
                     const isVariantsOpen = expandedVariants.has(car.id);
                     const selCount = getCarSelectionCount(car.id);
@@ -329,9 +339,9 @@ export default function Sidebar({
                     return (
                       <div key={car.id} className="car-leaf-wrapper">
                         <div
-                          className={`car-leaf-compact ${baseSelected ? "selected" : ""}`}
+                          className={`car-leaf-compact ${startingTrimSelected ? "selected" : ""}`}
                           style={
-                            baseSelected
+                            startingTrimSelected
                               ? { borderColor: car.color }
                               : undefined
                           }
@@ -339,18 +349,18 @@ export default function Sidebar({
                           <button
                             className="car-leaf-select-area"
                             onClick={() => handleItemToggle(car.id)}
-                            disabled={!baseSelected && selectedItems.length >= 5}
-                            title={`Select ${car.name} (base model)`}
+                            disabled={!startingTrimSelected && selectedItems.length >= 5}
+                            title={`Select ${car.name} (${STARTING_TRIM_LABEL.toLowerCase()})`}
                           >
                             <div
                               className="car-leaf-check-sm"
                               style={
-                                baseSelected
+                                startingTrimSelected
                                   ? { background: car.color, borderColor: car.color }
                                   : undefined
                               }
                             >
-                              {baseSelected && (
+                              {startingTrimSelected && (
                                 <svg width="8" height="8" viewBox="0 0 10 10" fill="none">
                                   <path d="M2 5L4 7L8 3" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>

@@ -4,10 +4,13 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { getCarById, formatPrice, BRAND_LOGOS } from "@/lib/car-data";
+import { formatPrice, BRAND_LOGOS, STARTING_TRIM_LABEL } from "@/lib/car-data";
+import { useCarDataset } from "@/context/CarDatasetContext";
+import CarOpenAiEstimate from "@/components/CarOpenAiEstimate";
 
 export default function CarDetailPage() {
   const params = useParams();
+  const { getCarById } = useCarDataset();
   const car = getCarById(params.id as string);
   const [activeVariant, setActiveVariant] = useState<number | null>(null);
 
@@ -29,7 +32,7 @@ export default function CarDetailPage() {
     : car.price;
   const displayVariantName = activeVariant !== null && car.variants
     ? car.variants[activeVariant].name
-    : "Base Model";
+    : STARTING_TRIM_LABEL;
 
   const ratingEntries: { label: string; key: keyof typeof car.ratings; icon: string }[] = [
     { label: "Performance", key: "performance", icon: "🏎️" },
@@ -116,7 +119,7 @@ export default function CarDetailPage() {
               className={`cdp-variant-card ${activeVariant === null ? "active" : ""}`}
               onClick={() => setActiveVariant(null)}
             >
-              <span className="cdp-variant-name">Base Model</span>
+              <span className="cdp-variant-name">{STARTING_TRIM_LABEL}</span>
               <span className="cdp-variant-price">{formatPrice(car.price)}</span>
             </button>
             {car.variants.map((v, idx) => (
@@ -132,6 +135,16 @@ export default function CarDetailPage() {
           </div>
         </section>
       )}
+
+      <CarOpenAiEstimate
+        car={car}
+        activeVariantName={
+          activeVariant !== null && car.variants
+            ? car.variants[activeVariant].name
+            : null
+        }
+        displayPrice={displayPrice}
+      />
 
       {/* Quick Specs */}
       <section className="cdp-section">

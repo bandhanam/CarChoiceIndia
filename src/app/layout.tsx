@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import CarDataProviders from "@/components/CarDataProviders";
 
 export const metadata: Metadata = {
   title: "Car Selector - AI-Powered Car Comparison & Winner",
@@ -34,7 +35,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased min-h-screen">{children}</body>
+      <body className="antialiased min-h-screen">
+        <CarDataProviders>{children}</CarDataProviders>
+      </body>
     </html>
   );
 }
