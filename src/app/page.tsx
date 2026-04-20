@@ -9,8 +9,8 @@ import {
 } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import Image from "next/image";
 import { useCarDataset } from "@/context/CarDatasetContext";
+import CarPhoto from "@/components/CarPhoto";
 import { runAIComparison } from "@/lib/ai-engine";
 import { Car, ComparisonResult } from "@/types";
 import Sidebar from "@/components/Sidebar";
@@ -177,12 +177,14 @@ export default function HomePage() {
         {/* Top bar */}
         <header className="mob-topbar">
           <div>
-            <h1 className="mob-topbar-title">Car Selector AI</h1>
-            <p className="mob-topbar-desc">Select the variant of car and hit Find Winner</p>
+            <h1 className="mob-topbar-title">Smart Compare</h1>
+            <p className="mob-topbar-desc">
+              Pick 2–5 cars or variants — on-device AI picks a comfortable winner with clear scores.
+            </p>
           </div>
-          <div className="mob-topbar-badge">
+          <div className="mob-topbar-badge" title="Scores run in your browser">
             <span className="mob-dot" />
-            AI
+            Private AI
           </div>
         </header>
 
@@ -263,13 +265,12 @@ export default function HomePage() {
                     const itemsForCar = selectedItems.filter((i) => i.carId === car.id);
                     return itemsForCar.map((item) => (
                       <div key={`${item.carId}-${item.variantName || "base"}`} className="mob-selected-thumb">
-                        <Image
-                          src={car.imageUrl}
+                        <CarPhoto
+                          car={car}
                           alt={car.name}
                           width={48}
                           height={48}
                           className="mob-selected-img"
-                          unoptimized
                         />
                         <button
                           className="mob-selected-remove"
@@ -399,9 +400,19 @@ export default function HomePage() {
 
         <header className="app-header">
           <div>
-            <h1 className="header-title">Car Selector AI</h1>
+            <h1 className="header-title">Smart car comparison</h1>
             <p className="header-subtitle">
-              Confused which car to buy? Pick your top choices and let AI end the debate.
+              Build a shortlist from the left, then let AI score performance, safety, comfort,
+              tech & value — side by side, with simple charts. No account needed.
+            </p>
+            <ul className="trust-pills" aria-label="How this app works">
+              <li>Pick 2–5 models</li>
+              <li>AI scores locally</li>
+              <li>No sign-up</li>
+            </ul>
+            <p className="ai-comfort-note">
+              <strong>Comfortable comparison:</strong> this is a decision helper, not a dealer.
+              Use official brochures and test drives before you buy.
             </p>
             {refreshState === "updated" && (
               <p className="header-data-hint" role="status" aria-live="polite">
@@ -432,7 +443,7 @@ export default function HomePage() {
               <span
                 className={`live-dot ${refreshState === "checking" ? "pulse" : ""}`}
               />
-              {refreshState === "checking" ? "Syncing…" : "AI Ready"}
+              {refreshState === "checking" ? "Syncing…" : "Ready to compare"}
             </div>
           </div>
         </header>
@@ -502,9 +513,13 @@ export default function HomePage() {
           </>
         ) : (
           <div className="empty-state">
-            <div className="empty-state-emoji">👈</div>
-            <h3>Select cars from the sidebar</h3>
-            <p>Pick 2 to 5 cars or variants, then let AI find the best one for you.<br />Or use the price filter to see all cars ranked in a budget.</p>
+            <div className="empty-state-emoji">✨</div>
+            <h3>Start your comparison</h3>
+            <p>
+              Choose 2–5 cars (or specific variants) in the sidebar, then tap{" "}
+              <strong>Find winner</strong> for an AI-ranked view. Adjust the price slider to
+              auto-rank everything in your budget — still fully in your browser.
+            </p>
           </div>
         )}
       </main>

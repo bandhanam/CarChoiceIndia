@@ -10,6 +10,7 @@ import {
   getAllBrandNamesFrom,
   STARTING_TRIM_LABEL,
 } from "@/lib/car-data";
+import CarPhoto from "@/components/CarPhoto";
 
 interface SelectedItem {
   carId: string;
@@ -205,13 +206,12 @@ export default function MobileBrowse({
                   disabled={!startingTrimSelected && !hasVariants && selectedItems.length >= 5}
                 >
                   <div className="mob-car-img-wrap">
-                    <Image
-                      src={car.imageUrl}
+                    <CarPhoto
+                      car={car}
                       alt={car.name}
                       width={180}
                       height={110}
                       className="mob-car-img"
-                      unoptimized
                     />
                     {startingTrimSelected && (
                       <div className="mob-car-check">

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-label="Car image placeholder">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e5e7eb"/>
+      <stop offset="100%" style="stop-color:#d1d5db"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#g)"/>
+  <g fill="#9ca3af" font-family="system-ui,sans-serif" text-anchor="middle">
+    <text x="320" y="175" font-size="22">No photo yet</text>
+    <text x="320" y="205" font-size="14">Add image in admin or import</text>
+  </g>
+</svg>

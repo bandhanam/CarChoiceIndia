@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Car } from "@/types";
 import { formatPrice } from "@/lib/car-data";
+import CarPhoto from "@/components/CarPhoto";
 
 interface CarDetailCardProps {
   car: Car;
@@ -40,8 +40,8 @@ export default function CarDetailCard({
       <div className="card-top-row">
         <div className="card-image-col">
           <div className="card-image-wrap">
-            <Image
-              src={car.imageUrl}
+            <CarPhoto
+              car={car}
               alt={car.name}
               width={360}
               height={200}

@@ -157,12 +157,13 @@ export default function Sidebar({
   return (
     <aside className={`sidebar ${mobileMenuOpen ? "mobile-open" : ""}`}>
       <div className="sidebar-header">
+        <p className="sidebar-ai-label">AI comparison shortlist</p>
         <h2 className="sidebar-title">
           <span className="sidebar-icon">🚗</span>
-          Car Brands
+          Cars & brands
         </h2>
         <p className="sidebar-subtitle">
-          {brandGroups.length} brands · {cars.length} cars
+          {brandGroups.length} brands · {cars.length} models · tap to add (max 5)
         </p>
       </div>
 

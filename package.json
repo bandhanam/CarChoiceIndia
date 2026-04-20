@@ -1,16 +1,14 @@
 {
   "name": "carselector",
-  "version": "1.0.0",
-  "description": "AI-powered car comparison and winner selection dashboard with offline TensorFlow.js",
+  "version": "2.0.0",
+  "description": "AI-powered car comparison dashboard — pick cars, score them, find a winner",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build:catalog": "node scripts/build-indian-catalog.mjs",
-    "build:nested-catalog": "node scripts/build-nested-india-catalog-2026.mjs",
-    "refresh:data": "node scripts/daily-refresh-car-data.mjs",
+    "generate:data": "node scripts/generate-clean-cars-json.mjs",
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch --passWithNoTests",
     "postbuild": "jest --passWithNoTests"
@@ -19,18 +17,14 @@
     "car",
     "selector",
     "comparison",
-    "ai",
-    "tensorflow",
-    "offline"
+    "ai"
   ],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",
-    "@tensorflow/tfjs": "^4.22.0",
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
-    "date-fns": "^4.1.0",
     "next": "^16.2.1",
     "postcss": "^8.5.8",
     "react": "^19.2.4",

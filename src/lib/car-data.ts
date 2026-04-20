@@ -10,7 +10,6 @@ const dataset = carsJson as CarsDataset;
 
 export { getBrandGroupsFrom, getAllBrandNamesFrom, datasetFingerprint };
 
-/** Default list-price tier in the UI — avoids “base” (sounds stripped-down). */
 export const STARTING_TRIM_LABEL = "Starting trim";
 
 export const CARS: Car[] = dataset.cars;
@@ -27,20 +26,10 @@ export const BRAND_LOGOS: Record<string, string> = {
   Skoda: "/images/brands/skoda.jpeg",
   Volkswagen: "/images/brands/valksvegon.jpeg",
   Renault: "/images/brands/renault.jpeg",
-  BMW: "/images/brands/BMW.jpeg",
-  "Mercedes-Benz": "/images/brands/benz.jpeg",
-  Tesla: "/images/brands/Tesla.jpeg",
-  Ford: "/images/brands/ford.jpeg",
-  Chevrolet: "/images/brands/chervrolet.jpeg",
-  Ferrari: "/images/brands/ferari.jpeg",
-  Jaguar: "/images/brands/jaguar.jpeg",
-  Jeep: "/images/brands/Jeep.jpeg",
-  "Land Rover": "/images/brands/landrover (1).jpeg",
-  Mini: "/images/brands/mini.jpeg",
-  Mitsubishi: "/images/brands/Mistubishi.jpeg",
+  "MG Motor":
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mg_logo.svg/250px-Mg_logo.svg.png",
   Citroen: "/images/brands/citroen.jpeg",
-  Datsun: "/images/brands/datsun.jpeg",
-  Volvo: "/images/brands/valvo.jpeg",
+  Nissan: "/images/brands/nissan.jpeg",
 };
 
 export function getCarById(id: string): Car | undefined {

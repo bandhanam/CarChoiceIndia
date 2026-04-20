@@ -3,9 +3,9 @@ import "./globals.css";
 import CarDataProviders from "@/components/CarDataProviders";
 
 export const metadata: Metadata = {
-  title: "Car Selector - AI-Powered Car Comparison & Winner",
+  title: "Smart Compare — AI car comparison (comfortable & private)",
   description:
-    "Compare latest 2025 cars with AI-powered analysis. Select 2-5 cars and let offline AI pick the best one based on performance, safety, comfort, technology and value.",
+    "Friendly side-by-side car comparison: pick 2–5 models, run on-device AI scoring, and see a clear winner with charts. No sign-up — your shortlist stays in the browser.",
   keywords: [
     "car comparison",
     "best car 2025",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#3366ff",
+  themeColor: "#4f46e5",
   width: "device-width",
   initialScale: 1,
 };
@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
       </head>

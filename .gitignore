@@ -32,3 +32,6 @@ next-env.d.ts
 # IDE
 .vscode/
 .idea/
+
+# Specstory
+.specstory/

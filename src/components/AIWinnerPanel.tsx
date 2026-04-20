@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { ComparisonResult, Car } from "@/types";
 import { formatPrice } from "@/lib/car-data";
+import CarPhoto from "@/components/CarPhoto";
 
 interface AIWinnerPanelProps {
   result: ComparisonResult;
@@ -25,8 +25,8 @@ export default function AIWinnerPanel({ result, cars }: AIWinnerPanelProps) {
 
       <div className="winner-hero" style={{ "--winner-color": winnerCar.color } as React.CSSProperties}>
         <div className="winner-hero-image-wrap">
-          <Image
-            src={winnerCar.imageUrl}
+          <CarPhoto
+            car={winnerCar}
             alt={winnerCar.name}
             width={500}
             height={281}
