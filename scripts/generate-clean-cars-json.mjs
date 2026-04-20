@@ -197,6 +197,58 @@ function buildRatings(r) {
 }
 
 // Group variants by brand+model
+const CDN = "https://imgd.aeplcdn.com/664x374/n/cw/ec";
+const carImages = {
+  "Maruti Suzuki|Swift": `${CDN}/159099/Maruti-Swift-Exterior-166164.jpeg`,
+  "Maruti Suzuki|Baleno": `${CDN}/114455/Maruti-Baleno-Exterior-166165.jpeg`,
+  "Maruti Suzuki|Dzire": `${CDN}/176277/Maruti-Dzire-Exterior-166167.jpeg`,
+  "Maruti Suzuki|Brezza": `${CDN}/107543/Maruti-Brezza-Exterior-166166.jpeg`,
+  "Maruti Suzuki|Grand Vitara": `${CDN}/117536/Maruti-Grand-Vitara-Exterior-166170.jpeg`,
+  "Maruti Suzuki|Ertiga": `${CDN}/53065/Maruti-Ertiga-Exterior-166168.jpeg`,
+  "Maruti Suzuki|XL6": `${CDN}/93545/Maruti-XL6-Exterior-166171.jpeg`,
+  "Maruti Suzuki|Fronx": `${CDN}/127756/Maruti-Fronx-Exterior-166169.jpeg`,
+  "Maruti Suzuki|Jimny": `${CDN}/126491/Maruti-Jimny-Exterior-166172.jpeg`,
+  "Hyundai|Creta": `${CDN}/170525/Hyundai-Creta-Exterior-166113.jpeg`,
+  "Hyundai|Venue": `${CDN}/112518/Hyundai-Venue-Exterior-166118.jpeg`,
+  "Hyundai|i20": `${CDN}/80531/Hyundai-i20-Exterior-166114.jpeg`,
+  "Hyundai|Verna": `${CDN}/137548/Hyundai-Verna-Exterior-166119.jpeg`,
+  "Hyundai|Tucson": `${CDN}/124014/Hyundai-Tucson-Exterior-166117.jpeg`,
+  "Hyundai|Exter": `${CDN}/139651/Hyundai-Exter-Exterior-166112.jpeg`,
+  "Tata|Nexon": `${CDN}/139651/Tata-Nexon-Exterior-166183.jpeg`,
+  "Tata|Punch": `${CDN}/175939/Tata-Punch-Exterior-166184.jpeg`,
+  "Tata|Harrier": `${CDN}/175465/Tata-Harrier-Exterior-166181.jpeg`,
+  "Tata|Safari": `${CDN}/175465/Tata-Safari-Exterior-166186.jpeg`,
+  "Tata|Curvv": `${CDN}/170525/Tata-Curvv-Exterior-166180.jpeg`,
+  "Tata|Curvv EV": `${CDN}/139651/curvv-ev-exterior-right-front-three-quarter.jpeg`,
+  "Tata|Nexon EV": `${CDN}/139651/Tata-Nexon-EV-Exterior-166185.jpeg`,
+  "Tata|Altroz": `${CDN}/80531/Tata-Altroz-Exterior-166179.jpeg`,
+  "Mahindra|Thar Roxx": `${CDN}/170525/Mahindra-Thar-ROXX-Exterior-166145.jpeg`,
+  "Mahindra|XUV700": `${CDN}/110502/Mahindra-XUV700-Exterior-166149.jpeg`,
+  "Mahindra|XUV 3XO": `${CDN}/170525/Mahindra-XUV-3XO-Exterior-166148.jpeg`,
+  "Mahindra|Scorpio-N": `${CDN}/127756/Mahindra-Scorpio-N-Exterior-166146.jpeg`,
+  "Mahindra|Bolero Neo": `${CDN}/53065/Mahindra-Bolero-Neo-Exterior-166143.jpeg`,
+  "Mahindra|BE 6": `${CDN}/170525/Mahindra-BE-6-Exterior-166142.jpeg`,
+  "Kia|Seltos": `${CDN}/170525/Kia-Seltos-Exterior-166128.jpeg`,
+  "Kia|Sonet": `${CDN}/112518/Kia-Sonet-Exterior-166129.jpeg`,
+  "Kia|Carens": `${CDN}/117536/Kia-Carens-Exterior-166126.jpeg`,
+  "Kia|EV6": `${CDN}/124014/Kia-EV6-Exterior-166127.jpeg`,
+  "Honda|City": `${CDN}/93545/Honda-City-Exterior-166103.jpeg`,
+  "Honda|Elevate": `${CDN}/139651/Honda-Elevate-Exterior-166104.jpeg`,
+  "Honda|Amaze": `${CDN}/176277/Honda-Amaze-Exterior-166102.jpeg`,
+  "Toyota|Fortuner": `${CDN}/80531/Toyota-Fortuner-Exterior-166190.jpeg`,
+  "Toyota|Innova Hycross": `${CDN}/137548/Toyota-Innova-HyCross-Exterior-166192.jpeg`,
+  "Toyota|Urban Cruiser Hyryder": `${CDN}/117536/Toyota-Urban-Cruiser-Hyryder-Exterior-166194.jpeg`,
+  "Skoda|Kushaq": `${CDN}/117536/Skoda-Kushaq-Exterior-166175.jpeg`,
+  "Skoda|Slavia": `${CDN}/114455/Skoda-Slavia-Exterior-166176.jpeg`,
+  "Volkswagen|Taigun": `${CDN}/117536/Volkswagen-Taigun-Exterior-166197.jpeg`,
+  "Volkswagen|Virtus": `${CDN}/114455/Volkswagen-Virtus-Exterior-166198.jpeg`,
+  "MG Motor|Hector": `${CDN}/110502/MG-Hector-Exterior-166155.jpeg`,
+  "MG Motor|Astor": `${CDN}/112518/MG-Astor-Exterior-166153.jpeg`,
+  "Renault|Duster": `${CDN}/176277/Renault-Duster-Exterior-166173.jpeg`,
+  "Citroen|Basalt": `${CDN}/170525/Citroen-Basalt-Exterior-166095.jpeg`,
+  "Nissan|Magnite": `${CDN}/112518/Nissan-Magnite-Exterior-166159.jpeg`,
+};
+
 const modelGroups = {};
 for (const r of rows) {
   const key = `${r[0]}|${r[1]}`;
@@ -220,7 +272,8 @@ for (const [key, variants] of Object.entries(modelGroups)) {
     currency: "INR",
     category: base[31],
     imageEmoji: emoji,
-    imageUrl: `/images/cars/placeholder-car.svg`,
+    imageUrl: carImages[key] || `/images/cars/placeholder-car.svg`,
+    gallery: carImages[key] ? [carImages[key]] : [],
     color: brands.find(b => b.name === base[0])?.color || "#6B7280",
     specs: {
       engine: midVariant[4],

@@ -59,6 +59,7 @@ export default function CarPhoto({
       priority={priority}
       sizes={sizes}
       unoptimized
+      referrerPolicy="no-referrer"
       onError={onError}
     />
   );

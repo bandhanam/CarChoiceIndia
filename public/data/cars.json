@@ -1,6 +1,6 @@
 {
   "version": "5.0.0",
-  "lastUpdated": "2026-04-20T08:38:29.509Z",
+  "lastUpdated": "2026-04-20T09:23:57.873Z",
   "brands": [
     {
       "name": "Maruti Suzuki",
@@ -92,7 +92,10 @@
       "currency": "INR",
       "category": "Hatchback",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/Maruti-Swift-Exterior-166164.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/159099/Maruti-Swift-Exterior-166164.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -173,7 +176,10 @@
       "currency": "INR",
       "category": "Hatchback",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Maruti-Baleno-Exterior-166165.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Maruti-Baleno-Exterior-166165.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -254,7 +260,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Maruti-Dzire-Exterior-166167.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Maruti-Dzire-Exterior-166167.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -328,7 +337,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/107543/Maruti-Brezza-Exterior-166166.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/107543/Maruti-Brezza-Exterior-166166.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -404,7 +416,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Maruti-Grand-Vitara-Exterior-166170.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Maruti-Grand-Vitara-Exterior-166170.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Strong Hybrid",
@@ -483,7 +498,10 @@
       "currency": "INR",
       "category": "MPV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/53065/Maruti-Ertiga-Exterior-166168.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/53065/Maruti-Ertiga-Exterior-166168.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -557,7 +575,10 @@
       "currency": "INR",
       "category": "MPV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/93545/Maruti-XL6-Exterior-166171.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/93545/Maruti-XL6-Exterior-166171.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -627,7 +648,10 @@
       "currency": "INR",
       "category": "SUV Coupe",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/127756/Maruti-Fronx-Exterior-166169.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/127756/Maruti-Fronx-Exterior-166169.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol Turbo",
@@ -701,7 +725,10 @@
       "currency": "INR",
       "category": "SUV Off-Road",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/126491/Maruti-Jimny-Exterior-166172.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/126491/Maruti-Jimny-Exterior-166172.jpeg"
+      ],
       "color": "#E31837",
       "specs": {
         "engine": "Petrol NA",
@@ -775,7 +802,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Hyundai-Creta-Exterior-166113.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Hyundai-Creta-Exterior-166113.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -859,7 +889,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Hyundai-Venue-Exterior-166118.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Hyundai-Venue-Exterior-166118.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -935,7 +968,10 @@
       "currency": "INR",
       "category": "Hatchback",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Hyundai-i20-Exterior-166114.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Hyundai-i20-Exterior-166114.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -1008,7 +1044,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/137548/Hyundai-Verna-Exterior-166119.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/137548/Hyundai-Verna-Exterior-166119.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -1084,7 +1123,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/124014/Hyundai-Tucson-Exterior-166117.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/124014/Hyundai-Tucson-Exterior-166117.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol NA",
@@ -1160,7 +1202,10 @@
       "currency": "INR",
       "category": "SUV Micro",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Hyundai-Exter-Exterior-166112.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Hyundai-Exter-Exterior-166112.jpeg"
+      ],
       "color": "#002C5F",
       "specs": {
         "engine": "Petrol NA",
@@ -1234,7 +1279,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Tata-Nexon-Exterior-166183.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Tata-Nexon-Exterior-166183.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Petrol Turbo",
@@ -1312,7 +1360,10 @@
       "currency": "INR",
       "category": "SUV Micro",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175939/Tata-Punch-Exterior-166184.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/175939/Tata-Punch-Exterior-166184.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Petrol NA",
@@ -1384,7 +1435,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175465/Tata-Harrier-Exterior-166181.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/175465/Tata-Harrier-Exterior-166181.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Diesel Turbo",
@@ -1460,7 +1514,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/175465/Tata-Safari-Exterior-166186.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/175465/Tata-Safari-Exterior-166186.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Diesel Turbo",
@@ -1536,7 +1593,10 @@
       "currency": "INR",
       "category": "SUV Coupe",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Tata-Curvv-Exterior-166180.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Tata-Curvv-Exterior-166180.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Diesel Turbo",
@@ -1612,7 +1672,10 @@
       "currency": "INR",
       "category": "SUV Coupe",
       "imageEmoji": "⚡",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/curvv-ev-exterior-right-front-three-quarter.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/curvv-ev-exterior-right-front-three-quarter.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Electric Motor",
@@ -1688,7 +1751,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "⚡",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Tata-Nexon-EV-Exterior-166185.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Tata-Nexon-EV-Exterior-166185.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Electric Motor",
@@ -1764,7 +1830,10 @@
       "currency": "INR",
       "category": "Hatchback",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Tata-Altroz-Exterior-166179.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Tata-Altroz-Exterior-166179.jpeg"
+      ],
       "color": "#0066FF",
       "specs": {
         "engine": "Petrol Turbo",
@@ -1838,7 +1907,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-Thar-ROXX-Exterior-166145.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-Thar-ROXX-Exterior-166145.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Diesel Turbo",
@@ -1916,7 +1988,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/110502/Mahindra-XUV700-Exterior-166149.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/110502/Mahindra-XUV700-Exterior-166149.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Diesel Turbo",
@@ -1994,7 +2069,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-XUV-3XO-Exterior-166148.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-XUV-3XO-Exterior-166148.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Petrol Turbo",
@@ -2070,7 +2148,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/127756/Mahindra-Scorpio-N-Exterior-166146.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/127756/Mahindra-Scorpio-N-Exterior-166146.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Diesel Turbo",
@@ -2146,7 +2227,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/53065/Mahindra-Bolero-Neo-Exterior-166143.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/53065/Mahindra-Bolero-Neo-Exterior-166143.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Diesel Turbo",
@@ -2208,7 +2292,10 @@
       "currency": "INR",
       "category": "SUV Coupe",
       "imageEmoji": "⚡",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-BE-6-Exterior-166142.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Mahindra-BE-6-Exterior-166142.jpeg"
+      ],
       "color": "#D4213D",
       "specs": {
         "engine": "Electric Motor",
@@ -2280,7 +2367,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Kia-Seltos-Exterior-166128.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Kia-Seltos-Exterior-166128.jpeg"
+      ],
       "color": "#05141F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -2358,7 +2448,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Kia-Sonet-Exterior-166129.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Kia-Sonet-Exterior-166129.jpeg"
+      ],
       "color": "#05141F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -2435,7 +2528,10 @@
       "currency": "INR",
       "category": "MPV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Kia-Carens-Exterior-166126.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Kia-Carens-Exterior-166126.jpeg"
+      ],
       "color": "#05141F",
       "specs": {
         "engine": "Diesel Turbo",
@@ -2510,7 +2606,10 @@
       "currency": "INR",
       "category": "SUV Crossover",
       "imageEmoji": "⚡",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/124014/Kia-EV6-Exterior-166127.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/124014/Kia-EV6-Exterior-166127.jpeg"
+      ],
       "color": "#05141F",
       "specs": {
         "engine": "Electric Motor",
@@ -2582,7 +2681,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/93545/Honda-City-Exterior-166103.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/93545/Honda-City-Exterior-166103.jpeg"
+      ],
       "color": "#CC0000",
       "specs": {
         "engine": "Petrol NA",
@@ -2660,7 +2762,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Honda-Elevate-Exterior-166104.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/139651/Honda-Elevate-Exterior-166104.jpeg"
+      ],
       "color": "#CC0000",
       "specs": {
         "engine": "Petrol NA",
@@ -2734,7 +2839,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Honda-Amaze-Exterior-166102.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Honda-Amaze-Exterior-166102.jpeg"
+      ],
       "color": "#CC0000",
       "specs": {
         "engine": "Petrol NA",
@@ -2808,7 +2916,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🏋️",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Toyota-Fortuner-Exterior-166190.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/80531/Toyota-Fortuner-Exterior-166190.jpeg"
+      ],
       "color": "#EB0A1E",
       "specs": {
         "engine": "Diesel Turbo",
@@ -2883,7 +2994,10 @@
       "currency": "INR",
       "category": "MPV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/137548/Toyota-Innova-HyCross-Exterior-166192.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/137548/Toyota-Innova-HyCross-Exterior-166192.jpeg"
+      ],
       "color": "#EB0A1E",
       "specs": {
         "engine": "Strong Hybrid",
@@ -2958,7 +3072,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Toyota-Urban-Cruiser-Hyryder-Exterior-166194.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Toyota-Urban-Cruiser-Hyryder-Exterior-166194.jpeg"
+      ],
       "color": "#EB0A1E",
       "specs": {
         "engine": "Strong Hybrid",
@@ -3033,7 +3150,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Skoda-Kushaq-Exterior-166175.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Skoda-Kushaq-Exterior-166175.jpeg"
+      ],
       "color": "#4BA82E",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3108,7 +3228,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Skoda-Slavia-Exterior-166176.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Skoda-Slavia-Exterior-166176.jpeg"
+      ],
       "color": "#4BA82E",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3183,7 +3306,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Volkswagen-Taigun-Exterior-166197.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/117536/Volkswagen-Taigun-Exterior-166197.jpeg"
+      ],
       "color": "#001E50",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3258,7 +3384,10 @@
       "currency": "INR",
       "category": "Sedan",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Volkswagen-Virtus-Exterior-166198.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/114455/Volkswagen-Virtus-Exterior-166198.jpeg"
+      ],
       "color": "#001E50",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3333,7 +3462,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/110502/MG-Hector-Exterior-166155.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/110502/MG-Hector-Exterior-166155.jpeg"
+      ],
       "color": "#1B1B1B",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3413,7 +3545,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/MG-Astor-Exterior-166153.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/MG-Astor-Exterior-166153.jpeg"
+      ],
       "color": "#1B1B1B",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3488,7 +3623,10 @@
       "currency": "INR",
       "category": "SUV",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Renault-Duster-Exterior-166173.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/176277/Renault-Duster-Exterior-166173.jpeg"
+      ],
       "color": "#FFCC00",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3563,7 +3701,10 @@
       "currency": "INR",
       "category": "SUV Coupe",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Citroen-Basalt-Exterior-166095.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/170525/Citroen-Basalt-Exterior-166095.jpeg"
+      ],
       "color": "#AC1A2F",
       "specs": {
         "engine": "Petrol Turbo",
@@ -3636,7 +3777,10 @@
       "currency": "INR",
       "category": "SUV Compact",
       "imageEmoji": "🚗",
-      "imageUrl": "/images/cars/placeholder-car.svg",
+      "imageUrl": "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Nissan-Magnite-Exterior-166159.jpeg",
+      "gallery": [
+        "https://imgd.aeplcdn.com/664x374/n/cw/ec/112518/Nissan-Magnite-Exterior-166159.jpeg"
+      ],
       "color": "#C3002F",
       "specs": {
         "engine": "Petrol Turbo",
